@@ -74,7 +74,7 @@ $(document).ready(function() {
   <tbody>
     <tr class="info">
       <td>Cucumber Audit</td>
-      <td>21 Apr 2020, 05:15</td>
+      <td>21 Apr 2020, 05:50</td>
     </tr>
   </tbody>
 </table>
@@ -138,7 +138,7 @@ $(document).ready(function() {
           <td  class="failed"    >1</td>
           <td class="total">1</td>
 
-          <td class="duration" data-value="31000000">0.031</td>
+          <td class="duration" data-value="28000000">0.028</td>
           <td class="failed">Failed</td>
         </tr>
         </tbody>
@@ -189,7 +189,7 @@ $(document).ready(function() {
 </div>
 
 
-  <span class="lead-duration duration">0.007</span>
+  <span class="lead-duration duration">0.013</span>
 
 
   <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-1">
@@ -286,7 +286,7 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">app under <span class="argument">&quot;http://localhost.:8000/consumer/&quot;</span> has already started</span>
 
-  <span class="lead-duration duration">0.007</span>
+  <span class="lead-duration duration">0.013</span>
 
 </div>
 
@@ -326,7 +326,7 @@ $(document).ready(function() {
 </div>
 
 
-  <span class="lead-duration duration">0.024</span>
+  <span class="lead-duration duration">0.015</span>
 
 
   <span data-toggle="collapse" class=" collapsable-control" data-target="#element-3">
@@ -430,7 +430,7 @@ $(document).ready(function() {
   <span class="keyword indention">Then</span>
   <span class="name">the connection should be secure</span>
 
-  <span class="lead-duration duration">0.024</span>
+  <span class="lead-duration duration">0.015</span>
 
 </div>
 
@@ -447,12 +447,11 @@ $(document).ready(function() {
       <div id="msg-6" class="collapse collapsable-details  in ">
         <pre>java.lang.AssertionError: 
 Expecting:
- &lt;sun.net.www.protocol.http.HttpURLConnection:http://localhost.:8000/accounts/login&gt;
-to be an instance of any of:
- &lt;[javax.net.ssl.HttpsURLConnection,
-    sun.net.www.protocol.https.HttpsURLConnectionImpl]&gt;
+  &lt;sun.net.www.protocol.http.HttpURLConnection:http://localhost.:8000/accounts/login&gt;
+to be an instance of:
+  &lt;javax.net.ssl.HttpsURLConnection&gt;
 but was instance of:
- &lt;sun.net.www.protocol.http.HttpURLConnection&gt;
+  &lt;sun.net.www.protocol.http.HttpURLConnection&gt;
 	at io.github.multicatch.cucumber.audit.ProtocolInspectionStepDefs$2.accept(ProtocolInspectionStepDefs.kt:23)
 	at &#10045;.the connection should be secure(classpath:io/github/multicatch/cucumber/audit/Authentication_Request.feature:15)
 </pre>
