@@ -48,32 +48,32 @@ $(document).ready(function() {
 $(document).ready(function() {
 
     var chartData = {
-        labels:  [] ,
+        labels:  [ "@InformationDisclosure",  "@Spoofing",  "@Tampering", ] ,
         datasets: [
             {
                 label: "Passed",
                 backgroundColor: "#92DD96",
-                data:  [] 
+                data:  [ 90.48,  75.00,  96.15, ] 
             },
             {
                 label: "Failed",
                 backgroundColor: "#F2928C",
-                data:  [] 
+                data:  [ 7.14,  25.00,  3.85, ] 
             },
             {
                 label: "Skipped",
                 backgroundColor: "#8AF",
-                data:  [] 
+                data:  [ 2.38,  0.00,  0.00, ] 
             },
             {
                 label: "Pending",
                 backgroundColor: "#F5F28F",
-                data:  [] 
+                data:  [ 0.00,  0.00,  0.00, ] 
             },
             {
                 label: "Undefined",
                 backgroundColor: "#F5B975",
-                data:  [] 
+                data:  [ 0.00,  0.00,  0.00, ] 
             }
         ]
     };
@@ -132,8 +132,8 @@ $(document).ready(function() {
   </thead>
   <tbody>
     <tr class="info">
-      <td>No Name (add projectName to cucumber-reporting.properties)</td>
-      <td>21 Apr 2020, 04:45</td>
+      <td>Cucumber Audit</td>
+      <td>21 Apr 2020, 05:15</td>
     </tr>
   </tbody>
 </table>
@@ -152,12 +152,135 @@ $(document).ready(function() {
 </div>
 
 
+  <div class="container-fluid" id="charts">
+    <div class="row">
+      <div class="col-md-10 col-md-offset-1">
+        <canvas id="tags-chart" height="50"></canvas>
+      </div>
+    </div>
+  </div>
 
 <br/>
 <div class="container-fluid" id="report">
   <div class="row">
     <div class="col-md-10 col-md-offset-1">
-        <p>You have no tags in your cucumber report</p>
+
+<table id="tablesorter" class="stats-table table-hover">
+
+<thead>
+  <tr class="header dont-sort">
+      <th></th>
+    <th colspan="6">Steps</th>
+    <th colspan="3">Scenarios</th>
+    <th colspan="2">Features</th>
+  </tr>
+  <tr>
+    <th>Tag</th>
+    <th class="passed">Passed</th>
+    <th class="failed">Failed</th>
+    <th class="skipped">Skipped</th>
+    <th class="pending">Pending</th>
+    <th class="undefined">Undefined</th>
+    <th class="total">Total</th>
+
+    <th class="passed">Passed</th>
+    <th class="failed">Failed</th>
+    <th class="total">Total</th>
+
+    <th>Duration</th>
+    <th>Status</th>
+  </tr>
+</thead>
+
+
+  <tbody>
+      <tr>
+        <td class="tagname"><a href="report-tag_2122853336.html">@InformationDisclosure</a></td>
+
+        <td      class="passed"    >38</td>
+        <td      class="failed"    >3</td>
+        <td     class="skipped"   >1</td>
+        <td >0</td>
+        <td >0</td>
+        <td class="total">42</td>
+
+        <td  class="passed"    >5</td>
+        <td  class="failed"    >3</td>
+        <td class="total">8</td>
+
+        <td class="duration" data-value="1310000000">1.310</td>
+        <td class="failed">Failed</td>
+      </tr>
+      <tr>
+        <td class="tagname"><a href="report-tag_663571608.html">@Spoofing</a></td>
+
+        <td      class="passed"    >3</td>
+        <td      class="failed"    >1</td>
+        <td >0</td>
+        <td >0</td>
+        <td >0</td>
+        <td class="total">4</td>
+
+        <td >0</td>
+        <td  class="failed"    >1</td>
+        <td class="total">1</td>
+
+        <td class="duration" data-value="2241000000">2.241</td>
+        <td class="failed">Failed</td>
+      </tr>
+      <tr>
+        <td class="tagname"><a href="report-tag_3758974180.html">@Tampering</a></td>
+
+        <td      class="passed"    >25</td>
+        <td      class="failed"    >1</td>
+        <td >0</td>
+        <td >0</td>
+        <td >0</td>
+        <td class="total">26</td>
+
+        <td  class="passed"    >4</td>
+        <td  class="failed"    >1</td>
+        <td class="total">5</td>
+
+        <td class="duration" data-value="1559000000">1.559</td>
+        <td class="failed">Failed</td>
+      </tr>
+  </tbody>
+
+  <tfoot class="total">
+    <tr>
+      <td></td>
+      <td>66</td>
+      <td>5</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>72</td>
+
+      <td>9</td>
+      <td>5</td>
+      <td>14</td>
+
+      <td class="duration">5.110</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>91.67%</td>
+      <td>6.94%</td>
+      <td>1.39%</td>
+      <td>0.00%</td>
+      <td>0.00%</td>
+      <td></td>
+      <td>64.29%</td>
+      <td>35.71%</td>
+      <td></td>
+      <td></td>
+      <td>33.33%</td>
+    </tr>
+  </tfoot>
+</table>
+
     </div>
   </div>
 </div>
