@@ -1,0 +1,3547 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.tablesorter.min.js"></script>
+<script src="js/Chart.min.js"></script>
+<script src="js/moment.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"/>
+<link rel="stylesheet" href="css/cucumber.css" type="text/css"/>
+<link rel="stylesheet" href="css/font-awesome.min.css"/>
+<link rel="shortcut icon" href="images/favicon.png"/>
+
+<script>
+$(document).ready(function() {
+    // this will tell tablesorter to try looking for the data-value attribute
+    // if present, it'll sort by that instead
+    // otherwise, it'll sort by the text content of the table cell
+    $("#tablesorter").tablesorter({
+        textAttribute: 'data-value',
+        // ignores the first row of the header, the 'scenario', 'steps', since
+        // sorting those doesn't make sense
+        selectorHeaders: '> thead tr:not(.dont-sort) th',
+        // use a stable sort
+        sortStable: true
+    });
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+
+<title>Cucumber Reports  - Feature: Authentication Page Threats</title>
+
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navigation">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse">
+      <p class="navbar-text navbar-left">Cucumber Report</p>
+      <ul class="nav navbar-nav navbar-right">
+        <li role="presentation" ><a href="overview-features.html">Features</a></li>
+        <li role="presentation" ><a href="overview-tags.html">Tags</a></li>
+        <li role="presentation" ><a href="overview-steps.html">Steps</a></li>
+        <li role="presentation" ><a href="overview-failures.html">Failures</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<div class="container-fluid">
+  <div class="col-md-5 col-md-offset-1">
+
+<table class="table table-bordered" id="build-info">
+  <thead>
+    <tr>
+      <th>Project</th>
+      <th>Date</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="info">
+      <td>No Name (add projectName to cucumber-reporting.properties)</td>
+      <td>21 Apr 2020, 04:45</td>
+    </tr>
+  </tbody>
+</table>
+
+  </div>
+  <div class="col-md-3 col-md-offset-2">
+  </div>
+</div>
+
+
+<div id="report-lead" class="container-fluid">
+  <div class="col-md-10 col-md-offset-1">
+    <h2>Feature Report</h2>
+  </div>
+</div>
+
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <table class="stats-table">
+
+
+<thead>
+  <tr class="header dont-sort">
+      <th></th>
+    <th colspan="6">Steps</th>
+    <th colspan="3">Scenarios</th>
+    <th colspan="2">Features</th>
+  </tr>
+  <tr>
+    <th>Feature</th>
+    <th class="passed">Passed</th>
+    <th class="failed">Failed</th>
+    <th class="skipped">Skipped</th>
+    <th class="pending">Pending</th>
+    <th class="undefined">Undefined</th>
+    <th class="total">Total</th>
+
+    <th class="passed">Passed</th>
+    <th class="failed">Failed</th>
+    <th class="total">Total</th>
+
+    <th>Duration</th>
+    <th>Status</th>
+  </tr>
+</thead>
+
+
+        <tbody>
+        <tr>
+          <td class="tagname">Authentication Page Threats</td>
+          <td      class="passed"    >53</td>
+          <td      class="failed"    >4</td>
+          <td     class="skipped"   >1</td>
+          <td >0</td>
+          <td >0</td>
+          <td class="total">58</td>
+
+          <td  class="passed"    >4</td>
+          <td  class="failed"    >4</td>
+          <td class="total">8</td>
+
+          <td class="duration" data-value="2729000000">2.729</td>
+          <td class="failed">Failed</td>
+        </tr>
+        </tbody>
+
+      </table>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-1 col-md-offset-10">
+      <i class="fa fa-chevron-circle-down fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('show')"></i>
+      <i class="fa fa-chevron-circle-up fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('hide')"></i>
+    </div>
+  </div>
+</div>
+
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <div class="feature">
+
+<div class="tags indention">
+</div>
+
+
+<div class="brief failed">
+  <span class="keyword indention">Feature</span>
+  <span class="name">Authentication Page Threats</span>
+
+
+</div>
+
+        <div class="description indention"></div>
+
+        <div class="elements inner-level">
+
+<div class="element">
+
+
+<div class="tags indention">
+</div>
+
+
+  <span class="lead-duration duration">0.168</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-1">
+
+<div class="brief passed">
+  <span class="keyword indention">Background</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-1" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-2">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-2" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">only whitelisted traffic is allowed</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">traffic matching <span class="argument">&quot;https?://localhost.:8000.*&quot;</span> is allowed</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">app under <span class="argument">&quot;http://localhost.:8000/consumer/&quot;</span> has already started</span>
+
+  <span class="lead-duration duration">0.167</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+
+
+<div class="tags indention">
+</div>
+
+
+  <span class="lead-duration duration">1.831</span>
+
+
+  <span data-toggle="collapse" class=" collapsable-control" data-target="#element-3">
+
+<div class="brief failed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">Session Hijacking</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention">  The HttpOnly flag in &quot;Set-Cookie&quot; header disables the ability to access the cookie through JavaScript.
+  If an attacker successfully performs an XSS attack, the HttpOnly flag prevents from stealing the session cookie.</div>
+
+  <div id="element-3" class="collapse collapsable-details  in ">
+
+
+  <div class="inner-level hooks-element-before">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-4">
+
+<div class="brief passed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+    </div>
+
+    <div id="before-4" class="inner-level collapse collapsable-details ">
+        <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">Before</span>
+              <span class="location name">io.github.multicatch.cucumber.audit.NavigationStepDefs.&lt;init&gt;(NavigationStepDefs.kt:14)</span>
+
+  <span class="lead-duration duration">0.002</span>
+
+          </div>
+
+
+
+
+
+
+
+        </div>
+    </div>
+  </div>
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-5">
+
+<div class="brief failed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-5" class="inner-level collapse collapsable-details  in ">
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">the response headers are under inspection</span>
+
+  <span class="lead-duration duration">0.610</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">cookies are cleared</span>
+
+  <span class="lead-duration duration">0.038</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">I go to <span class="argument">&quot;http://localhost.:8000/accounts/login&quot;</span></span>
+
+  <span class="lead-duration duration">1.082</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then failed">
+  <span class="keyword indention">Then</span>
+  <span class="name">the <span class="argument">&quot;Set-Cookie&quot;</span> response header should contain <span class="argument">&quot;HttpOnly&quot;</span></span>
+
+  <span class="lead-duration duration">0.101</span>
+
+</div>
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-6">
+          <a>java.lang.AssertionError:</a>
+      </div>
+      <div id="msg-6" class="collapse collapsable-details  in ">
+        <pre>java.lang.AssertionError: 
+Expecting any elements of:
+  &lt;[&quot;csrftoken=adbCGqGM0TuFGml1bNoEy1OVxnhKRzwEqKUe3Tusvfx6ToHtZS4l9kwEDYRq9yEC; expires=Tue, 20 Apr 2021 04:45:02 GMT; Max-Age=31449600; Path=/; SameSite=Lax&quot;]&gt;
+to match given predicate but none did.
+	at java.util.Optional.orElseGet(Optional.java:267)
+	at io.github.multicatch.cucumber.audit.ResponseInspectionStepDefs$3.accept(ResponseInspectionStepDefs.kt:35)
+	at &#10045;.the &quot;Set-Cookie&quot; response header should contain &quot;HttpOnly&quot;(classpath:io/github/multicatch/cucumber/audit/Authentication_Page.feature:15)
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+
+
+<div class="tags indention">
+</div>
+
+
+  <span class="lead-duration duration">0.007</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-7">
+
+<div class="brief passed">
+  <span class="keyword indention">Background</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-7" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-8">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-8" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">only whitelisted traffic is allowed</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">traffic matching <span class="argument">&quot;https?://localhost.:8000.*&quot;</span> is allowed</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">app under <span class="argument">&quot;http://localhost.:8000/consumer/&quot;</span> has already started</span>
+
+  <span class="lead-duration duration">0.007</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+
+
+<div class="tags indention">
+</div>
+
+
+  <span class="lead-duration duration">0.147</span>
+
+
+  <span data-toggle="collapse" class=" collapsable-control" data-target="#element-9">
+
+<div class="brief failed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">Known Software Vulnerabilities Disclosure (Headers)</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention">  The &quot;Server&quot; and &quot;X-Powered-By&quot; headers provide information about technology that is used on the server side.
+  They usually contain the software version (eg. &quot;Apache/2.2.15 (CentOS) ...&quot;) and can be used to find
+  known vulnerabilities of that software. Disabling them makes it more difficult to exploit the server software.</div>
+
+  <div id="element-9" class="collapse collapsable-details  in ">
+
+
+  <div class="inner-level hooks-element-before">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-10">
+
+<div class="brief passed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+    </div>
+
+    <div id="before-10" class="inner-level collapse collapsable-details ">
+        <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">Before</span>
+              <span class="location name">io.github.multicatch.cucumber.audit.NavigationStepDefs.&lt;init&gt;(NavigationStepDefs.kt:14)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+          </div>
+
+
+
+
+
+
+
+        </div>
+    </div>
+  </div>
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-11">
+
+<div class="brief failed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-11" class="inner-level collapse collapsable-details  in ">
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">the response headers are under inspection</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">I go to <span class="argument">&quot;http://localhost.:8000/accounts/login&quot;</span></span>
+
+  <span class="lead-duration duration">0.145</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then failed">
+  <span class="keyword indention">Then</span>
+  <span class="name">the <span class="argument">&quot;Server&quot;</span> response header should not contain numbers</span>
+
+  <span class="lead-duration duration">0.002</span>
+
+</div>
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-12">
+          <a>java.lang.AssertionError:</a>
+      </div>
+      <div id="msg-12" class="collapse collapsable-details  in ">
+        <pre>java.lang.AssertionError: 
+Expecting no elements of:
+  &lt;[&quot;WSGIServer/0.2 CPython/3.6.9&quot;]&gt;
+to match given predicate but this element did:
+  &lt;&quot;WSGIServer/0.2 CPython/3.6.9&quot;&gt;
+	at java.util.Optional.ifPresent(Optional.java:159)
+	at io.github.multicatch.cucumber.audit.ResponseInspectionStepDefs$4.accept(ResponseInspectionStepDefs.kt:50)
+	at &#10045;.the &quot;Server&quot; response header should not contain numbers(classpath:io/github/multicatch/cucumber/audit/Authentication_Page.feature:24)
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">the <span class="argument">&quot;X-Powered-By&quot;</span> response header should not contain numbers</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+
+
+<div class="tags indention">
+</div>
+
+
+  <span class="lead-duration duration">0.005</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-13">
+
+<div class="brief passed">
+  <span class="keyword indention">Background</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-13" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-14">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-14" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">only whitelisted traffic is allowed</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">traffic matching <span class="argument">&quot;https?://localhost.:8000.*&quot;</span> is allowed</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">app under <span class="argument">&quot;http://localhost.:8000/consumer/&quot;</span> has already started</span>
+
+  <span class="lead-duration duration">0.005</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+
+
+<div class="tags indention">
+</div>
+
+
+  <span class="lead-duration duration">0.078</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-15">
+
+<div class="brief passed">
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">Known Software Vulnerabilities Disclosure (Error Pages)</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention">  The default error pages can contain information about the server software. Usually this includes the version
+  of the software used. This piece of information can be used to find known vulnerabilities of that software.
+  Overriding default error pages makes it more difficult to exploit the server software.</div>
+
+  <div id="element-15" class="collapse collapsable-details ">
+
+
+  <div class="inner-level hooks-element-before">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-16">
+
+<div class="brief passed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+    </div>
+
+    <div id="before-16" class="inner-level collapse collapsable-details ">
+        <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">Before</span>
+              <span class="location name">io.github.multicatch.cucumber.audit.NavigationStepDefs.&lt;init&gt;(NavigationStepDefs.kt:14)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+          </div>
+
+
+
+
+
+
+
+        </div>
+    </div>
+  </div>
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-17">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-17" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">the response content is under inspection</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">I go to <span class="argument">&quot;http://localhost.:8000/accounts/login/shouldbenotfound&quot;</span></span>
+
+  <span class="lead-duration duration">0.078</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">the response should not contain <span class="argument">&quot;nginx&quot;</span></span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+
+
+<div class="tags indention">
+</div>
+
+
+  <span class="lead-duration duration">0.005</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-18">
+
+<div class="brief passed">
+  <span class="keyword indention">Background</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-18" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-19">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-19" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">only whitelisted traffic is allowed</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">traffic matching <span class="argument">&quot;https?://localhost.:8000.*&quot;</span> is allowed</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">app under <span class="argument">&quot;http://localhost.:8000/consumer/&quot;</span> has already started</span>
+
+  <span class="lead-duration duration">0.005</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+
+
+<div class="tags indention">
+</div>
+
+
+  <span class="lead-duration duration">0.049</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-20">
+
+<div class="brief passed">
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">Known Software Vulnerabilities Disclosure (Error Pages)</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention">  The default error pages can contain information about the server software. Usually this includes the version
+  of the software used. This piece of information can be used to find known vulnerabilities of that software.
+  Overriding default error pages makes it more difficult to exploit the server software.</div>
+
+  <div id="element-20" class="collapse collapsable-details ">
+
+
+  <div class="inner-level hooks-element-before">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-21">
+
+<div class="brief passed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+    </div>
+
+    <div id="before-21" class="inner-level collapse collapsable-details ">
+        <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">Before</span>
+              <span class="location name">io.github.multicatch.cucumber.audit.NavigationStepDefs.&lt;init&gt;(NavigationStepDefs.kt:14)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+          </div>
+
+
+
+
+
+
+
+        </div>
+    </div>
+  </div>
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-22">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-22" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">the response content is under inspection</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">I go to <span class="argument">&quot;http://localhost.:8000/accounts/login/shouldbenotfound&quot;</span></span>
+
+  <span class="lead-duration duration">0.049</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">the response should not contain <span class="argument">&quot;Apache&quot;</span></span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+
+
+<div class="tags indention">
+</div>
+
+
+  <span class="lead-duration duration">0.010</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-23">
+
+<div class="brief passed">
+  <span class="keyword indention">Background</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-23" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-24">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-24" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">only whitelisted traffic is allowed</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">traffic matching <span class="argument">&quot;https?://localhost.:8000.*&quot;</span> is allowed</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">app under <span class="argument">&quot;http://localhost.:8000/consumer/&quot;</span> has already started</span>
+
+  <span class="lead-duration duration">0.009</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+
+
+<div class="tags indention">
+</div>
+
+
+  <span class="lead-duration duration">0.094</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-25">
+
+<div class="brief passed">
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">Known Software Vulnerabilities Disclosure (Error Pages)</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention">  The default error pages can contain information about the server software. Usually this includes the version
+  of the software used. This piece of information can be used to find known vulnerabilities of that software.
+  Overriding default error pages makes it more difficult to exploit the server software.</div>
+
+  <div id="element-25" class="collapse collapsable-details ">
+
+
+  <div class="inner-level hooks-element-before">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-26">
+
+<div class="brief passed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+    </div>
+
+    <div id="before-26" class="inner-level collapse collapsable-details ">
+        <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">Before</span>
+              <span class="location name">io.github.multicatch.cucumber.audit.NavigationStepDefs.&lt;init&gt;(NavigationStepDefs.kt:14)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+          </div>
+
+
+
+
+
+
+
+        </div>
+    </div>
+  </div>
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-27">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-27" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">the response content is under inspection</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">I go to <span class="argument">&quot;http://localhost.:8000/accounts/login/shouldbenotfound&quot;</span></span>
+
+  <span class="lead-duration duration">0.094</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">the response should not contain <span class="argument">&quot;ASP.NET&quot;</span></span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+
+
+<div class="tags indention">
+</div>
+
+
+  <span class="lead-duration duration">0.007</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-28">
+
+<div class="brief passed">
+  <span class="keyword indention">Background</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-28" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-29">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-29" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">only whitelisted traffic is allowed</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">traffic matching <span class="argument">&quot;https?://localhost.:8000.*&quot;</span> is allowed</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">app under <span class="argument">&quot;http://localhost.:8000/consumer/&quot;</span> has already started</span>
+
+  <span class="lead-duration duration">0.007</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+
+
+<div class="tags indention">
+</div>
+
+
+  <span class="lead-duration duration">0.044</span>
+
+
+  <span data-toggle="collapse" class=" collapsable-control" data-target="#element-30">
+
+<div class="brief failed">
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">Known Software Vulnerabilities Disclosure (Error Pages)</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention">  The default error pages can contain information about the server software. Usually this includes the version
+  of the software used. This piece of information can be used to find known vulnerabilities of that software.
+  Overriding default error pages makes it more difficult to exploit the server software.</div>
+
+  <div id="element-30" class="collapse collapsable-details  in ">
+
+
+  <div class="inner-level hooks-element-before">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-31">
+
+<div class="brief passed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+    </div>
+
+    <div id="before-31" class="inner-level collapse collapsable-details ">
+        <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">Before</span>
+              <span class="location name">io.github.multicatch.cucumber.audit.NavigationStepDefs.&lt;init&gt;(NavigationStepDefs.kt:14)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+          </div>
+
+
+
+
+
+
+
+        </div>
+    </div>
+  </div>
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-32">
+
+<div class="brief failed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-32" class="inner-level collapse collapsable-details  in ">
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">the response content is under inspection</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">I go to <span class="argument">&quot;http://localhost.:8000/accounts/login/shouldbenotfound&quot;</span></span>
+
+  <span class="lead-duration duration">0.044</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then failed">
+  <span class="keyword indention">Then</span>
+  <span class="name">the response should not contain <span class="argument">&quot;Django&quot;</span></span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-33">
+          <a>java.lang.AssertionError:</a>
+      </div>
+      <div id="msg-33" class="collapse collapsable-details  in ">
+        <pre>java.lang.AssertionError: 
+Expecting no elements of:
+  &lt;[&quot;&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+  &lt;meta http-equiv=&quot;content-type&quot; content=&quot;text/html; charset=utf-8&quot;&gt;
+  &lt;title&gt;Page not found at /accounts/login/shouldbenotfound&lt;/title&gt;
+  &lt;meta name=&quot;robots&quot; content=&quot;NONE,NOARCHIVE&quot;&gt;
+  &lt;style type=&quot;text/css&quot;&gt;
+    html * { padding:0; margin:0; }
+    body * { padding:10px 20px; }
+    body * * { padding:0; }
+    body { font:small sans-serif; background:#eee; color:#000; }
+    body&gt;div { border-bottom:1px solid #ddd; }
+    h1 { font-weight:normal; margin-bottom:.4em; }
+    h1 span { font-size:60%; color:#666; font-weight:normal; }
+    table { border:none; border-collapse: collapse; width:100%; }
+    td, th { vertical-align:top; padding:2px 3px; }
+    th { width:12em; text-align:right; color:#666; padding-right:.5em; }
+    #info { background:#f6f6f6; }
+    #info ol { margin: 0.5em 4em; }
+    #info ol li { font-family: monospace; }
+    #summary { background: #ffc; }
+    #explanation { background:#eee; border-bottom: 0px none; }
+  &lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;div id=&quot;summary&quot;&gt;
+    &lt;h1&gt;Page not found &lt;span&gt;(404)&lt;/span&gt;&lt;/h1&gt;
+    &lt;table class=&quot;meta&quot;&gt;
+      &lt;tr&gt;
+        &lt;th&gt;Request Method:&lt;/th&gt;
+        &lt;td&gt;GET&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;th&gt;Request URL:&lt;/th&gt;
+        &lt;td&gt;http://localhost.:8000/accounts/login/shouldbenotfound&lt;/td&gt;
+      &lt;/tr&gt;
+      
+    &lt;/table&gt;
+  &lt;/div&gt;
+  &lt;div id=&quot;info&quot;&gt;
+    
+      &lt;p&gt;
+      Using the URLconf defined in &lt;code&gt;app.urls&lt;/code&gt;,
+      Django tried these URL patterns, in this order:
+      &lt;/p&gt;
+      &lt;ol&gt;
+        
+          &lt;li&gt;
+            
+                consumer/
+                
+            
+          &lt;/li&gt;
+        
+          &lt;li&gt;
+            
+                admin/
+                
+            
+          &lt;/li&gt;
+        
+          &lt;li&gt;
+            
+                
+                
+            
+                accounts/
+                
+            
+                login/
+                [name='login']
+            
+          &lt;/li&gt;
+        
+          &lt;li&gt;
+            
+                
+                
+            
+                accounts/
+                
+            
+                logout/
+                [name='logout']
+            
+          &lt;/li&gt;
+        
+          &lt;li&gt;
+            
+                
+                
+            
+                accounts/
+                
+            
+                password_change/
+                [name='password_change']
+            
+          &lt;/li&gt;
+        
+          &lt;li&gt;
+            
+                
+                
+            
+                accounts/
+                
+            
+                password_change/done/
+                [name='password_change_done']
+            
+          &lt;/li&gt;
+        
+          &lt;li&gt;
+            
+                
+                
+            
+                accounts/
+                
+            
+                password_reset/
+                [name='password_reset']
+            
+          &lt;/li&gt;
+        
+          &lt;li&gt;
+            
+                
+                
+            
+                accounts/
+                
+            
+                password_reset/done/
+                [name='password_reset_done']
+            
+          &lt;/li&gt;
+        
+          &lt;li&gt;
+            
+                
+                
+            
+                accounts/
+                
+            
+                reset/&amp;lt;uidb64&amp;gt;/&amp;lt;token&amp;gt;/
+                [name='password_reset_confirm']
+            
+          &lt;/li&gt;
+        
+          &lt;li&gt;
+            
+                
+                
+            
+                accounts/
+                
+            
+                reset/done/
+                [name='password_reset_complete']
+            
+          &lt;/li&gt;
+        
+          &lt;li&gt;
+            
+                
+                
+            
+                oauth2/
+                
+            
+          &lt;/li&gt;
+        
+          &lt;li&gt;
+            
+                
+                
+            
+                oauth2/user/
+                
+            
+          &lt;/li&gt;
+        
+      &lt;/ol&gt;
+      &lt;p&gt;
+        
+        The current path, &lt;code&gt;accounts/login/shouldbenotfound&lt;/code&gt;, didn't match any of these.
+      &lt;/p&gt;
+    
+  &lt;/div&gt;
+
+  &lt;div id=&quot;explanation&quot;&gt;
+    &lt;p&gt;
+      You're seeing this error because you have &lt;code&gt;DEBUG = True&lt;/code&gt; in
+      your Django settings file. Change that to &lt;code&gt;False&lt;/code&gt;, and Django
+      will display a standard 404 page.
+    &lt;/p&gt;
+  &lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+&quot;]&gt;
+to match given predicate but this element did:
+  &lt;&quot;&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+  &lt;meta http-equiv=&quot;content-type&quot; content=&quot;text/html; charset=utf-8&quot;&gt;
+  &lt;title&gt;Page not found at /accounts/login/shouldbenotfound&lt;/title&gt;
+  &lt;meta name=&quot;robots&quot; content=&quot;NONE,NOARCHIVE&quot;&gt;
+  &lt;style type=&quot;text/css&quot;&gt;
+    html * { padding:0; margin:0; }
+    body * { padding:10px 20px; }
+    body * * { padding:0; }
+    body { font:small sans-serif; background:#eee; color:#000; }
+    body&gt;div { border-bottom:1px solid #ddd; }
+    h1 { font-weight:normal; margin-bottom:.4em; }
+    h1 span { font-size:60%; color:#666; font-weight:normal; }
+    table { border:none; border-collapse: collapse; width:100%; }
+    td, th { vertical-align:top; padding:2px 3px; }
+    th { width:12em; text-align:right; color:#666; padding-right:.5em; }
+    #info { background:#f6f6f6; }
+    #info ol { margin: 0.5em 4em; }
+    #info ol li { font-family: monospace; }
+    #summary { background: #ffc; }
+    #explanation { background:#eee; border-bottom: 0px none; }
+  &lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;div id=&quot;summary&quot;&gt;
+    &lt;h1&gt;Page not found &lt;span&gt;(404)&lt;/span&gt;&lt;/h1&gt;
+    &lt;table class=&quot;meta&quot;&gt;
+      &lt;tr&gt;
+        &lt;th&gt;Request Method:&lt;/th&gt;
+        &lt;td&gt;GET&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;th&gt;Request URL:&lt;/th&gt;
+        &lt;td&gt;http://localhost.:8000/accounts/login/shouldbenotfound&lt;/td&gt;
+      &lt;/tr&gt;
+      
+    &lt;/table&gt;
+  &lt;/div&gt;
+  &lt;div id=&quot;info&quot;&gt;
+    
+      &lt;p&gt;
+      Using the URLconf defined in &lt;code&gt;app.urls&lt;/code&gt;,
+      Django tried these URL patterns, in this order:
+      &lt;/p&gt;
+      &lt;ol&gt;
+        
+          &lt;li&gt;
+            
+                consumer/
+                
+            
+          &lt;/li&gt;
+        
+          &lt;li&gt;
+            
+                admin/
+                
+            
+          &lt;/li&gt;
+        
+          &lt;li&gt;
+            
+                
+                
+            
+                accounts/
+                
+            
+                login/
+                [name='login']
+            
+          &lt;/li&gt;
+        
+          &lt;li&gt;
+            
+                
+                
+            
+                accounts/
+                
+            
+                logout/
+                [name='logout']
+            
+          &lt;/li&gt;
+        
+          &lt;li&gt;
+            
+                
+                
+            
+                accounts/
+                
+            
+                password_change/
+                [name='password_change']
+            
+          &lt;/li&gt;
+        
+          &lt;li&gt;
+            
+                
+                
+            
+                accounts/
+                
+            
+                password_change/done/
+                [name='password_change_done']
+            
+          &lt;/li&gt;
+        
+          &lt;li&gt;
+            
+                
+                
+            
+                accounts/
+                
+            
+                password_reset/
+                [name='password_reset']
+            
+          &lt;/li&gt;
+        
+          &lt;li&gt;
+            
+                
+                
+            
+                accounts/
+                
+            
+                password_reset/done/
+                [name='password_reset_done']
+            
+          &lt;/li&gt;
+        
+          &lt;li&gt;
+            
+                
+                
+            
+                accounts/
+                
+            
+                reset/&amp;lt;uidb64&amp;gt;/&amp;lt;token&amp;gt;/
+                [name='password_reset_confirm']
+            
+          &lt;/li&gt;
+        
+          &lt;li&gt;
+            
+                
+                
+            
+                accounts/
+                
+            
+                reset/done/
+                [name='password_reset_complete']
+            
+          &lt;/li&gt;
+        
+          &lt;li&gt;
+            
+                
+                
+            
+                oauth2/
+                
+            
+          &lt;/li&gt;
+        
+          &lt;li&gt;
+            
+                
+                
+            
+                oauth2/user/
+                
+            
+          &lt;/li&gt;
+        
+      &lt;/ol&gt;
+      &lt;p&gt;
+        
+        The current path, &lt;code&gt;accounts/login/shouldbenotfound&lt;/code&gt;, didn't match any of these.
+      &lt;/p&gt;
+    
+  &lt;/div&gt;
+
+  &lt;div id=&quot;explanation&quot;&gt;
+    &lt;p&gt;
+      You're seeing this error because you have &lt;code&gt;DEBUG = True&lt;/code&gt; in
+      your Django settings file. Change that to &lt;code&gt;False&lt;/code&gt;, and Django
+      will display a standard 404 page.
+    &lt;/p&gt;
+  &lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+&quot;&gt;
+	at java.util.Optional.ifPresent(Optional.java:159)
+	at io.github.multicatch.cucumber.audit.ResponseInspectionStepDefs$5.accept(ResponseInspectionStepDefs.kt:63)
+	at &#10045;.the response should not contain &quot;Django&quot;(classpath:io/github/multicatch/cucumber/audit/Authentication_Page.feature:34)
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+
+
+<div class="tags indention">
+</div>
+
+
+  <span class="lead-duration duration">0.023</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-34">
+
+<div class="brief passed">
+  <span class="keyword indention">Background</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-34" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-35">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-35" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">only whitelisted traffic is allowed</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">traffic matching <span class="argument">&quot;https?://localhost.:8000.*&quot;</span> is allowed</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">app under <span class="argument">&quot;http://localhost.:8000/consumer/&quot;</span> has already started</span>
+
+  <span class="lead-duration duration">0.023</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+
+
+<div class="tags indention">
+</div>
+
+
+  <span class="lead-duration duration">0.130</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-36">
+
+<div class="brief passed">
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">Known Software Vulnerabilities Disclosure (Error Pages)</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention">  The default error pages can contain information about the server software. Usually this includes the version
+  of the software used. This piece of information can be used to find known vulnerabilities of that software.
+  Overriding default error pages makes it more difficult to exploit the server software.</div>
+
+  <div id="element-36" class="collapse collapsable-details ">
+
+
+  <div class="inner-level hooks-element-before">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-37">
+
+<div class="brief passed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+    </div>
+
+    <div id="before-37" class="inner-level collapse collapsable-details ">
+        <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">Before</span>
+              <span class="location name">io.github.multicatch.cucumber.audit.NavigationStepDefs.&lt;init&gt;(NavigationStepDefs.kt:14)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+          </div>
+
+
+
+
+
+
+
+        </div>
+    </div>
+  </div>
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-38">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-38" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">the response content is under inspection</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">I go to <span class="argument">&quot;http://localhost.:8000/accounts/login/shouldbenotfound&quot;</span></span>
+
+  <span class="lead-duration duration">0.128</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">the response should not contain <span class="argument">&quot;HTTP Server&quot;</span></span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+
+
+<div class="tags indention">
+</div>
+
+
+  <span class="lead-duration duration">0.011</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-39">
+
+<div class="brief passed">
+  <span class="keyword indention">Background</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-39" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-40">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-40" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">only whitelisted traffic is allowed</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">traffic matching <span class="argument">&quot;https?://localhost.:8000.*&quot;</span> is allowed</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">app under <span class="argument">&quot;http://localhost.:8000/consumer/&quot;</span> has already started</span>
+
+  <span class="lead-duration duration">0.010</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+
+
+<div class="tags indention">
+</div>
+
+
+  <span class="lead-duration duration">0.120</span>
+
+
+  <span data-toggle="collapse" class=" collapsable-control" data-target="#element-41">
+
+<div class="brief failed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">System Architecture Disclosure (Error Pages)</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention">  Usually the server software prints stack traces on error by default. This is a debug feature that should be disabled
+  when running the software in production. The stack trace may provide information that can be used by an attacker,
+  eg. used libraries, algorithms or server software.</div>
+
+  <div id="element-41" class="collapse collapsable-details  in ">
+
+
+  <div class="inner-level hooks-element-before">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-42">
+
+<div class="brief passed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+    </div>
+
+    <div id="before-42" class="inner-level collapse collapsable-details ">
+        <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">Before</span>
+              <span class="location name">io.github.multicatch.cucumber.audit.NavigationStepDefs.&lt;init&gt;(NavigationStepDefs.kt:14)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+          </div>
+
+
+
+
+
+
+
+        </div>
+    </div>
+  </div>
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-43">
+
+<div class="brief failed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-43" class="inner-level collapse collapsable-details  in ">
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">the response content is under inspection</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">I use a <span class="argument">&quot;POST&quot;</span> HTTP method</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">I add a <span class="argument">&quot;Authentication&quot;</span> header with value <span class="argument">&quot;!Unsupported&quot;</span></span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">I add a <span class="argument">&quot;Content-Type&quot;</span> header with value <span class="argument">&quot;application/unsupported&quot;</span></span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">I make a request to <span class="argument">&quot;http://localhost.:8000/accounts/login/?error=1283927&quot;</span></span>
+
+  <span class="lead-duration duration">0.112</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">the response should not contain <span class="argument">&quot;Exception&quot;</span></span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">the response should not contain <span class="argument">&quot;Stacktrace&quot;</span></span>
+
+  <span class="lead-duration duration">0.003</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">the response should not contain <span class="argument">&quot;Traceback&quot;</span></span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">the response should not match <span class="argument">&quot;[a-zA-Z0-9.]+:[0-9]+\)&quot;</span></span>
+
+  <span class="lead-duration duration">0.004</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">the response should not match <span class="argument">&quot;(?i)line [0-9]+&quot;</span></span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And failed">
+  <span class="keyword indention">And</span>
+  <span class="name">the response should not match <span class="argument">&quot;(?i)debug&quot;</span></span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-44">
+          <a>java.lang.AssertionError:</a>
+      </div>
+      <div id="msg-44" class="collapse collapsable-details  in ">
+        <pre>java.lang.AssertionError: 
+Expecting no elements of:
+  &lt;[&quot;
+&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+  &lt;meta http-equiv=&quot;content-type&quot; content=&quot;text/html; charset=utf-8&quot;&gt;
+  &lt;meta name=&quot;robots&quot; content=&quot;NONE,NOARCHIVE&quot;&gt;
+  &lt;title&gt;403 Forbidden&lt;/title&gt;
+  &lt;style type=&quot;text/css&quot;&gt;
+    html * { padding:0; margin:0; }
+    body * { padding:10px 20px; }
+    body * * { padding:0; }
+    body { font:small sans-serif; background:#eee; color:#000; }
+    body&gt;div { border-bottom:1px solid #ddd; }
+    h1 { font-weight:normal; margin-bottom:.4em; }
+    h1 span { font-size:60%; color:#666; font-weight:normal; }
+    #info { background:#f6f6f6; }
+    #info ul { margin: 0.5em 4em; }
+    #info p, #summary p { padding-top:10px; }
+    #summary { background: #ffc; }
+    #explanation { background:#eee; border-bottom: 0px none; }
+  &lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;div id=&quot;summary&quot;&gt;
+  &lt;h1&gt;Forbidden &lt;span&gt;(403)&lt;/span&gt;&lt;/h1&gt;
+  &lt;p&gt;CSRF verification failed. Request aborted.&lt;/p&gt;
+
+
+&lt;/div&gt;
+
+&lt;div id=&quot;info&quot;&gt;
+  &lt;h2&gt;Help&lt;/h2&gt;
+    
+    &lt;p&gt;Reason given for failure:&lt;/p&gt;
+    &lt;pre&gt;
+    CSRF token missing or incorrect.
+    &lt;/pre&gt;
+    
+
+  &lt;p&gt;In general, this can occur when there is a genuine Cross Site Request Forgery, or when
+  &lt;a
+  href=&quot;https://docs.djangoproject.com/en/3.0/ref/csrf/&quot;&gt;Django's
+  CSRF mechanism&lt;/a&gt; has not been used correctly.  For POST forms, you need to
+  ensure:&lt;/p&gt;
+
+  &lt;ul&gt;
+    &lt;li&gt;Your browser is accepting cookies.&lt;/li&gt;
+
+    &lt;li&gt;The view function passes a &lt;code&gt;request&lt;/code&gt; to the template's &lt;a
+    href=&quot;https://docs.djangoproject.com/en/dev/topics/templates/#django.template.backends.base.Template.render&quot;&gt;&lt;code&gt;render&lt;/code&gt;&lt;/a&gt;
+    method.&lt;/li&gt;
+
+    &lt;li&gt;In the template, there is a &lt;code&gt;{% csrf_token
+    %}&lt;/code&gt; template tag inside each POST form that
+    targets an internal URL.&lt;/li&gt;
+
+    &lt;li&gt;If you are not using &lt;code&gt;CsrfViewMiddleware&lt;/code&gt;, then you must use
+    &lt;code&gt;csrf_protect&lt;/code&gt; on any views that use the &lt;code&gt;csrf_token&lt;/code&gt;
+    template tag, as well as those that accept the POST data.&lt;/li&gt;
+
+    &lt;li&gt;The form has a valid CSRF token. After logging in in another browser
+    tab or hitting the back button after a login, you may need to reload the
+    page with the form, because the token is rotated after a login.&lt;/li&gt;
+  &lt;/ul&gt;
+
+  &lt;p&gt;You're seeing the help section of this page because you have &lt;code&gt;DEBUG =
+  True&lt;/code&gt; in your Django settings file. Change that to &lt;code&gt;False&lt;/code&gt;,
+  and only the initial error message will be displayed.  &lt;/p&gt;
+
+  &lt;p&gt;You can customize this page using the CSRF_FAILURE_VIEW setting.&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+&quot;]&gt;
+to match given predicate but this element did:
+  &lt;&quot;
+&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+  &lt;meta http-equiv=&quot;content-type&quot; content=&quot;text/html; charset=utf-8&quot;&gt;
+  &lt;meta name=&quot;robots&quot; content=&quot;NONE,NOARCHIVE&quot;&gt;
+  &lt;title&gt;403 Forbidden&lt;/title&gt;
+  &lt;style type=&quot;text/css&quot;&gt;
+    html * { padding:0; margin:0; }
+    body * { padding:10px 20px; }
+    body * * { padding:0; }
+    body { font:small sans-serif; background:#eee; color:#000; }
+    body&gt;div { border-bottom:1px solid #ddd; }
+    h1 { font-weight:normal; margin-bottom:.4em; }
+    h1 span { font-size:60%; color:#666; font-weight:normal; }
+    #info { background:#f6f6f6; }
+    #info ul { margin: 0.5em 4em; }
+    #info p, #summary p { padding-top:10px; }
+    #summary { background: #ffc; }
+    #explanation { background:#eee; border-bottom: 0px none; }
+  &lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;div id=&quot;summary&quot;&gt;
+  &lt;h1&gt;Forbidden &lt;span&gt;(403)&lt;/span&gt;&lt;/h1&gt;
+  &lt;p&gt;CSRF verification failed. Request aborted.&lt;/p&gt;
+
+
+&lt;/div&gt;
+
+&lt;div id=&quot;info&quot;&gt;
+  &lt;h2&gt;Help&lt;/h2&gt;
+    
+    &lt;p&gt;Reason given for failure:&lt;/p&gt;
+    &lt;pre&gt;
+    CSRF token missing or incorrect.
+    &lt;/pre&gt;
+    
+
+  &lt;p&gt;In general, this can occur when there is a genuine Cross Site Request Forgery, or when
+  &lt;a
+  href=&quot;https://docs.djangoproject.com/en/3.0/ref/csrf/&quot;&gt;Django's
+  CSRF mechanism&lt;/a&gt; has not been used correctly.  For POST forms, you need to
+  ensure:&lt;/p&gt;
+
+  &lt;ul&gt;
+    &lt;li&gt;Your browser is accepting cookies.&lt;/li&gt;
+
+    &lt;li&gt;The view function passes a &lt;code&gt;request&lt;/code&gt; to the template's &lt;a
+    href=&quot;https://docs.djangoproject.com/en/dev/topics/templates/#django.template.backends.base.Template.render&quot;&gt;&lt;code&gt;render&lt;/code&gt;&lt;/a&gt;
+    method.&lt;/li&gt;
+
+    &lt;li&gt;In the template, there is a &lt;code&gt;{% csrf_token
+    %}&lt;/code&gt; template tag inside each POST form that
+    targets an internal URL.&lt;/li&gt;
+
+    &lt;li&gt;If you are not using &lt;code&gt;CsrfViewMiddleware&lt;/code&gt;, then you must use
+    &lt;code&gt;csrf_protect&lt;/code&gt; on any views that use the &lt;code&gt;csrf_token&lt;/code&gt;
+    template tag, as well as those that accept the POST data.&lt;/li&gt;
+
+    &lt;li&gt;The form has a valid CSRF token. After logging in in another browser
+    tab or hitting the back button after a login, you may need to reload the
+    page with the form, because the token is rotated after a login.&lt;/li&gt;
+  &lt;/ul&gt;
+
+  &lt;p&gt;You're seeing the help section of this page because you have &lt;code&gt;DEBUG =
+  True&lt;/code&gt; in your Django settings file. Change that to &lt;code&gt;False&lt;/code&gt;,
+  and only the initial error message will be displayed.  &lt;/p&gt;
+
+  &lt;p&gt;You can customize this page using the CSRF_FAILURE_VIEW setting.&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+&quot;&gt;
+	at java.util.Optional.ifPresent(Optional.java:159)
+	at io.github.multicatch.cucumber.audit.ResponseInspectionStepDefs$6.accept(ResponseInspectionStepDefs.kt:76)
+	at &#10045;.the response should not match &quot;(?i)debug&quot;(classpath:io/github/multicatch/cucumber/audit/Authentication_Page.feature:59)
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-1 col-md-offset-10">
+      <i class="fa fa-chevron-circle-down fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('show')"></i>
+      <i class="fa fa-chevron-circle-up fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('hide')"></i>
+    </div>
+  </div>
+</div>
+
+<br/>
+
+<nav class="navbar navbar-default" id="footer">
+  <div class="container-fluid">
+    <p class="navbar-text navbar-right">
+        <small>generate Cucumber HTML reports via:&nbsp;</small>
+        <a class="navbar-link" href="https://github.com/jenkinsci/cucumber-reports-plugin">Jenkins Plugin</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-reporting">Standalone</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-sandwich">Sandwich</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/maven-cucumber-reporting">Maven</a>
+        &nbsp;&nbsp;
+    </p>
+  </div>
+</nav>
+
+</body>
+</html>
