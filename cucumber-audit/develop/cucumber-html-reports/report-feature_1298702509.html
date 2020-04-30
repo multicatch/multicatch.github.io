@@ -74,7 +74,7 @@ $(document).ready(function() {
   <tbody>
     <tr class="info">
       <td>Cucumber Audit</td>
-      <td>30 Apr 2020, 14:19</td>
+      <td>30 Apr 2020, 14:36</td>
     </tr>
   </tbody>
 </table>
@@ -127,9 +127,9 @@ $(document).ready(function() {
         <tbody>
         <tr>
           <td class="tagname">Authentication Page Threats</td>
-          <td      class="passed"    >54</td>
+          <td      class="passed"    >53</td>
           <td      class="failed"    >3</td>
-          <td     class="skipped"   >1</td>
+          <td     class="skipped"   >2</td>
           <td >0</td>
           <td >0</td>
           <td class="total">58</td>
@@ -138,7 +138,7 @@ $(document).ready(function() {
           <td  class="failed"    >3</td>
           <td class="total">8</td>
 
-          <td class="duration" data-value="4110000000">4.110</td>
+          <td class="duration" data-value="302489000000">5:2.489</td>
           <td class="failed">Failed</td>
         </tr>
         </tbody>
@@ -189,7 +189,7 @@ $(document).ready(function() {
 </div>
 
 
-  <span class="lead-duration duration">0.235</span>
+  <span class="lead-duration duration">0.239</span>
 
 
   <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-1">
@@ -286,7 +286,7 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">app under <span class="argument">&quot;http://localhost.:8000/consumer/&quot;</span> has already started</span>
 
-  <span class="lead-duration duration">0.233</span>
+  <span class="lead-duration duration">0.237</span>
 
 </div>
 
@@ -326,7 +326,7 @@ $(document).ready(function() {
 </div>
 
 
-  <span class="lead-duration duration">2.757</span>
+  <span class="lead-duration duration">5:0.885</span>
 
 
   <span data-toggle="collapse" class=" collapsable-control" data-target="#element-3">
@@ -365,7 +365,7 @@ $(document).ready(function() {
             <span class="keyword indention">Before</span>
               <span class="location name">io.github.multicatch.cucumber.audit.NavigationStepDefs.&lt;init&gt;(NavigationStepDefs.kt:14)</span>
 
-  <span class="lead-duration duration">0.015</span>
+  <span class="lead-duration duration">0.010</span>
 
           </div>
 
@@ -402,7 +402,7 @@ $(document).ready(function() {
   <span class="keyword indention">Given</span>
   <span class="name">the response headers are under inspection</span>
 
-  <span class="lead-duration duration">0.922</span>
+  <span class="lead-duration duration">0.786</span>
 
 </div>
 
@@ -429,7 +429,7 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">cookies are cleared</span>
 
-  <span class="lead-duration duration">0.022</span>
+  <span class="lead-duration duration">0.052</span>
 
 </div>
 
@@ -452,38 +452,11 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-When passed">
+<div class="brief step-name-When failed">
   <span class="keyword indention">When</span>
   <span class="name">I go to <span class="argument">&quot;http://localhost.:8000/accounts/login&quot;</span></span>
 
-  <span class="lead-duration duration">1.511</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-Then failed">
-  <span class="keyword indention">Then</span>
-  <span class="name">the <span class="argument">&quot;Set-Cookie&quot;</span> response header should contain <span class="argument">&quot;HttpOnly&quot;</span></span>
-
-  <span class="lead-duration duration">0.302</span>
+  <span class="lead-duration duration">5:0.047</span>
 
 </div>
 
@@ -495,20 +468,59 @@ $(document).ready(function() {
   <div class="inner-level">
     <div class="message indention">
       <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-6">
-          <a>java.lang.AssertionError:</a>
+          <a>org.openqa.selenium.TimeoutException:</a>
       </div>
       <div id="msg-6" class="collapse collapsable-details  in ">
-        <pre>java.lang.AssertionError: 
-Expecting any elements of:
-  &lt;[&quot;csrftoken=0WYMNjCmEzAflxncuN7zvPwvwn1N56CZN3ibS54GLRowmwGAgpx5EGKmvuduNmoE; expires=Thu, 29 Apr 2021 14:19:39 GMT; Max-Age=31449600; Path=/; SameSite=Lax&quot;]&gt;
-to match given predicate but none did.
-	at java.util.Optional.orElseGet(Optional.java:267)
-	at io.github.multicatch.cucumber.audit.ResponseInspectionStepDefs$3.accept(ResponseInspectionStepDefs.kt:35)
-	at &#10045;.the &quot;Set-Cookie&quot; response header should contain &quot;HttpOnly&quot;(classpath:io/github/multicatch/cucumber/audit/Authentication_Page.feature:16)
+        <pre>org.openqa.selenium.TimeoutException: Timeout loading page after 300000ms
+Build info: version: '4.0.0-alpha-3', revision: '8c567de6dc'
+System info: host: 'travis-job-bbe87784-a814-448e-b92e-76488378aae4', ip: '127.0.0.1', os.name: 'Linux', os.arch: 'amd64', os.version: '5.0.0-1031-gcp', java.version: '1.8.0_242'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 75.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20200403170909, moz:geckodriverVersion: 0.26.0, moz:headless: true, moz:processID: 7778, moz:profile: /tmp/rust_mozprofileungWBN, moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, platformVersion: 5.0.0-1031-gcp, proxy: Proxy(manual, http=travis-j..., rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 6b2c76c1-bf74-401e-837f-4c42bf6223fd
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:191)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:125)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:161)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:576)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:276)
+	at io.github.multicatch.cucumber.audit.NavigationStepDefs$4.accept(NavigationStepDefs.kt:28)
+	at &#10045;.I go to &quot;http://localhost.:8000/accounts/login&quot;(classpath:io/github/multicatch/cucumber/audit/Authentication_Page.feature:15)
 </pre>
       </div>
     </div>
   </div>
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then skipped">
+  <span class="keyword indention">Then</span>
+  <span class="name">the <span class="argument">&quot;Set-Cookie&quot;</span> response header should contain <span class="argument">&quot;HttpOnly&quot;</span></span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
 
 
 
@@ -539,7 +551,7 @@ to match given predicate but none did.
 </div>
 
 
-  <span class="lead-duration duration">0.013</span>
+  <span class="lead-duration duration">0.008</span>
 
 
   <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-7">
@@ -636,7 +648,7 @@ to match given predicate but none did.
   <span class="keyword indention">And</span>
   <span class="name">app under <span class="argument">&quot;http://localhost.:8000/consumer/&quot;</span> has already started</span>
 
-  <span class="lead-duration duration">0.013</span>
+  <span class="lead-duration duration">0.008</span>
 
 </div>
 
@@ -676,7 +688,7 @@ to match given predicate but none did.
 </div>
 
 
-  <span class="lead-duration duration">0.178</span>
+  <span class="lead-duration duration">0.792</span>
 
 
   <span data-toggle="collapse" class=" collapsable-control" data-target="#element-9">
@@ -780,7 +792,7 @@ to match given predicate but none did.
   <span class="keyword indention">When</span>
   <span class="name">I go to <span class="argument">&quot;http://localhost.:8000/accounts/login&quot;</span></span>
 
-  <span class="lead-duration duration">0.169</span>
+  <span class="lead-duration duration">0.655</span>
 
 </div>
 
@@ -807,7 +819,7 @@ to match given predicate but none did.
   <span class="keyword indention">Then</span>
   <span class="name">the <span class="argument">&quot;Server&quot;</span> response header should not contain numbers</span>
 
-  <span class="lead-duration duration">0.009</span>
+  <span class="lead-duration duration">0.137</span>
 
 </div>
 
@@ -824,7 +836,7 @@ to match given predicate but none did.
       <div id="msg-12" class="collapse collapsable-details  in ">
         <pre>java.lang.AssertionError: 
 Expecting no elements of:
-  &lt;[&quot;WSGIServer/0.2 CPython/3.8.2&quot;]&gt;
+  &lt;[&quot;WSGIServer/0.2 CPython/3.8.2&quot;, &quot;WSGIServer/0.2 CPython/3.8.2&quot;]&gt;
 to match given predicate but this element did:
   &lt;&quot;WSGIServer/0.2 CPython/3.8.2&quot;&gt;
 	at java.util.Optional.ifPresent(Optional.java:159)
@@ -891,7 +903,7 @@ to match given predicate but this element did:
 </div>
 
 
-  <span class="lead-duration duration">0.009</span>
+  <span class="lead-duration duration">0.008</span>
 
 
   <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-13">
@@ -988,7 +1000,7 @@ to match given predicate but this element did:
   <span class="keyword indention">And</span>
   <span class="name">app under <span class="argument">&quot;http://localhost.:8000/consumer/&quot;</span> has already started</span>
 
-  <span class="lead-duration duration">0.009</span>
+  <span class="lead-duration duration">0.008</span>
 
 </div>
 
@@ -1028,7 +1040,7 @@ to match given predicate but this element did:
 </div>
 
 
-  <span class="lead-duration duration">0.152</span>
+  <span class="lead-duration duration">0.087</span>
 
 
   <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-15">
@@ -1132,7 +1144,7 @@ to match given predicate but this element did:
   <span class="keyword indention">When</span>
   <span class="name">I go to <span class="argument">&quot;http://localhost.:8000/accounts/login/shouldbenotfound&quot;</span></span>
 
-  <span class="lead-duration duration">0.151</span>
+  <span class="lead-duration duration">0.086</span>
 
 </div>
 
@@ -1197,7 +1209,7 @@ to match given predicate but this element did:
 </div>
 
 
-  <span class="lead-duration duration">0.006</span>
+  <span class="lead-duration duration">0.010</span>
 
 
   <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-18">
@@ -1267,7 +1279,7 @@ to match given predicate but this element did:
   <span class="keyword indention">And</span>
   <span class="name">traffic matching <span class="argument">&quot;https?://localhost.:8000.*&quot;</span> is allowed</span>
 
-  <span class="lead-duration duration">0.001</span>
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 
@@ -1294,7 +1306,7 @@ to match given predicate but this element did:
   <span class="keyword indention">And</span>
   <span class="name">app under <span class="argument">&quot;http://localhost.:8000/consumer/&quot;</span> has already started</span>
 
-  <span class="lead-duration duration">0.005</span>
+  <span class="lead-duration duration">0.010</span>
 
 </div>
 
@@ -1334,7 +1346,7 @@ to match given predicate but this element did:
 </div>
 
 
-  <span class="lead-duration duration">0.145</span>
+  <span class="lead-duration duration">0.062</span>
 
 
   <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-20">
@@ -1438,7 +1450,7 @@ to match given predicate but this element did:
   <span class="keyword indention">When</span>
   <span class="name">I go to <span class="argument">&quot;http://localhost.:8000/accounts/login/shouldbenotfound&quot;</span></span>
 
-  <span class="lead-duration duration">0.145</span>
+  <span class="lead-duration duration">0.061</span>
 
 </div>
 
@@ -1465,7 +1477,7 @@ to match given predicate but this element did:
   <span class="keyword indention">Then</span>
   <span class="name">the response should not contain <span class="argument">&quot;Apache&quot;</span></span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.001</span>
 
 </div>
 
@@ -1503,7 +1515,7 @@ to match given predicate but this element did:
 </div>
 
 
-  <span class="lead-duration duration">0.008</span>
+  <span class="lead-duration duration">0.005</span>
 
 
   <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-23">
@@ -1573,7 +1585,7 @@ to match given predicate but this element did:
   <span class="keyword indention">And</span>
   <span class="name">traffic matching <span class="argument">&quot;https?://localhost.:8000.*&quot;</span> is allowed</span>
 
-  <span class="lead-duration duration">0.001</span>
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 
@@ -1600,7 +1612,7 @@ to match given predicate but this element did:
   <span class="keyword indention">And</span>
   <span class="name">app under <span class="argument">&quot;http://localhost.:8000/consumer/&quot;</span> has already started</span>
 
-  <span class="lead-duration duration">0.007</span>
+  <span class="lead-duration duration">0.005</span>
 
 </div>
 
@@ -1640,7 +1652,7 @@ to match given predicate but this element did:
 </div>
 
 
-  <span class="lead-duration duration">0.116</span>
+  <span class="lead-duration duration">0.048</span>
 
 
   <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-25">
@@ -1744,7 +1756,7 @@ to match given predicate but this element did:
   <span class="keyword indention">When</span>
   <span class="name">I go to <span class="argument">&quot;http://localhost.:8000/accounts/login/shouldbenotfound&quot;</span></span>
 
-  <span class="lead-duration duration">0.116</span>
+  <span class="lead-duration duration">0.048</span>
 
 </div>
 
@@ -1809,7 +1821,7 @@ to match given predicate but this element did:
 </div>
 
 
-  <span class="lead-duration duration">0.026</span>
+  <span class="lead-duration duration">0.005</span>
 
 
   <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-28">
@@ -1906,7 +1918,7 @@ to match given predicate but this element did:
   <span class="keyword indention">And</span>
   <span class="name">app under <span class="argument">&quot;http://localhost.:8000/consumer/&quot;</span> has already started</span>
 
-  <span class="lead-duration duration">0.026</span>
+  <span class="lead-duration duration">0.005</span>
 
 </div>
 
@@ -1946,7 +1958,7 @@ to match given predicate but this element did:
 </div>
 
 
-  <span class="lead-duration duration">0.112</span>
+  <span class="lead-duration duration">0.056</span>
 
 
   <span data-toggle="collapse" class=" collapsable-control" data-target="#element-30">
@@ -1986,7 +1998,7 @@ to match given predicate but this element did:
             <span class="keyword indention">Before</span>
               <span class="location name">io.github.multicatch.cucumber.audit.NavigationStepDefs.&lt;init&gt;(NavigationStepDefs.kt:14)</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.001</span>
 
           </div>
 
@@ -2050,7 +2062,7 @@ to match given predicate but this element did:
   <span class="keyword indention">When</span>
   <span class="name">I go to <span class="argument">&quot;http://localhost.:8000/accounts/login/shouldbenotfound&quot;</span></span>
 
-  <span class="lead-duration duration">0.111</span>
+  <span class="lead-duration duration">0.056</span>
 
 </div>
 
@@ -2077,7 +2089,7 @@ to match given predicate but this element did:
   <span class="keyword indention">Then</span>
   <span class="name">the response should not contain <span class="argument">&quot;Django&quot;</span></span>
 
-  <span class="lead-duration duration">0.001</span>
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 
@@ -2538,7 +2550,7 @@ to match given predicate but this element did:
 </div>
 
 
-  <span class="lead-duration duration">0.009</span>
+  <span class="lead-duration duration">0.008</span>
 
 
   <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-34">
@@ -2635,7 +2647,7 @@ to match given predicate but this element did:
   <span class="keyword indention">And</span>
   <span class="name">app under <span class="argument">&quot;http://localhost.:8000/consumer/&quot;</span> has already started</span>
 
-  <span class="lead-duration duration">0.009</span>
+  <span class="lead-duration duration">0.008</span>
 
 </div>
 
@@ -2675,7 +2687,7 @@ to match given predicate but this element did:
 </div>
 
 
-  <span class="lead-duration duration">0.148</span>
+  <span class="lead-duration duration">0.113</span>
 
 
   <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-36">
@@ -2715,7 +2727,7 @@ to match given predicate but this element did:
             <span class="keyword indention">Before</span>
               <span class="location name">io.github.multicatch.cucumber.audit.NavigationStepDefs.&lt;init&gt;(NavigationStepDefs.kt:14)</span>
 
-  <span class="lead-duration duration">0.001</span>
+  <span class="lead-duration duration">0.000</span>
 
           </div>
 
@@ -2779,7 +2791,7 @@ to match given predicate but this element did:
   <span class="keyword indention">When</span>
   <span class="name">I go to <span class="argument">&quot;http://localhost.:8000/accounts/login/shouldbenotfound&quot;</span></span>
 
-  <span class="lead-duration duration">0.148</span>
+  <span class="lead-duration duration">0.113</span>
 
 </div>
 
@@ -2844,7 +2856,7 @@ to match given predicate but this element did:
 </div>
 
 
-  <span class="lead-duration duration">0.010</span>
+  <span class="lead-duration duration">0.008</span>
 
 
   <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-39">
@@ -2941,7 +2953,7 @@ to match given predicate but this element did:
   <span class="keyword indention">And</span>
   <span class="name">app under <span class="argument">&quot;http://localhost.:8000/consumer/&quot;</span> has already started</span>
 
-  <span class="lead-duration duration">0.010</span>
+  <span class="lead-duration duration">0.008</span>
 
 </div>
 
@@ -2981,7 +2993,7 @@ to match given predicate but this element did:
 </div>
 
 
-  <span class="lead-duration duration">0.186</span>
+  <span class="lead-duration duration">0.155</span>
 
 
   <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-41">
@@ -3058,7 +3070,7 @@ to match given predicate but this element did:
   <span class="keyword indention">Given</span>
   <span class="name">the response content is under inspection</span>
 
-  <span class="lead-duration duration">0.008</span>
+  <span class="lead-duration duration">0.001</span>
 
 </div>
 
@@ -3085,7 +3097,7 @@ to match given predicate but this element did:
   <span class="keyword indention">When</span>
   <span class="name">I use a <span class="argument">&quot;POST&quot;</span> HTTP method</span>
 
-  <span class="lead-duration duration">0.001</span>
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 
@@ -3166,7 +3178,7 @@ to match given predicate but this element did:
   <span class="keyword indention">And</span>
   <span class="name">I make a request to <span class="argument">&quot;http://localhost.:8000/accounts/login/?error=1283927&quot;</span></span>
 
-  <span class="lead-duration duration">0.174</span>
+  <span class="lead-duration duration">0.153</span>
 
 </div>
 
@@ -3193,7 +3205,7 @@ to match given predicate but this element did:
   <span class="keyword indention">Then</span>
   <span class="name">the response should not contain <span class="argument">&quot;Exception&quot;</span></span>
 
-  <span class="lead-duration duration">0.001</span>
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 
@@ -3274,7 +3286,7 @@ to match given predicate but this element did:
   <span class="keyword indention">And</span>
   <span class="name">the response should not match <span class="argument">&quot;[a-zA-Z0-9.]+:[0-9]+\)&quot;</span></span>
 
-  <span class="lead-duration duration">0.002</span>
+  <span class="lead-duration duration">0.001</span>
 
 </div>
 
