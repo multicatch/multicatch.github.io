@@ -74,7 +74,7 @@ $(document).ready(function() {
   <tbody>
     <tr class="info">
       <td>Cucumber Audit</td>
-      <td>21 Jun 2020, 15:36</td>
+      <td>21 Jun 2020, 15:52</td>
     </tr>
   </tbody>
 </table>
@@ -127,19 +127,19 @@ $(document).ready(function() {
         <tbody>
         <tr>
           <td class="tagname">@ElevationOfPrivilege</td>
+          <td      class="passed"    >11</td>
           <td >0</td>
           <td >0</td>
           <td >0</td>
           <td >0</td>
-          <td   class="undefined" >11</td>
           <td class="total">11</td>
 
+          <td  class="passed"    >1</td>
           <td >0</td>
-          <td  class="failed"    >1</td>
           <td class="total">1</td>
 
-          <td class="duration" data-value="0">0.000</td>
-          <td class="failed">Failed</td>
+          <td class="duration" data-value="855000000">0.855</td>
+          <td class="passed">Passed</td>
         </tr>
         </tbody>
 
@@ -181,12 +181,12 @@ $(document).ready(function() {
 </div>
 
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.855</span>
 
 
-  <span data-toggle="collapse" class=" collapsable-control" data-target="#element-1">
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-1">
 
-<div class="brief failed">
+<div class="brief passed">
   <span class="keyword indention">Scenario</span>
   <span class="name">Hostile Linking</span>
 
@@ -197,16 +197,48 @@ $(document).ready(function() {
   </span>
   <div class="description indention">  An attacker can prepare a link that automatically authorizes the application without any user action.</div>
 
-  <div id="element-1" class="collapse collapsable-details  in ">
+  <div id="element-1" class="collapse collapsable-details ">
 
 
+  <div class="inner-level hooks-element-before">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-2">
+
+<div class="brief passed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+    </div>
+
+    <div id="before-2" class="inner-level collapse collapsable-details ">
+        <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">Before</span>
+              <span class="location name">io.github.multicatch.cucumber.audit.NavigationStepDefs.&lt;init&gt;(NavigationStepDefs.kt:14)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+          </div>
+
+
+
+
+
+
+
+        </div>
+    </div>
+  </div>
 
 
 
 <div class="steps inner-level">
-  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-2">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-3">
 
-<div class="brief failed">
+<div class="brief passed">
   <span class="keyword indention">Steps</span>
   <span class="name"></span>
 
@@ -216,15 +248,15 @@ $(document).ready(function() {
 
   </div>
 
-  <div id="steps-2" class="inner-level collapse collapsable-details  in ">
+  <div id="steps-3" class="inner-level collapse collapsable-details ">
       <div class="step">
 
 
-<div class="brief step-name-Given undefined">
+<div class="brief step-name-Given passed">
   <span class="keyword indention">Given</span>
-  <span class="name">I go to &quot;http://localhost.:8000/consumer&quot;</span>
+  <span class="name">I go to <span class="argument">&quot;http://localhost.:8000/consumer&quot;</span></span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.210</span>
 
 </div>
 
@@ -247,11 +279,11 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-And undefined">
+<div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
-  <span class="name">I click on &quot;a.btn-primary&quot;</span>
+  <span class="name">I click on <span class="argument">&quot;a.btn-primary&quot;</span></span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.213</span>
 
 </div>
 
@@ -274,11 +306,11 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-And undefined">
+<div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
-  <span class="name">I enter &quot;demo&quot; into a field selected by &quot;#id_username&quot;</span>
+  <span class="name">I enter <span class="argument">&quot;demo&quot;</span> into a field selected by <span class="argument">&quot;#id_username&quot;</span></span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.070</span>
 
 </div>
 
@@ -301,11 +333,11 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-And undefined">
+<div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
-  <span class="name">I enter &quot;easypassword&quot; into a field selected by &quot;#id_password&quot;</span>
+  <span class="name">I enter <span class="argument">&quot;easypassword&quot;</span> into a field selected by <span class="argument">&quot;#id_password&quot;</span></span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.044</span>
 
 </div>
 
@@ -328,11 +360,11 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-And undefined">
+<div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
-  <span class="name">I click on &quot;input[type=submit]&quot;</span>
+  <span class="name">I click on <span class="argument">&quot;input[type=submit]&quot;</span></span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.214</span>
 
 </div>
 
@@ -355,7 +387,7 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-And undefined">
+<div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
   <span class="name">the response headers are under inspection</span>
 
@@ -382,9 +414,9 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-When undefined">
+<div class="brief step-name-When passed">
   <span class="keyword indention">When</span>
-  <span class="name">I use a &quot;POST&quot; HTTP method</span>
+  <span class="name">I use a <span class="argument">&quot;POST&quot;</span> HTTP method</span>
 
   <span class="lead-duration duration">0.000</span>
 
@@ -409,9 +441,9 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-And undefined">
+<div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
-  <span class="name">I add a &quot;Content-Type&quot; header with value &quot;application/x-www-form-urlencoded&quot;</span>
+  <span class="name">I add a <span class="argument">&quot;Content-Type&quot;</span> header with value <span class="argument">&quot;application/x-www-form-urlencoded&quot;</span></span>
 
   <span class="lead-duration duration">0.000</span>
 
@@ -436,9 +468,9 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-And undefined">
+<div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
-  <span class="name">the request body is &quot;csrfmiddlewaretoken=wrong_csrf&amp;redirect_uri=http%3A%2F%2Fhttpbin.org%2F&amp;scope=read+write&amp;client_id=Qv6vn7hxGGNyGuLxOU7DHtvPAykevYe1fKwy0eEP&amp;state=4564382&amp;response_type=code&amp;code_challenge=&amp;code_challenge_method=&amp;allow=Authorize&quot;</span>
+  <span class="name">the request body is <span class="argument">&quot;csrfmiddlewaretoken=wrong_csrf&amp;redirect_uri=http%3A%2F%2Fhttpbin.org%2F&amp;scope=read+write&amp;client_id=Qv6vn7hxGGNyGuLxOU7DHtvPAykevYe1fKwy0eEP&amp;state=4564382&amp;response_type=code&amp;code_challenge=&amp;code_challenge_method=&amp;allow=Authorize&quot;</span></span>
 
   <span class="lead-duration duration">0.000</span>
 
@@ -463,11 +495,11 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-And undefined">
+<div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
-  <span class="name">I make a request to &quot;http://localhost.:8000/oauth2/authorize/?response_type=code&amp;state=4564382&amp;client_id=Qv6vn7hxGGNyGuLxOU7DHtvPAykevYe1fKwy0eEP&quot;</span>
+  <span class="name">I make a request to <span class="argument">&quot;http://localhost.:8000/oauth2/authorize/?response_type=code&amp;state=4564382&amp;client_id=Qv6vn7hxGGNyGuLxOU7DHtvPAykevYe1fKwy0eEP&quot;</span></span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.098</span>
 
 </div>
 
@@ -490,11 +522,11 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-Then undefined">
+<div class="brief step-name-Then passed">
   <span class="keyword indention">Then</span>
-  <span class="name">the response code should be 403</span>
+  <span class="name">the response code should be <span class="argument">403</span></span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.006</span>
 
 </div>
 

@@ -74,7 +74,7 @@ $(document).ready(function() {
   <tbody>
     <tr class="info">
       <td>Cucumber Audit</td>
-      <td>21 Jun 2020, 15:36</td>
+      <td>21 Jun 2020, 15:52</td>
     </tr>
   </tbody>
 </table>
@@ -127,18 +127,18 @@ $(document).ready(function() {
         <tbody>
         <tr>
           <td class="tagname">@Tampering</td>
+          <td      class="passed"    >25</td>
+          <td      class="failed"    >1</td>
           <td >0</td>
           <td >0</td>
           <td >0</td>
-          <td >0</td>
-          <td   class="undefined" >26</td>
           <td class="total">26</td>
 
-          <td >0</td>
-          <td  class="failed"    >5</td>
+          <td  class="passed"    >4</td>
+          <td  class="failed"    >1</td>
           <td class="total">5</td>
 
-          <td class="duration" data-value="0">0.000</td>
+          <td class="duration" data-value="1546000000">1.546</td>
           <td class="failed">Failed</td>
         </tr>
         </tbody>
@@ -181,7 +181,7 @@ $(document).ready(function() {
 </div>
 
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.037</span>
 
 
   <span data-toggle="collapse" class=" collapsable-control" data-target="#element-1">
@@ -202,11 +202,43 @@ $(document).ready(function() {
   <div id="element-1" class="collapse collapsable-details  in ">
 
 
+  <div class="inner-level hooks-element-before">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-2">
+
+<div class="brief passed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+    </div>
+
+    <div id="before-2" class="inner-level collapse collapsable-details ">
+        <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">Before</span>
+              <span class="location name">io.github.multicatch.cucumber.audit.NavigationStepDefs.&lt;init&gt;(NavigationStepDefs.kt:14)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+          </div>
+
+
+
+
+
+
+
+        </div>
+    </div>
+  </div>
 
 
 
 <div class="steps inner-level">
-  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-2">
+  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-3">
 
 <div class="brief failed">
   <span class="keyword indention">Steps</span>
@@ -218,15 +250,15 @@ $(document).ready(function() {
 
   </div>
 
-  <div id="steps-2" class="inner-level collapse collapsable-details  in ">
+  <div id="steps-3" class="inner-level collapse collapsable-details  in ">
       <div class="step">
 
 
-<div class="brief step-name-When undefined">
+<div class="brief step-name-When passed">
   <span class="keyword indention">When</span>
-  <span class="name">I connect to &quot;http://localhost.:8000/accounts/login&quot;</span>
+  <span class="name">I connect to <span class="argument">&quot;http://localhost.:8000/accounts/login&quot;</span></span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.001</span>
 
 </div>
 
@@ -249,11 +281,286 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-Then undefined">
+<div class="brief step-name-Then failed">
   <span class="keyword indention">Then</span>
   <span class="name">the connection should be secure</span>
 
+  <span class="lead-duration duration">0.036</span>
+
+</div>
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-4">
+          <a>java.lang.AssertionError:</a>
+      </div>
+      <div id="msg-4" class="collapse collapsable-details  in ">
+        <pre>java.lang.AssertionError: 
+Expecting:
+  &lt;sun.net.www.protocol.http.HttpURLConnection:http://localhost.:8000/accounts/login&gt;
+to be an instance of:
+  &lt;javax.net.ssl.HttpsURLConnection&gt;
+but was instance of:
+  &lt;sun.net.www.protocol.http.HttpURLConnection&gt;
+	at io.github.multicatch.cucumber.audit.ProtocolInspectionStepDefs$2.accept(ProtocolInspectionStepDefs.kt:22)
+	at &#10045;.the connection should be secure(classpath:io/github/multicatch/cucumber/audit/Authentication_Request.feature:15)
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+    <div class="indention">
+      <b>Feature:</b>
+      <a href="report-feature_2_2671934457.html">Database Queries Threats</a>
+    </div>
+
+
+<div class="tags indention">
+    <b>Tags:</b>
+       <a href="report-tag_3758974180.html">@Tampering</a>
+</div>
+
+
+  <span class="lead-duration duration">0.372</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-5">
+
+<div class="brief passed">
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">Unsafe Query Handling</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention">  Creation of database queries by simply inserting parameters into a string pattern is an SQL Injection
+  vulnerability. An attacker can use form submit to access or alter information present in the database.</div>
+
+  <div id="element-5" class="collapse collapsable-details ">
+
+
+  <div class="inner-level hooks-element-before">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-6">
+
+<div class="brief passed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+    </div>
+
+    <div id="before-6" class="inner-level collapse collapsable-details ">
+        <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">Before</span>
+              <span class="location name">io.github.multicatch.cucumber.audit.NavigationStepDefs.&lt;init&gt;(NavigationStepDefs.kt:14)</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+          </div>
+
+
+
+
+
+
+
+        </div>
+    </div>
+  </div>
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-7">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-7" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">I am on <span class="argument">&quot;http://localhost.:8000/accounts/login&quot;</span></span>
+
+  <span class="lead-duration duration">0.090</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">the response content is under inspection</span>
+
   <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">I enter <span class="argument">&quot;' OR sleep(5000) -- .&quot;</span> into a field selected by <span class="argument">&quot;input[name='username']&quot;</span></span>
+
+  <span class="lead-duration duration">0.056</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">I enter <span class="argument">&quot;' OR sleep(5000) -- .&quot;</span> into a field selected by <span class="argument">&quot;input[name='password']&quot;</span></span>
+
+  <span class="lead-duration duration">0.030</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">I click on <span class="argument">&quot;form input[type='submit']&quot;</span></span>
+
+  <span class="lead-duration duration">0.195</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">the response time should not be longer than <span class="argument">5000</span> ms</span>
+
+  <span class="lead-duration duration">0.001</span>
 
 </div>
 
@@ -297,12 +604,12 @@ $(document).ready(function() {
 </div>
 
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.395</span>
 
 
-  <span data-toggle="collapse" class=" collapsable-control" data-target="#element-3">
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-8">
 
-<div class="brief failed">
+<div class="brief passed">
   <span class="keyword indention">Scenario Outline</span>
   <span class="name">Unsafe Query Handling</span>
 
@@ -314,259 +621,31 @@ $(document).ready(function() {
   <div class="description indention">  Creation of database queries by simply inserting parameters into a string pattern is an SQL Injection
   vulnerability. An attacker can use form submit to access or alter information present in the database.</div>
 
-  <div id="element-3" class="collapse collapsable-details  in ">
+  <div id="element-8" class="collapse collapsable-details ">
 
 
+  <div class="inner-level hooks-element-before">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-9">
 
-
-
-<div class="steps inner-level">
-  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-4">
-
-<div class="brief failed">
-  <span class="keyword indention">Steps</span>
+<div class="brief passed">
+  <span class="keyword indention">Hooks</span>
   <span class="name"></span>
 
 
      <i class="chevron fa fa-fw"></i>
 </div>
 
-  </div>
-
-  <div id="steps-4" class="inner-level collapse collapsable-details  in ">
-      <div class="step">
-
-
-<div class="brief step-name-Given undefined">
-  <span class="keyword indention">Given</span>
-  <span class="name">I am on &quot;http://localhost.:8000/accounts/login&quot;</span>
-
-  <span class="lead-duration duration">0.000</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-And undefined">
-  <span class="keyword indention">And</span>
-  <span class="name">the response content is under inspection</span>
-
-  <span class="lead-duration duration">0.000</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-When undefined">
-  <span class="keyword indention">When</span>
-  <span class="name">I enter &quot;' OR sleep(5000) -- .&quot; into a field selected by &quot;input[name='username']&quot;</span>
-
-  <span class="lead-duration duration">0.000</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-And undefined">
-  <span class="keyword indention">And</span>
-  <span class="name">I enter &quot;' OR sleep(5000) -- .&quot; into a field selected by &quot;input[name='password']&quot;</span>
-
-  <span class="lead-duration duration">0.000</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-And undefined">
-  <span class="keyword indention">And</span>
-  <span class="name">I click on &quot;form input[type='submit']&quot;</span>
-
-  <span class="lead-duration duration">0.000</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-Then undefined">
-  <span class="keyword indention">Then</span>
-  <span class="name">the response time should not be longer than 5000 ms</span>
-
-  <span class="lead-duration duration">0.000</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-  </div>
-</div>
-
-
-
-
-
-  </div>
-</div>
-
-
-<div class="element">
-    <div class="indention">
-      <b>Feature:</b>
-      <a href="report-feature_2_2671934457.html">Database Queries Threats</a>
     </div>
 
-
-<div class="tags indention">
-    <b>Tags:</b>
-       <a href="report-tag_3758974180.html">@Tampering</a>
-</div>
-
-
-  <span class="lead-duration duration">0.000</span>
-
-
-  <span data-toggle="collapse" class=" collapsable-control" data-target="#element-5">
-
-<div class="brief failed">
-  <span class="keyword indention">Scenario Outline</span>
-  <span class="name">Unsafe Query Handling</span>
-
-
-     <i class="chevron fa fa-fw"></i>
-</div>
-
-  </span>
-  <div class="description indention">  Creation of database queries by simply inserting parameters into a string pattern is an SQL Injection
-  vulnerability. An attacker can use form submit to access or alter information present in the database.</div>
-
-  <div id="element-5" class="collapse collapsable-details  in ">
-
-
-
-
-
-<div class="steps inner-level">
-  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-6">
-
-<div class="brief failed">
-  <span class="keyword indention">Steps</span>
-  <span class="name"></span>
-
-
-     <i class="chevron fa fa-fw"></i>
-</div>
-
-  </div>
-
-  <div id="steps-6" class="inner-level collapse collapsable-details  in ">
-      <div class="step">
-
-
-<div class="brief step-name-Given undefined">
-  <span class="keyword indention">Given</span>
-  <span class="name">I am on &quot;http://localhost.:8000/accounts/login&quot;</span>
+    <div id="before-9" class="inner-level collapse collapsable-details ">
+        <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">Before</span>
+              <span class="location name">io.github.multicatch.cucumber.audit.NavigationStepDefs.&lt;init&gt;(NavigationStepDefs.kt:14)</span>
 
   <span class="lead-duration duration">0.000</span>
 
-</div>
+          </div>
 
 
 
@@ -574,202 +653,16 @@ $(document).ready(function() {
 
 
 
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-And undefined">
-  <span class="keyword indention">And</span>
-  <span class="name">the response content is under inspection</span>
-
-  <span class="lead-duration duration">0.000</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-When undefined">
-  <span class="keyword indention">When</span>
-  <span class="name">I enter &quot;' || dbms_pipe.receive_message(('a'), 5) -- .&quot; into a field selected by &quot;input[name='username']&quot;</span>
-
-  <span class="lead-duration duration">0.000</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-And undefined">
-  <span class="keyword indention">And</span>
-  <span class="name">I enter &quot;' || dbms_pipe.receive_message(('a'), 5) -- .&quot; into a field selected by &quot;input[name='password']&quot;</span>
-
-  <span class="lead-duration duration">0.000</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-And undefined">
-  <span class="keyword indention">And</span>
-  <span class="name">I click on &quot;form input[type='submit']&quot;</span>
-
-  <span class="lead-duration duration">0.000</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-Then undefined">
-  <span class="keyword indention">Then</span>
-  <span class="name">the response time should not be longer than 5000 ms</span>
-
-  <span class="lead-duration duration">0.000</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-  </div>
-</div>
-
-
-
-
-
-  </div>
-</div>
-
-
-<div class="element">
-    <div class="indention">
-      <b>Feature:</b>
-      <a href="report-feature_2_2671934457.html">Database Queries Threats</a>
+        </div>
     </div>
-
-
-<div class="tags indention">
-    <b>Tags:</b>
-       <a href="report-tag_3758974180.html">@Tampering</a>
-</div>
-
-
-  <span class="lead-duration duration">0.000</span>
-
-
-  <span data-toggle="collapse" class=" collapsable-control" data-target="#element-7">
-
-<div class="brief failed">
-  <span class="keyword indention">Scenario Outline</span>
-  <span class="name">Unsafe Query Handling</span>
-
-
-     <i class="chevron fa fa-fw"></i>
-</div>
-
-  </span>
-  <div class="description indention">  Creation of database queries by simply inserting parameters into a string pattern is an SQL Injection
-  vulnerability. An attacker can use form submit to access or alter information present in the database.</div>
-
-  <div id="element-7" class="collapse collapsable-details  in ">
-
-
+  </div>
 
 
 
 <div class="steps inner-level">
-  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-8">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-10">
 
-<div class="brief failed">
+<div class="brief passed">
   <span class="keyword indention">Steps</span>
   <span class="name"></span>
 
@@ -779,15 +672,15 @@ $(document).ready(function() {
 
   </div>
 
-  <div id="steps-8" class="inner-level collapse collapsable-details  in ">
+  <div id="steps-10" class="inner-level collapse collapsable-details ">
       <div class="step">
 
 
-<div class="brief step-name-Given undefined">
+<div class="brief step-name-Given passed">
   <span class="keyword indention">Given</span>
-  <span class="name">I am on &quot;http://localhost.:8000/accounts/login&quot;</span>
+  <span class="name">I am on <span class="argument">&quot;http://localhost.:8000/accounts/login&quot;</span></span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.093</span>
 
 </div>
 
@@ -810,7 +703,7 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-And undefined">
+<div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
   <span class="name">the response content is under inspection</span>
 
@@ -837,11 +730,11 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-When undefined">
+<div class="brief step-name-When passed">
   <span class="keyword indention">When</span>
-  <span class="name">I enter &quot;' OR pg_sleep(5) -- .&quot; into a field selected by &quot;input[name='username']&quot;</span>
+  <span class="name">I enter <span class="argument">&quot;' || dbms_pipe.receive_message(('a'), 5) -- .&quot;</span> into a field selected by <span class="argument">&quot;input[name='username']&quot;</span></span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.050</span>
 
 </div>
 
@@ -864,11 +757,11 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-And undefined">
+<div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
-  <span class="name">I enter &quot;' OR pg_sleep(5) -- .&quot; into a field selected by &quot;input[name='password']&quot;</span>
+  <span class="name">I enter <span class="argument">&quot;' || dbms_pipe.receive_message(('a'), 5) -- .&quot;</span> into a field selected by <span class="argument">&quot;input[name='password']&quot;</span></span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.051</span>
 
 </div>
 
@@ -891,11 +784,11 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-And undefined">
+<div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
-  <span class="name">I click on &quot;form input[type='submit']&quot;</span>
+  <span class="name">I click on <span class="argument">&quot;form input[type='submit']&quot;</span></span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.201</span>
 
 </div>
 
@@ -918,9 +811,9 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-Then undefined">
+<div class="brief step-name-Then passed">
   <span class="keyword indention">Then</span>
-  <span class="name">the response time should not be longer than 5000 ms</span>
+  <span class="name">the response time should not be longer than <span class="argument">5000</span> ms</span>
 
   <span class="lead-duration duration">0.000</span>
 
@@ -966,12 +859,12 @@ $(document).ready(function() {
 </div>
 
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.381</span>
 
 
-  <span data-toggle="collapse" class=" collapsable-control" data-target="#element-9">
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-11">
 
-<div class="brief failed">
+<div class="brief passed">
   <span class="keyword indention">Scenario Outline</span>
   <span class="name">Unsafe Query Handling</span>
 
@@ -983,16 +876,48 @@ $(document).ready(function() {
   <div class="description indention">  Creation of database queries by simply inserting parameters into a string pattern is an SQL Injection
   vulnerability. An attacker can use form submit to access or alter information present in the database.</div>
 
-  <div id="element-9" class="collapse collapsable-details  in ">
+  <div id="element-11" class="collapse collapsable-details ">
 
 
+  <div class="inner-level hooks-element-before">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-12">
+
+<div class="brief passed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+    </div>
+
+    <div id="before-12" class="inner-level collapse collapsable-details ">
+        <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">Before</span>
+              <span class="location name">io.github.multicatch.cucumber.audit.NavigationStepDefs.&lt;init&gt;(NavigationStepDefs.kt:14)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+          </div>
+
+
+
+
+
+
+
+        </div>
+    </div>
+  </div>
 
 
 
 <div class="steps inner-level">
-  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-10">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-13">
 
-<div class="brief failed">
+<div class="brief passed">
   <span class="keyword indention">Steps</span>
   <span class="name"></span>
 
@@ -1002,15 +927,15 @@ $(document).ready(function() {
 
   </div>
 
-  <div id="steps-10" class="inner-level collapse collapsable-details  in ">
+  <div id="steps-13" class="inner-level collapse collapsable-details ">
       <div class="step">
 
 
-<div class="brief step-name-Given undefined">
+<div class="brief step-name-Given passed">
   <span class="keyword indention">Given</span>
-  <span class="name">I am on &quot;http://localhost.:8000/accounts/login&quot;</span>
+  <span class="name">I am on <span class="argument">&quot;http://localhost.:8000/accounts/login&quot;</span></span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.127</span>
 
 </div>
 
@@ -1033,7 +958,7 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-And undefined">
+<div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
   <span class="name">the response content is under inspection</span>
 
@@ -1060,11 +985,11 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-When undefined">
+<div class="brief step-name-When passed">
   <span class="keyword indention">When</span>
-  <span class="name">I enter &quot;' OR WAITFOR DELAY '0:0:05' -- .&quot; into a field selected by &quot;input[name='username']&quot;</span>
+  <span class="name">I enter <span class="argument">&quot;' OR pg_sleep(5) -- .&quot;</span> into a field selected by <span class="argument">&quot;input[name='username']&quot;</span></span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.037</span>
 
 </div>
 
@@ -1087,11 +1012,11 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-And undefined">
+<div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
-  <span class="name">I enter &quot;' OR WAITFOR DELAY '0:0:05' -- .&quot; into a field selected by &quot;input[name='password']&quot;</span>
+  <span class="name">I enter <span class="argument">&quot;' OR pg_sleep(5) -- .&quot;</span> into a field selected by <span class="argument">&quot;input[name='password']&quot;</span></span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.030</span>
 
 </div>
 
@@ -1114,11 +1039,11 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-And undefined">
+<div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
-  <span class="name">I click on &quot;form input[type='submit']&quot;</span>
+  <span class="name">I click on <span class="argument">&quot;form input[type='submit']&quot;</span></span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.187</span>
 
 </div>
 
@@ -1141,11 +1066,266 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-Then undefined">
+<div class="brief step-name-Then passed">
   <span class="keyword indention">Then</span>
-  <span class="name">the response time should not be longer than 5000 ms</span>
+  <span class="name">the response time should not be longer than <span class="argument">5000</span> ms</span>
 
   <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+    <div class="indention">
+      <b>Feature:</b>
+      <a href="report-feature_2_2671934457.html">Database Queries Threats</a>
+    </div>
+
+
+<div class="tags indention">
+    <b>Tags:</b>
+       <a href="report-tag_3758974180.html">@Tampering</a>
+</div>
+
+
+  <span class="lead-duration duration">0.361</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-14">
+
+<div class="brief passed">
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">Unsafe Query Handling</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention">  Creation of database queries by simply inserting parameters into a string pattern is an SQL Injection
+  vulnerability. An attacker can use form submit to access or alter information present in the database.</div>
+
+  <div id="element-14" class="collapse collapsable-details ">
+
+
+  <div class="inner-level hooks-element-before">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-15">
+
+<div class="brief passed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+    </div>
+
+    <div id="before-15" class="inner-level collapse collapsable-details ">
+        <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">Before</span>
+              <span class="location name">io.github.multicatch.cucumber.audit.NavigationStepDefs.&lt;init&gt;(NavigationStepDefs.kt:14)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+          </div>
+
+
+
+
+
+
+
+        </div>
+    </div>
+  </div>
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-16">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-16" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">I am on <span class="argument">&quot;http://localhost.:8000/accounts/login&quot;</span></span>
+
+  <span class="lead-duration duration">0.084</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">the response content is under inspection</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">I enter <span class="argument">&quot;' OR WAITFOR DELAY '0:0:05' -- .&quot;</span> into a field selected by <span class="argument">&quot;input[name='username']&quot;</span></span>
+
+  <span class="lead-duration duration">0.046</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">I enter <span class="argument">&quot;' OR WAITFOR DELAY '0:0:05' -- .&quot;</span> into a field selected by <span class="argument">&quot;input[name='password']&quot;</span></span>
+
+  <span class="lead-duration duration">0.037</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">I click on <span class="argument">&quot;form input[type='submit']&quot;</span></span>
+
+  <span class="lead-duration duration">0.193</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">the response time should not be longer than <span class="argument">5000</span> ms</span>
+
+  <span class="lead-duration duration">0.001</span>
 
 </div>
 
