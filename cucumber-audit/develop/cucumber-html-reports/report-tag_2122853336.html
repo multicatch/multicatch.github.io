@@ -74,7 +74,7 @@ $(document).ready(function() {
   <tbody>
     <tr class="info">
       <td>Cucumber Audit</td>
-      <td>24 Jun 2020, 08:02</td>
+      <td>24 Jun 2020, 16:23</td>
     </tr>
   </tbody>
 </table>
@@ -127,18 +127,18 @@ $(document).ready(function() {
         <tbody>
         <tr>
           <td class="tagname">@InformationDisclosure</td>
-          <td      class="passed"    >38</td>
-          <td      class="failed"    >3</td>
+          <td      class="passed"    >63</td>
+          <td      class="failed"    >4</td>
           <td     class="skipped"   >1</td>
           <td >0</td>
           <td >0</td>
-          <td class="total">42</td>
+          <td class="total">68</td>
 
-          <td  class="passed"    >5</td>
-          <td  class="failed"    >3</td>
-          <td class="total">8</td>
+          <td  class="passed"    >9</td>
+          <td  class="failed"    >4</td>
+          <td class="total">13</td>
 
-          <td class="duration" data-value="1251000000">1.251</td>
+          <td class="duration" data-value="2594000000">2.594</td>
           <td class="failed">Failed</td>
         </tr>
         </tbody>
@@ -181,23 +181,23 @@ $(document).ready(function() {
 </div>
 
 
-  <span class="lead-duration duration">0.150</span>
+  <span class="lead-duration duration">0.212</span>
 
 
   <span data-toggle="collapse" class=" collapsable-control" data-target="#element-1">
 
 <div class="brief failed">
   <span class="keyword indention">Scenario</span>
-  <span class="name">Known Software Vulnerabilities Disclosure (Headers)</span>
+  <span class="name">Exploitation of System Software Information In Headers</span>
 
 
      <i class="chevron fa fa-fw"></i>
 </div>
 
   </span>
-  <div class="description indention">  The &quot;Server&quot; and &quot;X-Powered-By&quot; headers provide information about technology that is used on the server side.
-  They usually contain the software version (eg. &quot;Apache/2.2.15 (CentOS) ...&quot;) and can be used to find
-  known vulnerabilities of that software. Disabling them makes it more difficult to exploit the server software.</div>
+  <div class="description indention">  The disclosure of software information may be used to provide knowledge about known vulnerabilities of
+  a particular version. The &quot;Server&quot; and &quot;X-Powered-By&quot; headers provide information about technology that
+  is used on the server side. Disabling them makes it more difficult to exploit the server software.</div>
 
   <div id="element-1" class="collapse collapsable-details  in ">
 
@@ -221,7 +221,7 @@ $(document).ready(function() {
             <span class="keyword indention">Before</span>
               <span class="location name">io.github.multicatch.cucumber.audit.NavigationStepDefs.&lt;init&gt;(NavigationStepDefs.kt:14)</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.001</span>
 
           </div>
 
@@ -258,7 +258,7 @@ $(document).ready(function() {
   <span class="keyword indention">Given</span>
   <span class="name">the response headers are under inspection</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.001</span>
 
 </div>
 
@@ -285,7 +285,7 @@ $(document).ready(function() {
   <span class="keyword indention">When</span>
   <span class="name">I go to <span class="argument">&quot;http://localhost.:8000/accounts/login&quot;</span></span>
 
-  <span class="lead-duration duration">0.141</span>
+  <span class="lead-duration duration">0.204</span>
 
 </div>
 
@@ -312,7 +312,7 @@ $(document).ready(function() {
   <span class="keyword indention">Then</span>
   <span class="name">the <span class="argument">&quot;Server&quot;</span> response header should not contain numbers</span>
 
-  <span class="lead-duration duration">0.009</span>
+  <span class="lead-duration duration">0.007</span>
 
 </div>
 
@@ -334,7 +334,7 @@ to match given predicate but this element did:
   &lt;&quot;WSGIServer/0.2 CPython/3.8.3&quot;&gt;
 	at java.util.Optional.ifPresent(Optional.java:159)
 	at io.github.multicatch.cucumber.audit.ResponseInspectionStepDefs$5.accept(ResponseInspectionStepDefs.kt:65)
-	at &#10045;.the &quot;Server&quot; response header should not contain numbers(classpath:io/github/multicatch/cucumber/audit/Authentication_Page.feature:26)
+	at &#10045;.the &quot;Server&quot; response header should not contain numbers(classpath:io/github/multicatch/cucumber/audit/Authentication_Page.feature:34)
 </pre>
       </div>
     </div>
@@ -402,22 +402,22 @@ to match given predicate but this element did:
 </div>
 
 
-  <span class="lead-duration duration">0.144</span>
+  <span class="lead-duration duration">0.111</span>
 
 
   <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-5">
 
 <div class="brief passed">
   <span class="keyword indention">Scenario Outline</span>
-  <span class="name">Known Software Vulnerabilities Disclosure (Error Pages)</span>
+  <span class="name">Exploitation of Sensitive Information on Error Pages</span>
 
 
      <i class="chevron fa fa-fw"></i>
 </div>
 
   </span>
-  <div class="description indention">  The default error pages can contain information about the server software. Usually this includes the version
-  of the software used. This piece of information can be used to find known vulnerabilities of that software.
+  <div class="description indention">  The disclosure of software information may be used to provide knowledge about known vulnerabilities of
+  a particular version. The default error pages can contain information about the server software.
   Overriding default error pages makes it more difficult to exploit the server software.</div>
 
   <div id="element-5" class="collapse collapsable-details ">
@@ -506,7 +506,7 @@ to match given predicate but this element did:
   <span class="keyword indention">When</span>
   <span class="name">I go to <span class="argument">&quot;http://localhost.:8000/accounts/login/shouldbenotfound&quot;</span></span>
 
-  <span class="lead-duration duration">0.143</span>
+  <span class="lead-duration duration">0.110</span>
 
 </div>
 
@@ -577,22 +577,22 @@ to match given predicate but this element did:
 </div>
 
 
-  <span class="lead-duration duration">0.091</span>
+  <span class="lead-duration duration">0.044</span>
 
 
   <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-8">
 
 <div class="brief passed">
   <span class="keyword indention">Scenario Outline</span>
-  <span class="name">Known Software Vulnerabilities Disclosure (Error Pages)</span>
+  <span class="name">Exploitation of Sensitive Information on Error Pages</span>
 
 
      <i class="chevron fa fa-fw"></i>
 </div>
 
   </span>
-  <div class="description indention">  The default error pages can contain information about the server software. Usually this includes the version
-  of the software used. This piece of information can be used to find known vulnerabilities of that software.
+  <div class="description indention">  The disclosure of software information may be used to provide knowledge about known vulnerabilities of
+  a particular version. The default error pages can contain information about the server software.
   Overriding default error pages makes it more difficult to exploit the server software.</div>
 
   <div id="element-8" class="collapse collapsable-details ">
@@ -681,7 +681,7 @@ to match given predicate but this element did:
   <span class="keyword indention">When</span>
   <span class="name">I go to <span class="argument">&quot;http://localhost.:8000/accounts/login/shouldbenotfound&quot;</span></span>
 
-  <span class="lead-duration duration">0.090</span>
+  <span class="lead-duration duration">0.043</span>
 
 </div>
 
@@ -752,22 +752,22 @@ to match given predicate but this element did:
 </div>
 
 
-  <span class="lead-duration duration">0.093</span>
+  <span class="lead-duration duration">0.043</span>
 
 
   <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-11">
 
 <div class="brief passed">
   <span class="keyword indention">Scenario Outline</span>
-  <span class="name">Known Software Vulnerabilities Disclosure (Error Pages)</span>
+  <span class="name">Exploitation of Sensitive Information on Error Pages</span>
 
 
      <i class="chevron fa fa-fw"></i>
 </div>
 
   </span>
-  <div class="description indention">  The default error pages can contain information about the server software. Usually this includes the version
-  of the software used. This piece of information can be used to find known vulnerabilities of that software.
+  <div class="description indention">  The disclosure of software information may be used to provide knowledge about known vulnerabilities of
+  a particular version. The default error pages can contain information about the server software.
   Overriding default error pages makes it more difficult to exploit the server software.</div>
 
   <div id="element-11" class="collapse collapsable-details ">
@@ -856,7 +856,7 @@ to match given predicate but this element did:
   <span class="keyword indention">When</span>
   <span class="name">I go to <span class="argument">&quot;http://localhost.:8000/accounts/login/shouldbenotfound&quot;</span></span>
 
-  <span class="lead-duration duration">0.093</span>
+  <span class="lead-duration duration">0.043</span>
 
 </div>
 
@@ -927,22 +927,22 @@ to match given predicate but this element did:
 </div>
 
 
-  <span class="lead-duration duration">0.066</span>
+  <span class="lead-duration duration">0.056</span>
 
 
   <span data-toggle="collapse" class=" collapsable-control" data-target="#element-14">
 
 <div class="brief failed">
   <span class="keyword indention">Scenario Outline</span>
-  <span class="name">Known Software Vulnerabilities Disclosure (Error Pages)</span>
+  <span class="name">Exploitation of Sensitive Information on Error Pages</span>
 
 
      <i class="chevron fa fa-fw"></i>
 </div>
 
   </span>
-  <div class="description indention">  The default error pages can contain information about the server software. Usually this includes the version
-  of the software used. This piece of information can be used to find known vulnerabilities of that software.
+  <div class="description indention">  The disclosure of software information may be used to provide knowledge about known vulnerabilities of
+  a particular version. The default error pages can contain information about the server software.
   Overriding default error pages makes it more difficult to exploit the server software.</div>
 
   <div id="element-14" class="collapse collapsable-details  in ">
@@ -1031,7 +1031,7 @@ to match given predicate but this element did:
   <span class="keyword indention">When</span>
   <span class="name">I go to <span class="argument">&quot;http://localhost.:8000/accounts/login/shouldbenotfound&quot;</span></span>
 
-  <span class="lead-duration duration">0.065</span>
+  <span class="lead-duration duration">0.055</span>
 
 </div>
 
@@ -1484,7 +1484,7 @@ to match given predicate but this element did:
 &quot;&gt;
 	at java.util.Optional.ifPresent(Optional.java:159)
 	at io.github.multicatch.cucumber.audit.ResponseInspectionStepDefs$8.accept(ResponseInspectionStepDefs.kt:108)
-	at &#10045;.the response should not contain &quot;Django&quot;(classpath:io/github/multicatch/cucumber/audit/Authentication_Page.feature:37)
+	at &#10045;.the response should not contain &quot;Django&quot;(classpath:io/github/multicatch/cucumber/audit/Authentication_Page.feature:45)
 </pre>
       </div>
     </div>
@@ -1525,22 +1525,22 @@ to match given predicate but this element did:
 </div>
 
 
-  <span class="lead-duration duration">0.145</span>
+  <span class="lead-duration duration">0.073</span>
 
 
   <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-18">
 
 <div class="brief passed">
   <span class="keyword indention">Scenario Outline</span>
-  <span class="name">Known Software Vulnerabilities Disclosure (Error Pages)</span>
+  <span class="name">Exploitation of Sensitive Information on Error Pages</span>
 
 
      <i class="chevron fa fa-fw"></i>
 </div>
 
   </span>
-  <div class="description indention">  The default error pages can contain information about the server software. Usually this includes the version
-  of the software used. This piece of information can be used to find known vulnerabilities of that software.
+  <div class="description indention">  The disclosure of software information may be used to provide knowledge about known vulnerabilities of
+  a particular version. The default error pages can contain information about the server software.
   Overriding default error pages makes it more difficult to exploit the server software.</div>
 
   <div id="element-18" class="collapse collapsable-details ">
@@ -1602,7 +1602,7 @@ to match given predicate but this element did:
   <span class="keyword indention">Given</span>
   <span class="name">the response content is under inspection</span>
 
-  <span class="lead-duration duration">0.001</span>
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 
@@ -1629,7 +1629,7 @@ to match given predicate but this element did:
   <span class="keyword indention">When</span>
   <span class="name">I go to <span class="argument">&quot;http://localhost.:8000/accounts/login/shouldbenotfound&quot;</span></span>
 
-  <span class="lead-duration duration">0.143</span>
+  <span class="lead-duration duration">0.072</span>
 
 </div>
 
@@ -1700,23 +1700,23 @@ to match given predicate but this element did:
 </div>
 
 
-  <span class="lead-duration duration">0.169</span>
+  <span class="lead-duration duration">0.084</span>
 
 
   <span data-toggle="collapse" class=" collapsable-control" data-target="#element-21">
 
 <div class="brief failed">
   <span class="keyword indention">Scenario</span>
-  <span class="name">System Architecture Disclosure (Error Pages)</span>
+  <span class="name">Exploitation of System Architecture Information On Error Pages</span>
 
 
      <i class="chevron fa fa-fw"></i>
 </div>
 
   </span>
-  <div class="description indention">  Usually the server software prints stack traces on error by default. This is a debug feature that should be disabled
-  when running the software in production. The stack trace may provide information that can be used by an attacker,
-  eg. used libraries, algorithms or server software.</div>
+  <div class="description indention">  Usually the server software prints stack traces on error by default. This is a debug feature that should be
+  disabled when running the software in production. The stack trace may provide information about architecture
+  and used libraries that can be used by an attacker to exploit known vulnerabilities.</div>
 
   <div id="element-21" class="collapse collapsable-details  in ">
 
@@ -1831,7 +1831,7 @@ to match given predicate but this element did:
   <span class="keyword indention">And</span>
   <span class="name">I add a <span class="argument">&quot;Authentication&quot;</span> header with value <span class="argument">&quot;!Unsupported&quot;</span></span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.001</span>
 
 </div>
 
@@ -1885,7 +1885,7 @@ to match given predicate but this element did:
   <span class="keyword indention">And</span>
   <span class="name">I make a request to <span class="argument">&quot;http://localhost.:8000/accounts/login/?error=1283927&quot;</span></span>
 
-  <span class="lead-duration duration">0.143</span>
+  <span class="lead-duration duration">0.080</span>
 
 </div>
 
@@ -1912,7 +1912,7 @@ to match given predicate but this element did:
   <span class="keyword indention">Then</span>
   <span class="name">the response should not contain <span class="argument">&quot;Exception&quot;</span></span>
 
-  <span class="lead-duration duration">0.002</span>
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 
@@ -1993,7 +1993,7 @@ to match given predicate but this element did:
   <span class="keyword indention">And</span>
   <span class="name">the response should not match <span class="argument">&quot;.*[a-zA-Z0-9.]+:[0-9]+\).*&quot;</span></span>
 
-  <span class="lead-duration duration">0.012</span>
+  <span class="lead-duration duration">0.002</span>
 
 </div>
 
@@ -2020,7 +2020,7 @@ to match given predicate but this element did:
   <span class="keyword indention">And</span>
   <span class="name">the response should not match <span class="argument">&quot;(?i).*line [0-9]+.*&quot;</span></span>
 
-  <span class="lead-duration duration">0.003</span>
+  <span class="lead-duration duration">0.001</span>
 
 </div>
 
@@ -2047,7 +2047,7 @@ to match given predicate but this element did:
   <span class="keyword indention">And</span>
   <span class="name">the response should not match <span class="argument">&quot;(?i).*debug.*&quot;</span></span>
 
-  <span class="lead-duration duration">0.009</span>
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 
@@ -2217,7 +2217,174 @@ to match given predicate but this element did:
 &quot;&gt;
 	at java.util.Optional.ifPresent(Optional.java:159)
 	at io.github.multicatch.cucumber.audit.ResponseInspectionStepDefs$12.accept(ResponseInspectionStepDefs.kt:162)
-	at &#10045;.the response should not match &quot;(?i).*debug.*&quot;(classpath:io/github/multicatch/cucumber/audit/Authentication_Page.feature:63)
+	at &#10045;.the response should not match &quot;(?i).*debug.*&quot;(classpath:io/github/multicatch/cucumber/audit/Authentication_Page.feature:71)
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+    <div class="indention">
+      <b>Feature:</b>
+      <a href="report-feature_1_2353070367.html">Authentication Request Threats</a>
+    </div>
+
+
+<div class="tags indention">
+    <b>Tags:</b>
+       <a href="report-tag_2122853336.html">@InformationDisclosure</a>
+</div>
+
+
+  <span class="lead-duration duration">0.000</span>
+
+
+  <span data-toggle="collapse" class=" collapsable-control" data-target="#element-25">
+
+<div class="brief failed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">Confidential Data Eavesdropping</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention">  HTTP communication is unencrypted and thus prone to eavesdropping via Man-in-The-Middle Attacks.
+  HTTPS is recommended for safe exchange of confidential information such as passwords or tokens.</div>
+
+  <div id="element-25" class="collapse collapsable-details  in ">
+
+
+  <div class="inner-level hooks-element-before">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-26">
+
+<div class="brief passed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+    </div>
+
+    <div id="before-26" class="inner-level collapse collapsable-details ">
+        <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">Before</span>
+              <span class="location name">io.github.multicatch.cucumber.audit.NavigationStepDefs.&lt;init&gt;(NavigationStepDefs.kt:14)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+          </div>
+
+
+
+
+
+
+
+        </div>
+    </div>
+  </div>
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-27">
+
+<div class="brief failed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-27" class="inner-level collapse collapsable-details  in ">
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">I connect to <span class="argument">&quot;http://localhost.:8000/accounts/login&quot;</span></span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then failed">
+  <span class="keyword indention">Then</span>
+  <span class="name">the connection should be secure</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-28">
+          <a>java.lang.AssertionError:</a>
+      </div>
+      <div id="msg-28" class="collapse collapsable-details  in ">
+        <pre>java.lang.AssertionError: 
+Expecting:
+  &lt;sun.net.www.protocol.http.HttpURLConnection:http://localhost.:8000/accounts/login&gt;
+to be an instance of:
+  &lt;javax.net.ssl.HttpsURLConnection&gt;
+but was instance of:
+  &lt;sun.net.www.protocol.http.HttpURLConnection&gt;
+	at io.github.multicatch.cucumber.audit.ProtocolInspectionStepDefs$2.accept(ProtocolInspectionStepDefs.kt:22)
+	at &#10045;.the connection should be secure(classpath:io/github/multicatch/cucumber/audit/Authentication_Request.feature:14)
 </pre>
       </div>
     </div>
@@ -2258,28 +2425,28 @@ to match given predicate but this element did:
 </div>
 
 
-  <span class="lead-duration duration">0.393</span>
+  <span class="lead-duration duration">0.399</span>
 
 
-  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-25">
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-29">
 
 <div class="brief passed">
   <span class="keyword indention">Scenario</span>
-  <span class="name">Known Database Vulnerabilities Disclosure</span>
+  <span class="name">Exploitation of Database Management System Information</span>
 
 
      <i class="chevron fa fa-fw"></i>
 </div>
 
   </span>
-  <div class="description indention">  Unhandled database errors may lead to disclosure about database system version.
-  This may be used to prepare an attack that uses known system vulnerabilities.</div>
+  <div class="description indention">  Unhandled database errors may lead to disclosure about database system version. This may be used to prepare
+  an attack that uses known system vulnerabilities and characteristics of used DBMS.</div>
 
-  <div id="element-25" class="collapse collapsable-details ">
+  <div id="element-29" class="collapse collapsable-details ">
 
 
   <div class="inner-level hooks-element-before">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-26">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-30">
 
 <div class="brief passed">
   <span class="keyword indention">Hooks</span>
@@ -2291,7 +2458,7 @@ to match given predicate but this element did:
 
     </div>
 
-    <div id="before-26" class="inner-level collapse collapsable-details ">
+    <div id="before-30" class="inner-level collapse collapsable-details ">
         <div class="hook">
           <div class="brief passed">
             <span class="keyword indention">Before</span>
@@ -2314,7 +2481,7 @@ to match given predicate but this element did:
 
 
 <div class="steps inner-level">
-  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-27">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-31">
 
 <div class="brief passed">
   <span class="keyword indention">Steps</span>
@@ -2326,7 +2493,7 @@ to match given predicate but this element did:
 
   </div>
 
-  <div id="steps-27" class="inner-level collapse collapsable-details ">
+  <div id="steps-31" class="inner-level collapse collapsable-details ">
       <div class="step">
 
 
@@ -2334,7 +2501,7 @@ to match given predicate but this element did:
   <span class="keyword indention">Given</span>
   <span class="name">I am on <span class="argument">&quot;http://localhost.:8000/accounts/login&quot;</span></span>
 
-  <span class="lead-duration duration">0.103</span>
+  <span class="lead-duration duration">0.105</span>
 
 </div>
 
@@ -2361,7 +2528,7 @@ to match given predicate but this element did:
   <span class="keyword indention">And</span>
   <span class="name">the response content is under inspection</span>
 
-  <span class="lead-duration duration">0.001</span>
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 
@@ -2388,7 +2555,7 @@ to match given predicate but this element did:
   <span class="keyword indention">When</span>
   <span class="name">I enter <span class="argument">&quot;' UNKNOWN SYNTAX; -- .&quot;</span> into a field selected by <span class="argument">&quot;input[name='username']&quot;</span></span>
 
-  <span class="lead-duration duration">0.057</span>
+  <span class="lead-duration duration">0.049</span>
 
 </div>
 
@@ -2415,7 +2582,7 @@ to match given predicate but this element did:
   <span class="keyword indention">And</span>
   <span class="name">I enter <span class="argument">&quot;' UNKNOWN SYNTAX; -- .&quot;</span> into a field selected by <span class="argument">&quot;input[name='password']&quot;</span></span>
 
-  <span class="lead-duration duration">0.026</span>
+  <span class="lead-duration duration">0.033</span>
 
 </div>
 
@@ -2442,7 +2609,7 @@ to match given predicate but this element did:
   <span class="keyword indention">And</span>
   <span class="name">I click on <span class="argument">&quot;form input[type='submit']&quot;</span></span>
 
-  <span class="lead-duration duration">0.204</span>
+  <span class="lead-duration duration">0.205</span>
 
 </div>
 
@@ -2496,7 +2663,7 @@ to match given predicate but this element did:
   <span class="keyword indention">And</span>
   <span class="name">the response should not contain <span class="argument">&quot;Exception&quot;</span></span>
 
-  <span class="lead-duration duration">0.001</span>
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 
@@ -2523,7 +2690,7 @@ to match given predicate but this element did:
   <span class="keyword indention">And</span>
   <span class="name">the response should not contain <span class="argument">&quot;Stacktrace&quot;</span></span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.001</span>
 
 </div>
 
@@ -2577,7 +2744,7 @@ to match given predicate but this element did:
   <span class="keyword indention">And</span>
   <span class="name">the response should not match <span class="argument">&quot;.*[a-zA-Z0-9.]+:[0-9]+\).*&quot;</span></span>
 
-  <span class="lead-duration duration">0.001</span>
+  <span class="lead-duration duration">0.003</span>
 
 </div>
 
@@ -2604,7 +2771,7 @@ to match given predicate but this element did:
   <span class="keyword indention">And</span>
   <span class="name">the response should not match <span class="argument">&quot;(?i).*line [0-9]+.*&quot;</span></span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.001</span>
 
 </div>
 
@@ -2630,6 +2797,1026 @@ to match given predicate but this element did:
 <div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
   <span class="name">the response should not match <span class="argument">&quot;(?i).*debug.*&quot;</span></span>
+
+  <span class="lead-duration duration">0.002</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+    <div class="indention">
+      <b>Feature:</b>
+      <a href="report-feature_2_2671934457.html">Database Queries Threats</a>
+    </div>
+
+
+<div class="tags indention">
+    <b>Tags:</b>
+       <a href="report-tag_2122853336.html">@InformationDisclosure</a>
+</div>
+
+
+  <span class="lead-duration duration">0.426</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-32">
+
+<div class="brief passed">
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">Stealing Information From Database</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention">  If the SQL Queries are creates by simple concatenation, there is a risk that an attacker could inject
+  a malicious code into said queries. This SQL Injection can be used to obtain</div>
+
+  <div id="element-32" class="collapse collapsable-details ">
+
+
+  <div class="inner-level hooks-element-before">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-33">
+
+<div class="brief passed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+    </div>
+
+    <div id="before-33" class="inner-level collapse collapsable-details ">
+        <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">Before</span>
+              <span class="location name">io.github.multicatch.cucumber.audit.NavigationStepDefs.&lt;init&gt;(NavigationStepDefs.kt:14)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+          </div>
+
+
+
+
+
+
+
+        </div>
+    </div>
+  </div>
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-34">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-34" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">I am on <span class="argument">&quot;http://localhost.:8000/accounts/login&quot;</span></span>
+
+  <span class="lead-duration duration">0.135</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">the response content is under inspection</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">I enter <span class="argument">&quot;' OR sleep(5000) -- .&quot;</span> into a field selected by <span class="argument">&quot;input[name='username']&quot;</span></span>
+
+  <span class="lead-duration duration">0.048</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">I enter <span class="argument">&quot;' OR sleep(5000) -- .&quot;</span> into a field selected by <span class="argument">&quot;input[name='password']&quot;</span></span>
+
+  <span class="lead-duration duration">0.037</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">I click on <span class="argument">&quot;form input[type='submit']&quot;</span></span>
+
+  <span class="lead-duration duration">0.205</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">the response time should not be longer than <span class="argument">5000</span> ms</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+    <div class="indention">
+      <b>Feature:</b>
+      <a href="report-feature_2_2671934457.html">Database Queries Threats</a>
+    </div>
+
+
+<div class="tags indention">
+    <b>Tags:</b>
+       <a href="report-tag_2122853336.html">@InformationDisclosure</a>
+</div>
+
+
+  <span class="lead-duration duration">0.417</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-35">
+
+<div class="brief passed">
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">Stealing Information From Database</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention">  If the SQL Queries are creates by simple concatenation, there is a risk that an attacker could inject
+  a malicious code into said queries. This SQL Injection can be used to obtain</div>
+
+  <div id="element-35" class="collapse collapsable-details ">
+
+
+  <div class="inner-level hooks-element-before">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-36">
+
+<div class="brief passed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+    </div>
+
+    <div id="before-36" class="inner-level collapse collapsable-details ">
+        <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">Before</span>
+              <span class="location name">io.github.multicatch.cucumber.audit.NavigationStepDefs.&lt;init&gt;(NavigationStepDefs.kt:14)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+          </div>
+
+
+
+
+
+
+
+        </div>
+    </div>
+  </div>
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-37">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-37" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">I am on <span class="argument">&quot;http://localhost.:8000/accounts/login&quot;</span></span>
+
+  <span class="lead-duration duration">0.125</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">the response content is under inspection</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">I enter <span class="argument">&quot;' || dbms_pipe.receive_message(('a'), 5) -- .&quot;</span> into a field selected by <span class="argument">&quot;input[name='username']&quot;</span></span>
+
+  <span class="lead-duration duration">0.058</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">I enter <span class="argument">&quot;' || dbms_pipe.receive_message(('a'), 5) -- .&quot;</span> into a field selected by <span class="argument">&quot;input[name='password']&quot;</span></span>
+
+  <span class="lead-duration duration">0.033</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">I click on <span class="argument">&quot;form input[type='submit']&quot;</span></span>
+
+  <span class="lead-duration duration">0.201</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">the response time should not be longer than <span class="argument">5000</span> ms</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+    <div class="indention">
+      <b>Feature:</b>
+      <a href="report-feature_2_2671934457.html">Database Queries Threats</a>
+    </div>
+
+
+<div class="tags indention">
+    <b>Tags:</b>
+       <a href="report-tag_2122853336.html">@InformationDisclosure</a>
+</div>
+
+
+  <span class="lead-duration duration">0.362</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-38">
+
+<div class="brief passed">
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">Stealing Information From Database</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention">  If the SQL Queries are creates by simple concatenation, there is a risk that an attacker could inject
+  a malicious code into said queries. This SQL Injection can be used to obtain</div>
+
+  <div id="element-38" class="collapse collapsable-details ">
+
+
+  <div class="inner-level hooks-element-before">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-39">
+
+<div class="brief passed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+    </div>
+
+    <div id="before-39" class="inner-level collapse collapsable-details ">
+        <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">Before</span>
+              <span class="location name">io.github.multicatch.cucumber.audit.NavigationStepDefs.&lt;init&gt;(NavigationStepDefs.kt:14)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+          </div>
+
+
+
+
+
+
+
+        </div>
+    </div>
+  </div>
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-40">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-40" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">I am on <span class="argument">&quot;http://localhost.:8000/accounts/login&quot;</span></span>
+
+  <span class="lead-duration duration">0.080</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">the response content is under inspection</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">I enter <span class="argument">&quot;' OR pg_sleep(5) -- .&quot;</span> into a field selected by <span class="argument">&quot;input[name='username']&quot;</span></span>
+
+  <span class="lead-duration duration">0.045</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">I enter <span class="argument">&quot;' OR pg_sleep(5) -- .&quot;</span> into a field selected by <span class="argument">&quot;input[name='password']&quot;</span></span>
+
+  <span class="lead-duration duration">0.037</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">I click on <span class="argument">&quot;form input[type='submit']&quot;</span></span>
+
+  <span class="lead-duration duration">0.200</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">the response time should not be longer than <span class="argument">5000</span> ms</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+    <div class="indention">
+      <b>Feature:</b>
+      <a href="report-feature_2_2671934457.html">Database Queries Threats</a>
+    </div>
+
+
+<div class="tags indention">
+    <b>Tags:</b>
+       <a href="report-tag_2122853336.html">@InformationDisclosure</a>
+</div>
+
+
+  <span class="lead-duration duration">0.367</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-41">
+
+<div class="brief passed">
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">Stealing Information From Database</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention">  If the SQL Queries are creates by simple concatenation, there is a risk that an attacker could inject
+  a malicious code into said queries. This SQL Injection can be used to obtain</div>
+
+  <div id="element-41" class="collapse collapsable-details ">
+
+
+  <div class="inner-level hooks-element-before">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-42">
+
+<div class="brief passed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+    </div>
+
+    <div id="before-42" class="inner-level collapse collapsable-details ">
+        <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">Before</span>
+              <span class="location name">io.github.multicatch.cucumber.audit.NavigationStepDefs.&lt;init&gt;(NavigationStepDefs.kt:14)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+          </div>
+
+
+
+
+
+
+
+        </div>
+    </div>
+  </div>
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-43">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-43" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">I am on <span class="argument">&quot;http://localhost.:8000/accounts/login&quot;</span></span>
+
+  <span class="lead-duration duration">0.088</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">the response content is under inspection</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">I enter <span class="argument">&quot;' OR WAITFOR DELAY '0:0:05' -- .&quot;</span> into a field selected by <span class="argument">&quot;input[name='username']&quot;</span></span>
+
+  <span class="lead-duration duration">0.051</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">I enter <span class="argument">&quot;' OR WAITFOR DELAY '0:0:05' -- .&quot;</span> into a field selected by <span class="argument">&quot;input[name='password']&quot;</span></span>
+
+  <span class="lead-duration duration">0.037</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">I click on <span class="argument">&quot;form input[type='submit']&quot;</span></span>
+
+  <span class="lead-duration duration">0.191</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">the response time should not be longer than <span class="argument">5000</span> ms</span>
 
   <span class="lead-duration duration">0.000</span>
 

@@ -74,7 +74,7 @@ $(document).ready(function() {
   <tbody>
     <tr class="info">
       <td>Cucumber Audit</td>
-      <td>24 Jun 2020, 08:02</td>
+      <td>24 Jun 2020, 16:23</td>
     </tr>
   </tbody>
 </table>
@@ -138,7 +138,7 @@ $(document).ready(function() {
           <td  class="failed"    >1</td>
           <td class="total">2</td>
 
-          <td class="duration" data-value="922000000">0.922</td>
+          <td class="duration" data-value="842000000">0.842</td>
           <td class="failed">Failed</td>
         </tr>
         </tbody>
@@ -189,7 +189,7 @@ $(document).ready(function() {
 </div>
 
 
-  <span class="lead-duration duration">0.020</span>
+  <span class="lead-duration duration">0.012</span>
 
 
   <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-1">
@@ -259,7 +259,7 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">traffic matching <span class="argument">&quot;https?://localhost.:8000.*&quot;</span> is allowed</span>
 
-  <span class="lead-duration duration">0.001</span>
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 
@@ -286,7 +286,7 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">app running on <span class="argument">&quot;http://localhost.:8000/consumer/&quot;</span> has already started</span>
 
-  <span class="lead-duration duration">0.019</span>
+  <span class="lead-duration duration">0.012</span>
 
 </div>
 
@@ -322,11 +322,11 @@ $(document).ready(function() {
 
 <div class="tags indention">
     <b>Tags:</b>
-       <a href="report-tag_3758974180.html">@Tampering</a>
+       <a href="report-tag_2122853336.html">@InformationDisclosure</a>
 </div>
 
 
-  <span class="lead-duration duration">0.026</span>
+  <span class="lead-duration duration">0.000</span>
 
 
   <span data-toggle="collapse" class=" collapsable-control" data-target="#element-3">
@@ -340,9 +340,8 @@ $(document).ready(function() {
 </div>
 
   </span>
-  <div class="description indention">  HTTP communication is unencrypted and thus prone to altering via Man-in-The-Middle Attacks.
-  HTTPS is recommended so it prevents confidential data eavesdropping (such as passwords in requests)
-  and response altering.</div>
+  <div class="description indention">  HTTP communication is unencrypted and thus prone to eavesdropping via Man-in-The-Middle Attacks.
+  HTTPS is recommended for safe exchange of confidential information such as passwords or tokens.</div>
 
   <div id="element-3" class="collapse collapsable-details  in ">
 
@@ -403,7 +402,7 @@ $(document).ready(function() {
   <span class="keyword indention">When</span>
   <span class="name">I connect to <span class="argument">&quot;http://localhost.:8000/accounts/login&quot;</span></span>
 
-  <span class="lead-duration duration">0.001</span>
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 
@@ -430,7 +429,7 @@ $(document).ready(function() {
   <span class="keyword indention">Then</span>
   <span class="name">the connection should be secure</span>
 
-  <span class="lead-duration duration">0.025</span>
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 
@@ -453,7 +452,7 @@ to be an instance of:
 but was instance of:
   &lt;sun.net.www.protocol.http.HttpURLConnection&gt;
 	at io.github.multicatch.cucumber.audit.ProtocolInspectionStepDefs$2.accept(ProtocolInspectionStepDefs.kt:22)
-	at &#10045;.the connection should be secure(classpath:io/github/multicatch/cucumber/audit/Authentication_Request.feature:15)
+	at &#10045;.the connection should be secure(classpath:io/github/multicatch/cucumber/audit/Authentication_Request.feature:14)
 </pre>
       </div>
     </div>
@@ -488,7 +487,7 @@ but was instance of:
 </div>
 
 
-  <span class="lead-duration duration">0.013</span>
+  <span class="lead-duration duration">0.012</span>
 
 
   <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-7">
@@ -558,7 +557,7 @@ but was instance of:
   <span class="keyword indention">And</span>
   <span class="name">traffic matching <span class="argument">&quot;https?://localhost.:8000.*&quot;</span> is allowed</span>
 
-  <span class="lead-duration duration">0.001</span>
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 
@@ -625,7 +624,7 @@ but was instance of:
 </div>
 
 
-  <span class="lead-duration duration">0.863</span>
+  <span class="lead-duration duration">0.818</span>
 
 
   <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-9">
@@ -639,7 +638,9 @@ but was instance of:
 </div>
 
   </span>
-  <div class="description indention">  An attacker can prepare a link that automatically authorizes the application without any user action.</div>
+  <div class="description indention">  An authorization granted to the application should not be a stateless mechanism.
+  An attacker can prepare a link that automatically authorizes the application without any user action.
+  The authorization should only be valid when done by the user.</div>
 
   <div id="element-9" class="collapse collapsable-details ">
 
@@ -700,7 +701,7 @@ but was instance of:
   <span class="keyword indention">Given</span>
   <span class="name">I go to <span class="argument">&quot;http://localhost.:8000/consumer&quot;</span></span>
 
-  <span class="lead-duration duration">0.235</span>
+  <span class="lead-duration duration">0.205</span>
 
 </div>
 
@@ -727,7 +728,7 @@ but was instance of:
   <span class="keyword indention">And</span>
   <span class="name">I click on <span class="argument">&quot;a.btn-primary&quot;</span></span>
 
-  <span class="lead-duration duration">0.199</span>
+  <span class="lead-duration duration">0.221</span>
 
 </div>
 
@@ -754,7 +755,7 @@ but was instance of:
   <span class="keyword indention">And</span>
   <span class="name">I enter <span class="argument">&quot;demo&quot;</span> into a field selected by <span class="argument">&quot;#id_username&quot;</span></span>
 
-  <span class="lead-duration duration">0.052</span>
+  <span class="lead-duration duration">0.046</span>
 
 </div>
 
@@ -781,7 +782,7 @@ but was instance of:
   <span class="keyword indention">And</span>
   <span class="name">I enter <span class="argument">&quot;easypassword&quot;</span> into a field selected by <span class="argument">&quot;#id_password&quot;</span></span>
 
-  <span class="lead-duration duration">0.039</span>
+  <span class="lead-duration duration">0.028</span>
 
 </div>
 
@@ -808,7 +809,7 @@ but was instance of:
   <span class="keyword indention">And</span>
   <span class="name">I click on <span class="argument">&quot;input[type=submit]&quot;</span></span>
 
-  <span class="lead-duration duration">0.216</span>
+  <span class="lead-duration duration">0.212</span>
 
 </div>
 
@@ -943,7 +944,7 @@ but was instance of:
   <span class="keyword indention">And</span>
   <span class="name">I make a request to <span class="argument">&quot;http://localhost.:8000/oauth2/authorize/?response_type=code&amp;state=4564382&amp;client_id=Qv6vn7hxGGNyGuLxOU7DHtvPAykevYe1fKwy0eEP&quot;</span></span>
 
-  <span class="lead-duration duration">0.108</span>
+  <span class="lead-duration duration">0.099</span>
 
 </div>
 
@@ -970,7 +971,7 @@ but was instance of:
   <span class="keyword indention">Then</span>
   <span class="name">the response code should be <span class="argument">403</span></span>
 
-  <span class="lead-duration duration">0.014</span>
+  <span class="lead-duration duration">0.007</span>
 
 </div>
 
