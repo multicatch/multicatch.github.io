@@ -74,7 +74,7 @@ $(document).ready(function() {
   <tbody>
     <tr class="info">
       <td>Cucumber Audit</td>
-      <td>21 Jun 2020, 16:12</td>
+      <td>24 Jun 2020, 17:16</td>
     </tr>
   </tbody>
 </table>
@@ -138,7 +138,7 @@ $(document).ready(function() {
           <td >0</td>
           <td class="total">5</td>
 
-          <td class="duration" data-value="2221000000">2.221</td>
+          <td class="duration" data-value="2330000000">2.330</td>
           <td class="passed">Passed</td>
         </tr>
         </tbody>
@@ -189,7 +189,7 @@ $(document).ready(function() {
 </div>
 
 
-  <span class="lead-duration duration">0.009</span>
+  <span class="lead-duration duration">0.018</span>
 
 
   <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-1">
@@ -259,7 +259,7 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">traffic matching <span class="argument">&quot;https?://localhost.:8000.*&quot;</span> is allowed</span>
 
-  <span class="lead-duration duration">0.001</span>
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 
@@ -284,9 +284,9 @@ $(document).ready(function() {
 
 <div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
-  <span class="name">app under <span class="argument">&quot;http://localhost.:8000/consumer/&quot;</span> has already started</span>
+  <span class="name">app running on <span class="argument">&quot;http://localhost.:8000/consumer/&quot;</span> has already started</span>
 
-  <span class="lead-duration duration">0.008</span>
+  <span class="lead-duration duration">0.018</span>
 
 </div>
 
@@ -326,22 +326,22 @@ $(document).ready(function() {
 </div>
 
 
-  <span class="lead-duration duration">0.527</span>
+  <span class="lead-duration duration">0.457</span>
 
 
   <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-3">
 
 <div class="brief passed">
   <span class="keyword indention">Scenario</span>
-  <span class="name">Known Database Vulnerabilities Disclosure</span>
+  <span class="name">Exploitation of Database Management System Information</span>
 
 
      <i class="chevron fa fa-fw"></i>
 </div>
 
   </span>
-  <div class="description indention">  Unhandled database errors may lead to disclosure about database system version.
-  This may be used to prepare an attack that uses known system vulnerabilities.</div>
+  <div class="description indention">  Unhandled database errors may lead to disclosure about database system version. This may be used to prepare
+  an attack that uses known system vulnerabilities and characteristics of used DBMS.</div>
 
   <div id="element-3" class="collapse collapsable-details ">
 
@@ -402,7 +402,7 @@ $(document).ready(function() {
   <span class="keyword indention">Given</span>
   <span class="name">I am on <span class="argument">&quot;http://localhost.:8000/accounts/login&quot;</span></span>
 
-  <span class="lead-duration duration">0.138</span>
+  <span class="lead-duration duration">0.137</span>
 
 </div>
 
@@ -456,7 +456,7 @@ $(document).ready(function() {
   <span class="keyword indention">When</span>
   <span class="name">I enter <span class="argument">&quot;' UNKNOWN SYNTAX; -- .&quot;</span> into a field selected by <span class="argument">&quot;input[name='username']&quot;</span></span>
 
-  <span class="lead-duration duration">0.050</span>
+  <span class="lead-duration duration">0.053</span>
 
 </div>
 
@@ -483,7 +483,7 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">I enter <span class="argument">&quot;' UNKNOWN SYNTAX; -- .&quot;</span> into a field selected by <span class="argument">&quot;input[name='password']&quot;</span></span>
 
-  <span class="lead-duration duration">0.039</span>
+  <span class="lead-duration duration">0.041</span>
 
 </div>
 
@@ -510,7 +510,7 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">I click on <span class="argument">&quot;form input[type='submit']&quot;</span></span>
 
-  <span class="lead-duration duration">0.298</span>
+  <span class="lead-duration duration">0.225</span>
 
 </div>
 
@@ -618,6 +618,33 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">the response should not contain <span class="argument">&quot;Traceback&quot;</span></span>
 
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">the response should not match <span class="argument">&quot;.*[a-zA-Z0-9.]+:[0-9]+\).*&quot;</span></span>
+
   <span class="lead-duration duration">0.001</span>
 
 </div>
@@ -643,7 +670,7 @@ $(document).ready(function() {
 
 <div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
-  <span class="name">the response should not match <span class="argument">&quot;[a-zA-Z0-9.]+:[0-9]+\)&quot;</span></span>
+  <span class="name">the response should not match <span class="argument">&quot;(?i).*line [0-9]+.*&quot;</span></span>
 
   <span class="lead-duration duration">0.000</span>
 
@@ -670,34 +697,7 @@ $(document).ready(function() {
 
 <div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
-  <span class="name">the response should not match <span class="argument">&quot;(?i)line [0-9]+&quot;</span></span>
-
-  <span class="lead-duration duration">0.001</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-And passed">
-  <span class="keyword indention">And</span>
-  <span class="name">the response should not match <span class="argument">&quot;(?i)debug&quot;</span></span>
+  <span class="name">the response should not match <span class="argument">&quot;(?i).*debug.*&quot;</span></span>
 
   <span class="lead-duration duration">0.000</span>
 
@@ -737,7 +737,7 @@ $(document).ready(function() {
 </div>
 
 
-  <span class="lead-duration duration">0.009</span>
+  <span class="lead-duration duration">0.019</span>
 
 
   <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-6">
@@ -780,7 +780,7 @@ $(document).ready(function() {
   <span class="keyword indention">Given</span>
   <span class="name">only whitelisted traffic is allowed</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.001</span>
 
 </div>
 
@@ -832,9 +832,9 @@ $(document).ready(function() {
 
 <div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
-  <span class="name">app under <span class="argument">&quot;http://localhost.:8000/consumer/&quot;</span> has already started</span>
+  <span class="name">app running on <span class="argument">&quot;http://localhost.:8000/consumer/&quot;</span> has already started</span>
 
-  <span class="lead-duration duration">0.009</span>
+  <span class="lead-duration duration">0.018</span>
 
 </div>
 
@@ -870,26 +870,26 @@ $(document).ready(function() {
 
 <div class="tags indention">
     <b>Tags:</b>
-       <a href="report-tag_3758974180.html">@Tampering</a>
+       <a href="report-tag_2122853336.html">@InformationDisclosure</a>
 </div>
 
 
-  <span class="lead-duration duration">0.457</span>
+  <span class="lead-duration duration">0.424</span>
 
 
   <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-8">
 
 <div class="brief passed">
   <span class="keyword indention">Scenario Outline</span>
-  <span class="name">Unsafe Query Handling</span>
+  <span class="name">Stealing Information From Database</span>
 
 
      <i class="chevron fa fa-fw"></i>
 </div>
 
   </span>
-  <div class="description indention">  Creation of database queries by simply inserting parameters into a string pattern is an SQL Injection
-  vulnerability. An attacker can use form submit to access or alter information present in the database.</div>
+  <div class="description indention">  If the SQL Queries are creates by simple concatenation, there is a risk that an attacker could inject
+  a malicious code into said queries. This SQL Injection can be used to obtain</div>
 
   <div id="element-8" class="collapse collapsable-details ">
 
@@ -950,7 +950,7 @@ $(document).ready(function() {
   <span class="keyword indention">Given</span>
   <span class="name">I am on <span class="argument">&quot;http://localhost.:8000/accounts/login&quot;</span></span>
 
-  <span class="lead-duration duration">0.153</span>
+  <span class="lead-duration duration">0.116</span>
 
 </div>
 
@@ -1004,7 +1004,7 @@ $(document).ready(function() {
   <span class="keyword indention">When</span>
   <span class="name">I enter <span class="argument">&quot;' OR sleep(5000) -- .&quot;</span> into a field selected by <span class="argument">&quot;input[name='username']&quot;</span></span>
 
-  <span class="lead-duration duration">0.063</span>
+  <span class="lead-duration duration">0.057</span>
 
 </div>
 
@@ -1031,7 +1031,7 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">I enter <span class="argument">&quot;' OR sleep(5000) -- .&quot;</span> into a field selected by <span class="argument">&quot;input[name='password']&quot;</span></span>
 
-  <span class="lead-duration duration">0.036</span>
+  <span class="lead-duration duration">0.034</span>
 
 </div>
 
@@ -1058,7 +1058,7 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">I click on <span class="argument">&quot;form input[type='submit']&quot;</span></span>
 
-  <span class="lead-duration duration">0.204</span>
+  <span class="lead-duration duration">0.216</span>
 
 </div>
 
@@ -1123,7 +1123,7 @@ $(document).ready(function() {
 </div>
 
 
-  <span class="lead-duration duration">0.010</span>
+  <span class="lead-duration duration">0.015</span>
 
 
   <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-11">
@@ -1218,9 +1218,9 @@ $(document).ready(function() {
 
 <div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
-  <span class="name">app under <span class="argument">&quot;http://localhost.:8000/consumer/&quot;</span> has already started</span>
+  <span class="name">app running on <span class="argument">&quot;http://localhost.:8000/consumer/&quot;</span> has already started</span>
 
-  <span class="lead-duration duration">0.010</span>
+  <span class="lead-duration duration">0.015</span>
 
 </div>
 
@@ -1256,26 +1256,26 @@ $(document).ready(function() {
 
 <div class="tags indention">
     <b>Tags:</b>
-       <a href="report-tag_3758974180.html">@Tampering</a>
+       <a href="report-tag_2122853336.html">@InformationDisclosure</a>
 </div>
 
 
-  <span class="lead-duration duration">0.386</span>
+  <span class="lead-duration duration">0.446</span>
 
 
   <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-13">
 
 <div class="brief passed">
   <span class="keyword indention">Scenario Outline</span>
-  <span class="name">Unsafe Query Handling</span>
+  <span class="name">Stealing Information From Database</span>
 
 
      <i class="chevron fa fa-fw"></i>
 </div>
 
   </span>
-  <div class="description indention">  Creation of database queries by simply inserting parameters into a string pattern is an SQL Injection
-  vulnerability. An attacker can use form submit to access or alter information present in the database.</div>
+  <div class="description indention">  If the SQL Queries are creates by simple concatenation, there is a risk that an attacker could inject
+  a malicious code into said queries. This SQL Injection can be used to obtain</div>
 
   <div id="element-13" class="collapse collapsable-details ">
 
@@ -1336,7 +1336,7 @@ $(document).ready(function() {
   <span class="keyword indention">Given</span>
   <span class="name">I am on <span class="argument">&quot;http://localhost.:8000/accounts/login&quot;</span></span>
 
-  <span class="lead-duration duration">0.100</span>
+  <span class="lead-duration duration">0.132</span>
 
 </div>
 
@@ -1390,7 +1390,7 @@ $(document).ready(function() {
   <span class="keyword indention">When</span>
   <span class="name">I enter <span class="argument">&quot;' || dbms_pipe.receive_message(('a'), 5) -- .&quot;</span> into a field selected by <span class="argument">&quot;input[name='username']&quot;</span></span>
 
-  <span class="lead-duration duration">0.049</span>
+  <span class="lead-duration duration">0.057</span>
 
 </div>
 
@@ -1417,7 +1417,7 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">I enter <span class="argument">&quot;' || dbms_pipe.receive_message(('a'), 5) -- .&quot;</span> into a field selected by <span class="argument">&quot;input[name='password']&quot;</span></span>
 
-  <span class="lead-duration duration">0.034</span>
+  <span class="lead-duration duration">0.045</span>
 
 </div>
 
@@ -1444,7 +1444,7 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">I click on <span class="argument">&quot;form input[type='submit']&quot;</span></span>
 
-  <span class="lead-duration duration">0.203</span>
+  <span class="lead-duration duration">0.212</span>
 
 </div>
 
@@ -1509,7 +1509,7 @@ $(document).ready(function() {
 </div>
 
 
-  <span class="lead-duration duration">0.009</span>
+  <span class="lead-duration duration">0.031</span>
 
 
   <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-16">
@@ -1552,7 +1552,7 @@ $(document).ready(function() {
   <span class="keyword indention">Given</span>
   <span class="name">only whitelisted traffic is allowed</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.001</span>
 
 </div>
 
@@ -1604,9 +1604,9 @@ $(document).ready(function() {
 
 <div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
-  <span class="name">app under <span class="argument">&quot;http://localhost.:8000/consumer/&quot;</span> has already started</span>
+  <span class="name">app running on <span class="argument">&quot;http://localhost.:8000/consumer/&quot;</span> has already started</span>
 
-  <span class="lead-duration duration">0.009</span>
+  <span class="lead-duration duration">0.030</span>
 
 </div>
 
@@ -1642,26 +1642,26 @@ $(document).ready(function() {
 
 <div class="tags indention">
     <b>Tags:</b>
-       <a href="report-tag_3758974180.html">@Tampering</a>
+       <a href="report-tag_2122853336.html">@InformationDisclosure</a>
 </div>
 
 
-  <span class="lead-duration duration">0.399</span>
+  <span class="lead-duration duration">0.412</span>
 
 
   <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-18">
 
 <div class="brief passed">
   <span class="keyword indention">Scenario Outline</span>
-  <span class="name">Unsafe Query Handling</span>
+  <span class="name">Stealing Information From Database</span>
 
 
      <i class="chevron fa fa-fw"></i>
 </div>
 
   </span>
-  <div class="description indention">  Creation of database queries by simply inserting parameters into a string pattern is an SQL Injection
-  vulnerability. An attacker can use form submit to access or alter information present in the database.</div>
+  <div class="description indention">  If the SQL Queries are creates by simple concatenation, there is a risk that an attacker could inject
+  a malicious code into said queries. This SQL Injection can be used to obtain</div>
 
   <div id="element-18" class="collapse collapsable-details ">
 
@@ -1722,7 +1722,7 @@ $(document).ready(function() {
   <span class="keyword indention">Given</span>
   <span class="name">I am on <span class="argument">&quot;http://localhost.:8000/accounts/login&quot;</span></span>
 
-  <span class="lead-duration duration">0.113</span>
+  <span class="lead-duration duration">0.103</span>
 
 </div>
 
@@ -1776,7 +1776,7 @@ $(document).ready(function() {
   <span class="keyword indention">When</span>
   <span class="name">I enter <span class="argument">&quot;' OR pg_sleep(5) -- .&quot;</span> into a field selected by <span class="argument">&quot;input[name='username']&quot;</span></span>
 
-  <span class="lead-duration duration">0.047</span>
+  <span class="lead-duration duration">0.049</span>
 
 </div>
 
@@ -1803,7 +1803,7 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">I enter <span class="argument">&quot;' OR pg_sleep(5) -- .&quot;</span> into a field selected by <span class="argument">&quot;input[name='password']&quot;</span></span>
 
-  <span class="lead-duration duration">0.031</span>
+  <span class="lead-duration duration">0.035</span>
 
 </div>
 
@@ -1830,7 +1830,7 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">I click on <span class="argument">&quot;form input[type='submit']&quot;</span></span>
 
-  <span class="lead-duration duration">0.208</span>
+  <span class="lead-duration duration">0.225</span>
 
 </div>
 
@@ -1895,7 +1895,7 @@ $(document).ready(function() {
 </div>
 
 
-  <span class="lead-duration duration">0.012</span>
+  <span class="lead-duration duration">0.023</span>
 
 
   <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-21">
@@ -1990,9 +1990,9 @@ $(document).ready(function() {
 
 <div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
-  <span class="name">app under <span class="argument">&quot;http://localhost.:8000/consumer/&quot;</span> has already started</span>
+  <span class="name">app running on <span class="argument">&quot;http://localhost.:8000/consumer/&quot;</span> has already started</span>
 
-  <span class="lead-duration duration">0.012</span>
+  <span class="lead-duration duration">0.023</span>
 
 </div>
 
@@ -2028,26 +2028,26 @@ $(document).ready(function() {
 
 <div class="tags indention">
     <b>Tags:</b>
-       <a href="report-tag_3758974180.html">@Tampering</a>
+       <a href="report-tag_2122853336.html">@InformationDisclosure</a>
 </div>
 
 
-  <span class="lead-duration duration">0.403</span>
+  <span class="lead-duration duration">0.485</span>
 
 
   <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-23">
 
 <div class="brief passed">
   <span class="keyword indention">Scenario Outline</span>
-  <span class="name">Unsafe Query Handling</span>
+  <span class="name">Stealing Information From Database</span>
 
 
      <i class="chevron fa fa-fw"></i>
 </div>
 
   </span>
-  <div class="description indention">  Creation of database queries by simply inserting parameters into a string pattern is an SQL Injection
-  vulnerability. An attacker can use form submit to access or alter information present in the database.</div>
+  <div class="description indention">  If the SQL Queries are creates by simple concatenation, there is a risk that an attacker could inject
+  a malicious code into said queries. This SQL Injection can be used to obtain</div>
 
   <div id="element-23" class="collapse collapsable-details ">
 
@@ -2071,7 +2071,7 @@ $(document).ready(function() {
             <span class="keyword indention">Before</span>
               <span class="location name">io.github.multicatch.cucumber.audit.NavigationStepDefs.&lt;init&gt;(NavigationStepDefs.kt:14)</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.001</span>
 
           </div>
 
@@ -2108,7 +2108,7 @@ $(document).ready(function() {
   <span class="keyword indention">Given</span>
   <span class="name">I am on <span class="argument">&quot;http://localhost.:8000/accounts/login&quot;</span></span>
 
-  <span class="lead-duration duration">0.112</span>
+  <span class="lead-duration duration">0.149</span>
 
 </div>
 
@@ -2162,7 +2162,7 @@ $(document).ready(function() {
   <span class="keyword indention">When</span>
   <span class="name">I enter <span class="argument">&quot;' OR WAITFOR DELAY '0:0:05' -- .&quot;</span> into a field selected by <span class="argument">&quot;input[name='username']&quot;</span></span>
 
-  <span class="lead-duration duration">0.050</span>
+  <span class="lead-duration duration">0.074</span>
 
 </div>
 
@@ -2189,7 +2189,7 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">I enter <span class="argument">&quot;' OR WAITFOR DELAY '0:0:05' -- .&quot;</span> into a field selected by <span class="argument">&quot;input[name='password']&quot;</span></span>
 
-  <span class="lead-duration duration">0.035</span>
+  <span class="lead-duration duration">0.043</span>
 
 </div>
 
@@ -2216,7 +2216,7 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">I click on <span class="argument">&quot;form input[type='submit']&quot;</span></span>
 
-  <span class="lead-duration duration">0.205</span>
+  <span class="lead-duration duration">0.219</span>
 
 </div>
 
@@ -2243,7 +2243,7 @@ $(document).ready(function() {
   <span class="keyword indention">Then</span>
   <span class="name">the response time should not be longer than <span class="argument">5000</span> ms</span>
 
-  <span class="lead-duration duration">0.001</span>
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 
