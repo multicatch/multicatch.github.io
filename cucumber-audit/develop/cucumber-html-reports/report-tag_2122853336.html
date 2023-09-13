@@ -74,7 +74,7 @@ $(document).ready(function() {
   <tbody>
     <tr class="info">
       <td>Cucumber Audit</td>
-      <td>22 Apr 2021, 08:12</td>
+      <td>13 Sep 2023, 09:33</td>
     </tr>
   </tbody>
 </table>
@@ -127,18 +127,18 @@ $(document).ready(function() {
         <tbody>
         <tr>
           <td class="tagname">@InformationDisclosure</td>
-          <td      class="passed"    >63</td>
-          <td      class="failed"    >4</td>
-          <td     class="skipped"   >1</td>
+          <td      class="passed"    >67</td>
+          <td      class="failed"    >1</td>
+          <td >0</td>
           <td >0</td>
           <td >0</td>
           <td class="total">68</td>
 
-          <td  class="passed"    >9</td>
-          <td  class="failed"    >4</td>
+          <td  class="passed"    >12</td>
+          <td  class="failed"    >1</td>
           <td class="total">13</td>
 
-          <td class="duration" data-value="2846389000">2.846</td>
+          <td class="duration" data-value="3217522347">3.217</td>
           <td class="failed">Failed</td>
         </tr>
         </tbody>
@@ -181,12 +181,12 @@ $(document).ready(function() {
 </div>
 
 
-  <span class="lead-duration duration">0.131</span>
+  <span class="lead-duration duration">0.155</span>
 
 
-  <span data-toggle="collapse" class=" collapsable-control" data-target="#element-1">
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-1">
 
-<div class="brief failed">
+<div class="brief passed">
   <span class="keyword indention">Scenario</span>
   <span class="name">Exploitation of System Software Information In Headers</span>
 
@@ -199,7 +199,7 @@ $(document).ready(function() {
   a particular version. The &quot;Server&quot; and &quot;X-Powered-By&quot; headers provide information about technology that
   is used on the server side. Disabling them makes it more difficult to exploit the server software.</div>
 
-  <div id="element-1" class="collapse collapsable-details  in ">
+  <div id="element-1" class="collapse collapsable-details ">
 
 
   <div class="inner-level hooks-element-before">
@@ -238,9 +238,9 @@ $(document).ready(function() {
 
 
 <div class="steps inner-level">
-  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-3">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-3">
 
-<div class="brief failed">
+<div class="brief passed">
   <span class="keyword indention">Steps</span>
   <span class="name"></span>
 
@@ -250,7 +250,7 @@ $(document).ready(function() {
 
   </div>
 
-  <div id="steps-3" class="inner-level collapse collapsable-details  in ">
+  <div id="steps-3" class="inner-level collapse collapsable-details ">
       <div class="step">
 
 
@@ -285,7 +285,7 @@ $(document).ready(function() {
   <span class="keyword indention">When</span>
   <span class="name">I go to <span class="argument">&quot;http://localhost.:8000/accounts/login&quot;</span></span>
 
-  <span class="lead-duration duration">0.130</span>
+  <span class="lead-duration duration">0.153</span>
 
 </div>
 
@@ -308,11 +308,11 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-Then failed">
+<div class="brief step-name-Then passed">
   <span class="keyword indention">Then</span>
   <span class="name">the <span class="argument">&quot;Server&quot;</span> response header should not contain numbers</span>
 
-  <span class="lead-duration duration">0.001</span>
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 
@@ -320,25 +320,6 @@ $(document).ready(function() {
 
 
 
-
-  <div class="inner-level">
-    <div class="message indention">
-      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-4">
-          <a>java.lang.AssertionError:</a>
-      </div>
-      <div id="msg-4" class="collapse collapsable-details  in ">
-        <pre>java.lang.AssertionError: 
-Expecting no elements of:
-  &lt;[&quot;WSGIServer/0.2 CPython/3.8.3&quot;]&gt;
-to match given predicate but this element did:
-  &lt;&quot;WSGIServer/0.2 CPython/3.8.3&quot;&gt;
-	at java.base/java.util.Optional.ifPresent(Optional.java:183)
-	at io.github.multicatch.cucumber.audit.ResponseInspectionStepDefs$5.accept(ResponseInspectionStepDefs.kt:65)
-	at &#10045;.the &quot;Server&quot; response header should not contain numbers(classpath:io/github/multicatch/cucumber/audit/Authentication_Page.feature:34)
-</pre>
-      </div>
-    </div>
-  </div>
 
 
 
@@ -354,7 +335,7 @@ to match given predicate but this element did:
       <div class="step">
 
 
-<div class="brief step-name-And skipped">
+<div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
   <span class="name">the <span class="argument">&quot;X-Powered-By&quot;</span> response header should not contain numbers</span>
 
@@ -402,10 +383,10 @@ to match given predicate but this element did:
 </div>
 
 
-  <span class="lead-duration duration">0.320</span>
+  <span class="lead-duration duration">0.083</span>
 
 
-  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-5">
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-4">
 
 <div class="brief passed">
   <span class="keyword indention">Scenario Outline</span>
@@ -420,11 +401,11 @@ to match given predicate but this element did:
   a particular version. The default error pages can contain information about the server software.
   Overriding default error pages makes it more difficult to exploit the server software.</div>
 
-  <div id="element-5" class="collapse collapsable-details ">
+  <div id="element-4" class="collapse collapsable-details ">
 
 
   <div class="inner-level hooks-element-before">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-6">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-5">
 
 <div class="brief passed">
   <span class="keyword indention">Hooks</span>
@@ -436,7 +417,7 @@ to match given predicate but this element did:
 
     </div>
 
-    <div id="before-6" class="inner-level collapse collapsable-details ">
+    <div id="before-5" class="inner-level collapse collapsable-details ">
         <div class="hook">
           <div class="brief passed">
             <span class="keyword indention">Before</span>
@@ -459,7 +440,7 @@ to match given predicate but this element did:
 
 
 <div class="steps inner-level">
-  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-7">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-6">
 
 <div class="brief passed">
   <span class="keyword indention">Steps</span>
@@ -471,7 +452,7 @@ to match given predicate but this element did:
 
   </div>
 
-  <div id="steps-7" class="inner-level collapse collapsable-details ">
+  <div id="steps-6" class="inner-level collapse collapsable-details ">
       <div class="step">
 
 
@@ -479,7 +460,7 @@ to match given predicate but this element did:
   <span class="keyword indention">Given</span>
   <span class="name">the response content is under inspection</span>
 
-  <span class="lead-duration duration">0.002</span>
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 
@@ -506,7 +487,7 @@ to match given predicate but this element did:
   <span class="keyword indention">When</span>
   <span class="name">I go to <span class="argument">&quot;http://localhost.:8000/accounts/login/shouldbenotfound&quot;</span></span>
 
-  <span class="lead-duration duration">0.318</span>
+  <span class="lead-duration duration">0.082</span>
 
 </div>
 
@@ -577,10 +558,10 @@ to match given predicate but this element did:
 </div>
 
 
-  <span class="lead-duration duration">0.047</span>
+  <span class="lead-duration duration">0.061</span>
 
 
-  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-8">
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-7">
 
 <div class="brief passed">
   <span class="keyword indention">Scenario Outline</span>
@@ -595,11 +576,11 @@ to match given predicate but this element did:
   a particular version. The default error pages can contain information about the server software.
   Overriding default error pages makes it more difficult to exploit the server software.</div>
 
-  <div id="element-8" class="collapse collapsable-details ">
+  <div id="element-7" class="collapse collapsable-details ">
 
 
   <div class="inner-level hooks-element-before">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-9">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-8">
 
 <div class="brief passed">
   <span class="keyword indention">Hooks</span>
@@ -611,7 +592,7 @@ to match given predicate but this element did:
 
     </div>
 
-    <div id="before-9" class="inner-level collapse collapsable-details ">
+    <div id="before-8" class="inner-level collapse collapsable-details ">
         <div class="hook">
           <div class="brief passed">
             <span class="keyword indention">Before</span>
@@ -634,7 +615,7 @@ to match given predicate but this element did:
 
 
 <div class="steps inner-level">
-  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-10">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-9">
 
 <div class="brief passed">
   <span class="keyword indention">Steps</span>
@@ -646,7 +627,7 @@ to match given predicate but this element did:
 
   </div>
 
-  <div id="steps-10" class="inner-level collapse collapsable-details ">
+  <div id="steps-9" class="inner-level collapse collapsable-details ">
       <div class="step">
 
 
@@ -681,7 +662,7 @@ to match given predicate but this element did:
   <span class="keyword indention">When</span>
   <span class="name">I go to <span class="argument">&quot;http://localhost.:8000/accounts/login/shouldbenotfound&quot;</span></span>
 
-  <span class="lead-duration duration">0.046</span>
+  <span class="lead-duration duration">0.060</span>
 
 </div>
 
@@ -752,10 +733,10 @@ to match given predicate but this element did:
 </div>
 
 
-  <span class="lead-duration duration">0.040</span>
+  <span class="lead-duration duration">0.126</span>
 
 
-  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-11">
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-10">
 
 <div class="brief passed">
   <span class="keyword indention">Scenario Outline</span>
@@ -770,11 +751,11 @@ to match given predicate but this element did:
   a particular version. The default error pages can contain information about the server software.
   Overriding default error pages makes it more difficult to exploit the server software.</div>
 
-  <div id="element-11" class="collapse collapsable-details ">
+  <div id="element-10" class="collapse collapsable-details ">
 
 
   <div class="inner-level hooks-element-before">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-12">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-11">
 
 <div class="brief passed">
   <span class="keyword indention">Hooks</span>
@@ -786,7 +767,7 @@ to match given predicate but this element did:
 
     </div>
 
-    <div id="before-12" class="inner-level collapse collapsable-details ">
+    <div id="before-11" class="inner-level collapse collapsable-details ">
         <div class="hook">
           <div class="brief passed">
             <span class="keyword indention">Before</span>
@@ -809,7 +790,7 @@ to match given predicate but this element did:
 
 
 <div class="steps inner-level">
-  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-13">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-12">
 
 <div class="brief passed">
   <span class="keyword indention">Steps</span>
@@ -821,7 +802,7 @@ to match given predicate but this element did:
 
   </div>
 
-  <div id="steps-13" class="inner-level collapse collapsable-details ">
+  <div id="steps-12" class="inner-level collapse collapsable-details ">
       <div class="step">
 
 
@@ -856,7 +837,7 @@ to match given predicate but this element did:
   <span class="keyword indention">When</span>
   <span class="name">I go to <span class="argument">&quot;http://localhost.:8000/accounts/login/shouldbenotfound&quot;</span></span>
 
-  <span class="lead-duration duration">0.040</span>
+  <span class="lead-duration duration">0.126</span>
 
 </div>
 
@@ -927,12 +908,12 @@ to match given predicate but this element did:
 </div>
 
 
-  <span class="lead-duration duration">0.044</span>
+  <span class="lead-duration duration">0.085</span>
 
 
-  <span data-toggle="collapse" class=" collapsable-control" data-target="#element-14">
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-13">
 
-<div class="brief failed">
+<div class="brief passed">
   <span class="keyword indention">Scenario Outline</span>
   <span class="name">Exploitation of Sensitive Information on Error Pages</span>
 
@@ -945,11 +926,11 @@ to match given predicate but this element did:
   a particular version. The default error pages can contain information about the server software.
   Overriding default error pages makes it more difficult to exploit the server software.</div>
 
-  <div id="element-14" class="collapse collapsable-details  in ">
+  <div id="element-13" class="collapse collapsable-details ">
 
 
   <div class="inner-level hooks-element-before">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-15">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-14">
 
 <div class="brief passed">
   <span class="keyword indention">Hooks</span>
@@ -961,7 +942,7 @@ to match given predicate but this element did:
 
     </div>
 
-    <div id="before-15" class="inner-level collapse collapsable-details ">
+    <div id="before-14" class="inner-level collapse collapsable-details ">
         <div class="hook">
           <div class="brief passed">
             <span class="keyword indention">Before</span>
@@ -984,9 +965,9 @@ to match given predicate but this element did:
 
 
 <div class="steps inner-level">
-  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-16">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-15">
 
-<div class="brief failed">
+<div class="brief passed">
   <span class="keyword indention">Steps</span>
   <span class="name"></span>
 
@@ -996,7 +977,7 @@ to match given predicate but this element did:
 
   </div>
 
-  <div id="steps-16" class="inner-level collapse collapsable-details  in ">
+  <div id="steps-15" class="inner-level collapse collapsable-details ">
       <div class="step">
 
 
@@ -1031,7 +1012,7 @@ to match given predicate but this element did:
   <span class="keyword indention">When</span>
   <span class="name">I go to <span class="argument">&quot;http://localhost.:8000/accounts/login/shouldbenotfound&quot;</span></span>
 
-  <span class="lead-duration duration">0.044</span>
+  <span class="lead-duration duration">0.085</span>
 
 </div>
 
@@ -1054,7 +1035,7 @@ to match given predicate but this element did:
       <div class="step">
 
 
-<div class="brief step-name-Then failed">
+<div class="brief step-name-Then passed">
   <span class="keyword indention">Then</span>
   <span class="name">the response should not contain <span class="argument">&quot;Django&quot;</span></span>
 
@@ -1066,429 +1047,6 @@ to match given predicate but this element did:
 
 
 
-
-  <div class="inner-level">
-    <div class="message indention">
-      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-17">
-          <a>java.lang.AssertionError:</a>
-      </div>
-      <div id="msg-17" class="collapse collapsable-details  in ">
-        <pre>java.lang.AssertionError: 
-Expecting no elements of:
-  &lt;[&quot;&lt;!DOCTYPE html&gt;
-&lt;html lang=&quot;en&quot;&gt;
-&lt;head&gt;
-  &lt;meta http-equiv=&quot;content-type&quot; content=&quot;text/html; charset=utf-8&quot;&gt;
-  &lt;title&gt;Page not found at /accounts/login/shouldbenotfound&lt;/title&gt;
-  &lt;meta name=&quot;robots&quot; content=&quot;NONE,NOARCHIVE&quot;&gt;
-  &lt;style type=&quot;text/css&quot;&gt;
-    html * { padding:0; margin:0; }
-    body * { padding:10px 20px; }
-    body * * { padding:0; }
-    body { font:small sans-serif; background:#eee; color:#000; }
-    body&gt;div { border-bottom:1px solid #ddd; }
-    h1 { font-weight:normal; margin-bottom:.4em; }
-    h1 span { font-size:60%; color:#666; font-weight:normal; }
-    table { border:none; border-collapse: collapse; width:100%; }
-    td, th { vertical-align:top; padding:2px 3px; }
-    th { width:12em; text-align:right; color:#666; padding-right:.5em; }
-    #info { background:#f6f6f6; }
-    #info ol { margin: 0.5em 4em; }
-    #info ol li { font-family: monospace; }
-    #summary { background: #ffc; }
-    #explanation { background:#eee; border-bottom: 0px none; }
-  &lt;/style&gt;
-&lt;/head&gt;
-&lt;body&gt;
-  &lt;div id=&quot;summary&quot;&gt;
-    &lt;h1&gt;Page not found &lt;span&gt;(404)&lt;/span&gt;&lt;/h1&gt;
-    &lt;table class=&quot;meta&quot;&gt;
-      &lt;tr&gt;
-        &lt;th&gt;Request Method:&lt;/th&gt;
-        &lt;td&gt;GET&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-        &lt;th&gt;Request URL:&lt;/th&gt;
-        &lt;td&gt;http://localhost.:8000/accounts/login/shouldbenotfound&lt;/td&gt;
-      &lt;/tr&gt;
-      
-    &lt;/table&gt;
-  &lt;/div&gt;
-  &lt;div id=&quot;info&quot;&gt;
-    
-      &lt;p&gt;
-      Using the URLconf defined in &lt;code&gt;app.urls&lt;/code&gt;,
-      Django tried these URL patterns, in this order:
-      &lt;/p&gt;
-      &lt;ol&gt;
-        
-          &lt;li&gt;
-            
-                consumer/
-                
-            
-          &lt;/li&gt;
-        
-          &lt;li&gt;
-            
-                admin/
-                
-            
-          &lt;/li&gt;
-        
-          &lt;li&gt;
-            
-                
-                
-            
-                accounts/
-                
-            
-                login/
-                [name='login']
-            
-          &lt;/li&gt;
-        
-          &lt;li&gt;
-            
-                
-                
-            
-                accounts/
-                
-            
-                logout/
-                [name='logout']
-            
-          &lt;/li&gt;
-        
-          &lt;li&gt;
-            
-                
-                
-            
-                accounts/
-                
-            
-                password_change/
-                [name='password_change']
-            
-          &lt;/li&gt;
-        
-          &lt;li&gt;
-            
-                
-                
-            
-                accounts/
-                
-            
-                password_change/done/
-                [name='password_change_done']
-            
-          &lt;/li&gt;
-        
-          &lt;li&gt;
-            
-                
-                
-            
-                accounts/
-                
-            
-                password_reset/
-                [name='password_reset']
-            
-          &lt;/li&gt;
-        
-          &lt;li&gt;
-            
-                
-                
-            
-                accounts/
-                
-            
-                password_reset/done/
-                [name='password_reset_done']
-            
-          &lt;/li&gt;
-        
-          &lt;li&gt;
-            
-                
-                
-            
-                accounts/
-                
-            
-                reset/&amp;lt;uidb64&amp;gt;/&amp;lt;token&amp;gt;/
-                [name='password_reset_confirm']
-            
-          &lt;/li&gt;
-        
-          &lt;li&gt;
-            
-                
-                
-            
-                accounts/
-                
-            
-                reset/done/
-                [name='password_reset_complete']
-            
-          &lt;/li&gt;
-        
-          &lt;li&gt;
-            
-                
-                
-            
-                oauth2/
-                
-            
-          &lt;/li&gt;
-        
-          &lt;li&gt;
-            
-                
-                
-            
-                oauth2/user/
-                
-            
-          &lt;/li&gt;
-        
-      &lt;/ol&gt;
-      &lt;p&gt;
-        
-        The current path, &lt;code&gt;accounts/login/shouldbenotfound&lt;/code&gt;, didn't match any of these.
-      &lt;/p&gt;
-    
-  &lt;/div&gt;
-
-  &lt;div id=&quot;explanation&quot;&gt;
-    &lt;p&gt;
-      You're seeing this error because you have &lt;code&gt;DEBUG = True&lt;/code&gt; in
-      your Django settings file. Change that to &lt;code&gt;False&lt;/code&gt;, and Django
-      will display a standard 404 page.
-    &lt;/p&gt;
-  &lt;/div&gt;
-&lt;/body&gt;
-&lt;/html&gt;
-&quot;]&gt;
-to match given predicate but this element did:
-  &lt;&quot;&lt;!DOCTYPE html&gt;
-&lt;html lang=&quot;en&quot;&gt;
-&lt;head&gt;
-  &lt;meta http-equiv=&quot;content-type&quot; content=&quot;text/html; charset=utf-8&quot;&gt;
-  &lt;title&gt;Page not found at /accounts/login/shouldbenotfound&lt;/title&gt;
-  &lt;meta name=&quot;robots&quot; content=&quot;NONE,NOARCHIVE&quot;&gt;
-  &lt;style type=&quot;text/css&quot;&gt;
-    html * { padding:0; margin:0; }
-    body * { padding:10px 20px; }
-    body * * { padding:0; }
-    body { font:small sans-serif; background:#eee; color:#000; }
-    body&gt;div { border-bottom:1px solid #ddd; }
-    h1 { font-weight:normal; margin-bottom:.4em; }
-    h1 span { font-size:60%; color:#666; font-weight:normal; }
-    table { border:none; border-collapse: collapse; width:100%; }
-    td, th { vertical-align:top; padding:2px 3px; }
-    th { width:12em; text-align:right; color:#666; padding-right:.5em; }
-    #info { background:#f6f6f6; }
-    #info ol { margin: 0.5em 4em; }
-    #info ol li { font-family: monospace; }
-    #summary { background: #ffc; }
-    #explanation { background:#eee; border-bottom: 0px none; }
-  &lt;/style&gt;
-&lt;/head&gt;
-&lt;body&gt;
-  &lt;div id=&quot;summary&quot;&gt;
-    &lt;h1&gt;Page not found &lt;span&gt;(404)&lt;/span&gt;&lt;/h1&gt;
-    &lt;table class=&quot;meta&quot;&gt;
-      &lt;tr&gt;
-        &lt;th&gt;Request Method:&lt;/th&gt;
-        &lt;td&gt;GET&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-        &lt;th&gt;Request URL:&lt;/th&gt;
-        &lt;td&gt;http://localhost.:8000/accounts/login/shouldbenotfound&lt;/td&gt;
-      &lt;/tr&gt;
-      
-    &lt;/table&gt;
-  &lt;/div&gt;
-  &lt;div id=&quot;info&quot;&gt;
-    
-      &lt;p&gt;
-      Using the URLconf defined in &lt;code&gt;app.urls&lt;/code&gt;,
-      Django tried these URL patterns, in this order:
-      &lt;/p&gt;
-      &lt;ol&gt;
-        
-          &lt;li&gt;
-            
-                consumer/
-                
-            
-          &lt;/li&gt;
-        
-          &lt;li&gt;
-            
-                admin/
-                
-            
-          &lt;/li&gt;
-        
-          &lt;li&gt;
-            
-                
-                
-            
-                accounts/
-                
-            
-                login/
-                [name='login']
-            
-          &lt;/li&gt;
-        
-          &lt;li&gt;
-            
-                
-                
-            
-                accounts/
-                
-            
-                logout/
-                [name='logout']
-            
-          &lt;/li&gt;
-        
-          &lt;li&gt;
-            
-                
-                
-            
-                accounts/
-                
-            
-                password_change/
-                [name='password_change']
-            
-          &lt;/li&gt;
-        
-          &lt;li&gt;
-            
-                
-                
-            
-                accounts/
-                
-            
-                password_change/done/
-                [name='password_change_done']
-            
-          &lt;/li&gt;
-        
-          &lt;li&gt;
-            
-                
-                
-            
-                accounts/
-                
-            
-                password_reset/
-                [name='password_reset']
-            
-          &lt;/li&gt;
-        
-          &lt;li&gt;
-            
-                
-                
-            
-                accounts/
-                
-            
-                password_reset/done/
-                [name='password_reset_done']
-            
-          &lt;/li&gt;
-        
-          &lt;li&gt;
-            
-                
-                
-            
-                accounts/
-                
-            
-                reset/&amp;lt;uidb64&amp;gt;/&amp;lt;token&amp;gt;/
-                [name='password_reset_confirm']
-            
-          &lt;/li&gt;
-        
-          &lt;li&gt;
-            
-                
-                
-            
-                accounts/
-                
-            
-                reset/done/
-                [name='password_reset_complete']
-            
-          &lt;/li&gt;
-        
-          &lt;li&gt;
-            
-                
-                
-            
-                oauth2/
-                
-            
-          &lt;/li&gt;
-        
-          &lt;li&gt;
-            
-                
-                
-            
-                oauth2/user/
-                
-            
-          &lt;/li&gt;
-        
-      &lt;/ol&gt;
-      &lt;p&gt;
-        
-        The current path, &lt;code&gt;accounts/login/shouldbenotfound&lt;/code&gt;, didn't match any of these.
-      &lt;/p&gt;
-    
-  &lt;/div&gt;
-
-  &lt;div id=&quot;explanation&quot;&gt;
-    &lt;p&gt;
-      You're seeing this error because you have &lt;code&gt;DEBUG = True&lt;/code&gt; in
-      your Django settings file. Change that to &lt;code&gt;False&lt;/code&gt;, and Django
-      will display a standard 404 page.
-    &lt;/p&gt;
-  &lt;/div&gt;
-&lt;/body&gt;
-&lt;/html&gt;
-&quot;&gt;
-	at java.base/java.util.Optional.ifPresent(Optional.java:183)
-	at io.github.multicatch.cucumber.audit.ResponseInspectionStepDefs$8.accept(ResponseInspectionStepDefs.kt:108)
-	at &#10045;.the response should not contain &quot;Django&quot;(classpath:io/github/multicatch/cucumber/audit/Authentication_Page.feature:45)
-</pre>
-      </div>
-    </div>
-  </div>
 
 
 
@@ -1525,10 +1083,10 @@ to match given predicate but this element did:
 </div>
 
 
-  <span class="lead-duration duration">0.050</span>
+  <span class="lead-duration duration">0.037</span>
 
 
-  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-18">
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-16">
 
 <div class="brief passed">
   <span class="keyword indention">Scenario Outline</span>
@@ -1543,11 +1101,11 @@ to match given predicate but this element did:
   a particular version. The default error pages can contain information about the server software.
   Overriding default error pages makes it more difficult to exploit the server software.</div>
 
-  <div id="element-18" class="collapse collapsable-details ">
+  <div id="element-16" class="collapse collapsable-details ">
 
 
   <div class="inner-level hooks-element-before">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-19">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-17">
 
 <div class="brief passed">
   <span class="keyword indention">Hooks</span>
@@ -1559,7 +1117,7 @@ to match given predicate but this element did:
 
     </div>
 
-    <div id="before-19" class="inner-level collapse collapsable-details ">
+    <div id="before-17" class="inner-level collapse collapsable-details ">
         <div class="hook">
           <div class="brief passed">
             <span class="keyword indention">Before</span>
@@ -1582,7 +1140,7 @@ to match given predicate but this element did:
 
 
 <div class="steps inner-level">
-  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-20">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-18">
 
 <div class="brief passed">
   <span class="keyword indention">Steps</span>
@@ -1594,7 +1152,7 @@ to match given predicate but this element did:
 
   </div>
 
-  <div id="steps-20" class="inner-level collapse collapsable-details ">
+  <div id="steps-18" class="inner-level collapse collapsable-details ">
       <div class="step">
 
 
@@ -1629,7 +1187,7 @@ to match given predicate but this element did:
   <span class="keyword indention">When</span>
   <span class="name">I go to <span class="argument">&quot;http://localhost.:8000/accounts/login/shouldbenotfound&quot;</span></span>
 
-  <span class="lead-duration duration">0.050</span>
+  <span class="lead-duration duration">0.037</span>
 
 </div>
 
@@ -1700,12 +1258,12 @@ to match given predicate but this element did:
 </div>
 
 
-  <span class="lead-duration duration">0.378</span>
+  <span class="lead-duration duration">0.068</span>
 
 
-  <span data-toggle="collapse" class=" collapsable-control" data-target="#element-21">
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-19">
 
-<div class="brief failed">
+<div class="brief passed">
   <span class="keyword indention">Scenario</span>
   <span class="name">Exploitation of System Architecture Information On Error Pages</span>
 
@@ -1718,11 +1276,11 @@ to match given predicate but this element did:
   disabled when running the software in production. The stack trace may provide information about architecture
   and used libraries that can be used by an attacker to exploit known vulnerabilities.</div>
 
-  <div id="element-21" class="collapse collapsable-details  in ">
+  <div id="element-19" class="collapse collapsable-details ">
 
 
   <div class="inner-level hooks-element-before">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-22">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-20">
 
 <div class="brief passed">
   <span class="keyword indention">Hooks</span>
@@ -1734,7 +1292,7 @@ to match given predicate but this element did:
 
     </div>
 
-    <div id="before-22" class="inner-level collapse collapsable-details ">
+    <div id="before-20" class="inner-level collapse collapsable-details ">
         <div class="hook">
           <div class="brief passed">
             <span class="keyword indention">Before</span>
@@ -1757,9 +1315,9 @@ to match given predicate but this element did:
 
 
 <div class="steps inner-level">
-  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-23">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-21">
 
-<div class="brief failed">
+<div class="brief passed">
   <span class="keyword indention">Steps</span>
   <span class="name"></span>
 
@@ -1769,7 +1327,7 @@ to match given predicate but this element did:
 
   </div>
 
-  <div id="steps-23" class="inner-level collapse collapsable-details  in ">
+  <div id="steps-21" class="inner-level collapse collapsable-details ">
       <div class="step">
 
 
@@ -1885,7 +1443,7 @@ to match given predicate but this element did:
   <span class="keyword indention">And</span>
   <span class="name">I make a request to <span class="argument">&quot;http://localhost.:8000/accounts/login/?error=1283927&quot;</span></span>
 
-  <span class="lead-duration duration">0.375</span>
+  <span class="lead-duration duration">0.067</span>
 
 </div>
 
@@ -1993,7 +1551,7 @@ to match given predicate but this element did:
   <span class="keyword indention">And</span>
   <span class="name">the response should not match <span class="argument">&quot;.*[a-zA-Z0-9.]+:[0-9]+\).*&quot;</span></span>
 
-  <span class="lead-duration duration">0.002</span>
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 
@@ -2043,7 +1601,7 @@ to match given predicate but this element did:
       <div class="step">
 
 
-<div class="brief step-name-And failed">
+<div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
   <span class="name">the response should not match <span class="argument">&quot;(?i).*debug.*&quot;</span></span>
 
@@ -2055,173 +1613,6 @@ to match given predicate but this element did:
 
 
 
-
-  <div class="inner-level">
-    <div class="message indention">
-      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-24">
-          <a>java.lang.AssertionError:</a>
-      </div>
-      <div id="msg-24" class="collapse collapsable-details  in ">
-        <pre>java.lang.AssertionError: 
-Expecting no elements of:
-  &lt;[&quot;
-&lt;!DOCTYPE html&gt;
-&lt;html lang=&quot;en&quot;&gt;
-&lt;head&gt;
-  &lt;meta http-equiv=&quot;content-type&quot; content=&quot;text/html; charset=utf-8&quot;&gt;
-  &lt;meta name=&quot;robots&quot; content=&quot;NONE,NOARCHIVE&quot;&gt;
-  &lt;title&gt;403 Forbidden&lt;/title&gt;
-  &lt;style type=&quot;text/css&quot;&gt;
-    html * { padding:0; margin:0; }
-    body * { padding:10px 20px; }
-    body * * { padding:0; }
-    body { font:small sans-serif; background:#eee; color:#000; }
-    body&gt;div { border-bottom:1px solid #ddd; }
-    h1 { font-weight:normal; margin-bottom:.4em; }
-    h1 span { font-size:60%; color:#666; font-weight:normal; }
-    #info { background:#f6f6f6; }
-    #info ul { margin: 0.5em 4em; }
-    #info p, #summary p { padding-top:10px; }
-    #summary { background: #ffc; }
-    #explanation { background:#eee; border-bottom: 0px none; }
-  &lt;/style&gt;
-&lt;/head&gt;
-&lt;body&gt;
-&lt;div id=&quot;summary&quot;&gt;
-  &lt;h1&gt;Forbidden &lt;span&gt;(403)&lt;/span&gt;&lt;/h1&gt;
-  &lt;p&gt;CSRF verification failed. Request aborted.&lt;/p&gt;
-
-
-&lt;/div&gt;
-
-&lt;div id=&quot;info&quot;&gt;
-  &lt;h2&gt;Help&lt;/h2&gt;
-    
-    &lt;p&gt;Reason given for failure:&lt;/p&gt;
-    &lt;pre&gt;
-    CSRF token missing or incorrect.
-    &lt;/pre&gt;
-    
-
-  &lt;p&gt;In general, this can occur when there is a genuine Cross Site Request Forgery, or when
-  &lt;a
-  href=&quot;https://docs.djangoproject.com/en/3.0/ref/csrf/&quot;&gt;Django's
-  CSRF mechanism&lt;/a&gt; has not been used correctly.  For POST forms, you need to
-  ensure:&lt;/p&gt;
-
-  &lt;ul&gt;
-    &lt;li&gt;Your browser is accepting cookies.&lt;/li&gt;
-
-    &lt;li&gt;The view function passes a &lt;code&gt;request&lt;/code&gt; to the template's &lt;a
-    href=&quot;https://docs.djangoproject.com/en/dev/topics/templates/#django.template.backends.base.Template.render&quot;&gt;&lt;code&gt;render&lt;/code&gt;&lt;/a&gt;
-    method.&lt;/li&gt;
-
-    &lt;li&gt;In the template, there is a &lt;code&gt;{% csrf_token
-    %}&lt;/code&gt; template tag inside each POST form that
-    targets an internal URL.&lt;/li&gt;
-
-    &lt;li&gt;If you are not using &lt;code&gt;CsrfViewMiddleware&lt;/code&gt;, then you must use
-    &lt;code&gt;csrf_protect&lt;/code&gt; on any views that use the &lt;code&gt;csrf_token&lt;/code&gt;
-    template tag, as well as those that accept the POST data.&lt;/li&gt;
-
-    &lt;li&gt;The form has a valid CSRF token. After logging in in another browser
-    tab or hitting the back button after a login, you may need to reload the
-    page with the form, because the token is rotated after a login.&lt;/li&gt;
-  &lt;/ul&gt;
-
-  &lt;p&gt;You're seeing the help section of this page because you have &lt;code&gt;DEBUG =
-  True&lt;/code&gt; in your Django settings file. Change that to &lt;code&gt;False&lt;/code&gt;,
-  and only the initial error message will be displayed.  &lt;/p&gt;
-
-  &lt;p&gt;You can customize this page using the CSRF_FAILURE_VIEW setting.&lt;/p&gt;
-&lt;/div&gt;
-
-&lt;/body&gt;
-&lt;/html&gt;
-&quot;]&gt;
-to match given predicate but this element did:
-  &lt;&quot;
-&lt;!DOCTYPE html&gt;
-&lt;html lang=&quot;en&quot;&gt;
-&lt;head&gt;
-  &lt;meta http-equiv=&quot;content-type&quot; content=&quot;text/html; charset=utf-8&quot;&gt;
-  &lt;meta name=&quot;robots&quot; content=&quot;NONE,NOARCHIVE&quot;&gt;
-  &lt;title&gt;403 Forbidden&lt;/title&gt;
-  &lt;style type=&quot;text/css&quot;&gt;
-    html * { padding:0; margin:0; }
-    body * { padding:10px 20px; }
-    body * * { padding:0; }
-    body { font:small sans-serif; background:#eee; color:#000; }
-    body&gt;div { border-bottom:1px solid #ddd; }
-    h1 { font-weight:normal; margin-bottom:.4em; }
-    h1 span { font-size:60%; color:#666; font-weight:normal; }
-    #info { background:#f6f6f6; }
-    #info ul { margin: 0.5em 4em; }
-    #info p, #summary p { padding-top:10px; }
-    #summary { background: #ffc; }
-    #explanation { background:#eee; border-bottom: 0px none; }
-  &lt;/style&gt;
-&lt;/head&gt;
-&lt;body&gt;
-&lt;div id=&quot;summary&quot;&gt;
-  &lt;h1&gt;Forbidden &lt;span&gt;(403)&lt;/span&gt;&lt;/h1&gt;
-  &lt;p&gt;CSRF verification failed. Request aborted.&lt;/p&gt;
-
-
-&lt;/div&gt;
-
-&lt;div id=&quot;info&quot;&gt;
-  &lt;h2&gt;Help&lt;/h2&gt;
-    
-    &lt;p&gt;Reason given for failure:&lt;/p&gt;
-    &lt;pre&gt;
-    CSRF token missing or incorrect.
-    &lt;/pre&gt;
-    
-
-  &lt;p&gt;In general, this can occur when there is a genuine Cross Site Request Forgery, or when
-  &lt;a
-  href=&quot;https://docs.djangoproject.com/en/3.0/ref/csrf/&quot;&gt;Django's
-  CSRF mechanism&lt;/a&gt; has not been used correctly.  For POST forms, you need to
-  ensure:&lt;/p&gt;
-
-  &lt;ul&gt;
-    &lt;li&gt;Your browser is accepting cookies.&lt;/li&gt;
-
-    &lt;li&gt;The view function passes a &lt;code&gt;request&lt;/code&gt; to the template's &lt;a
-    href=&quot;https://docs.djangoproject.com/en/dev/topics/templates/#django.template.backends.base.Template.render&quot;&gt;&lt;code&gt;render&lt;/code&gt;&lt;/a&gt;
-    method.&lt;/li&gt;
-
-    &lt;li&gt;In the template, there is a &lt;code&gt;{% csrf_token
-    %}&lt;/code&gt; template tag inside each POST form that
-    targets an internal URL.&lt;/li&gt;
-
-    &lt;li&gt;If you are not using &lt;code&gt;CsrfViewMiddleware&lt;/code&gt;, then you must use
-    &lt;code&gt;csrf_protect&lt;/code&gt; on any views that use the &lt;code&gt;csrf_token&lt;/code&gt;
-    template tag, as well as those that accept the POST data.&lt;/li&gt;
-
-    &lt;li&gt;The form has a valid CSRF token. After logging in in another browser
-    tab or hitting the back button after a login, you may need to reload the
-    page with the form, because the token is rotated after a login.&lt;/li&gt;
-  &lt;/ul&gt;
-
-  &lt;p&gt;You're seeing the help section of this page because you have &lt;code&gt;DEBUG =
-  True&lt;/code&gt; in your Django settings file. Change that to &lt;code&gt;False&lt;/code&gt;,
-  and only the initial error message will be displayed.  &lt;/p&gt;
-
-  &lt;p&gt;You can customize this page using the CSRF_FAILURE_VIEW setting.&lt;/p&gt;
-&lt;/div&gt;
-
-&lt;/body&gt;
-&lt;/html&gt;
-&quot;&gt;
-	at java.base/java.util.Optional.ifPresent(Optional.java:183)
-	at io.github.multicatch.cucumber.audit.ResponseInspectionStepDefs$12.accept(ResponseInspectionStepDefs.kt:162)
-	at &#10045;.the response should not match &quot;(?i).*debug.*&quot;(classpath:io/github/multicatch/cucumber/audit/Authentication_Page.feature:71)
-</pre>
-      </div>
-    </div>
-  </div>
 
 
 
@@ -2258,10 +1649,10 @@ to match given predicate but this element did:
 </div>
 
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.001</span>
 
 
-  <span data-toggle="collapse" class=" collapsable-control" data-target="#element-25">
+  <span data-toggle="collapse" class=" collapsable-control" data-target="#element-22">
 
 <div class="brief failed">
   <span class="keyword indention">Scenario</span>
@@ -2275,11 +1666,11 @@ to match given predicate but this element did:
   <div class="description indention">  HTTP communication is unencrypted and thus prone to eavesdropping via Man-in-The-Middle Attacks.
   HTTPS is recommended for safe exchange of confidential information such as passwords or tokens.</div>
 
-  <div id="element-25" class="collapse collapsable-details  in ">
+  <div id="element-22" class="collapse collapsable-details  in ">
 
 
   <div class="inner-level hooks-element-before">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-26">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-23">
 
 <div class="brief passed">
   <span class="keyword indention">Hooks</span>
@@ -2291,7 +1682,7 @@ to match given predicate but this element did:
 
     </div>
 
-    <div id="before-26" class="inner-level collapse collapsable-details ">
+    <div id="before-23" class="inner-level collapse collapsable-details ">
         <div class="hook">
           <div class="brief passed">
             <span class="keyword indention">Before</span>
@@ -2314,7 +1705,7 @@ to match given predicate but this element did:
 
 
 <div class="steps inner-level">
-  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-27">
+  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-24">
 
 <div class="brief failed">
   <span class="keyword indention">Steps</span>
@@ -2326,7 +1717,7 @@ to match given predicate but this element did:
 
   </div>
 
-  <div id="steps-27" class="inner-level collapse collapsable-details  in ">
+  <div id="steps-24" class="inner-level collapse collapsable-details  in ">
       <div class="step">
 
 
@@ -2361,7 +1752,7 @@ to match given predicate but this element did:
   <span class="keyword indention">Then</span>
   <span class="name">the connection should be secure</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.001</span>
 
 </div>
 
@@ -2372,18 +1763,18 @@ to match given predicate but this element did:
 
   <div class="inner-level">
     <div class="message indention">
-      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-28">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-25">
           <a>java.lang.AssertionError:</a>
       </div>
-      <div id="msg-28" class="collapse collapsable-details  in ">
+      <div id="msg-25" class="collapse collapsable-details  in ">
         <pre>java.lang.AssertionError: 
-Expecting:
-  &lt;sun.net.www.protocol.http.HttpURLConnection:http://localhost.:8000/accounts/login&gt;
+Expecting actual:
+  sun.net.www.protocol.http.HttpURLConnection:http://localhost.:8000/accounts/login
 to be an instance of:
-  &lt;javax.net.ssl.HttpsURLConnection&gt;
+  javax.net.ssl.HttpsURLConnection
 but was instance of:
-  &lt;sun.net.www.protocol.http.HttpURLConnection&gt;
-	at io.github.multicatch.cucumber.audit.ProtocolInspectionStepDefs$2.accept(ProtocolInspectionStepDefs.kt:22)
+  sun.net.www.protocol.http.HttpURLConnection
+	at io.github.multicatch.cucumber.audit.ProtocolInspectionStepDefs._init_$lambda$2(ProtocolInspectionStepDefs.kt:22)
 	at &#10045;.the connection should be secure(classpath:io/github/multicatch/cucumber/audit/Authentication_Request.feature:14)
 </pre>
       </div>
@@ -2425,10 +1816,10 @@ but was instance of:
 </div>
 
 
-  <span class="lead-duration duration">0.398</span>
+  <span class="lead-duration duration">0.656</span>
 
 
-  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-29">
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-26">
 
 <div class="brief passed">
   <span class="keyword indention">Scenario</span>
@@ -2442,11 +1833,11 @@ but was instance of:
   <div class="description indention">  Unhandled database errors may lead to disclosure about database system version. This may be used to prepare
   an attack that uses known system vulnerabilities and characteristics of used DBMS.</div>
 
-  <div id="element-29" class="collapse collapsable-details ">
+  <div id="element-26" class="collapse collapsable-details ">
 
 
   <div class="inner-level hooks-element-before">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-30">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-27">
 
 <div class="brief passed">
   <span class="keyword indention">Hooks</span>
@@ -2458,7 +1849,7 @@ but was instance of:
 
     </div>
 
-    <div id="before-30" class="inner-level collapse collapsable-details ">
+    <div id="before-27" class="inner-level collapse collapsable-details ">
         <div class="hook">
           <div class="brief passed">
             <span class="keyword indention">Before</span>
@@ -2481,7 +1872,7 @@ but was instance of:
 
 
 <div class="steps inner-level">
-  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-31">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-28">
 
 <div class="brief passed">
   <span class="keyword indention">Steps</span>
@@ -2493,7 +1884,7 @@ but was instance of:
 
   </div>
 
-  <div id="steps-31" class="inner-level collapse collapsable-details ">
+  <div id="steps-28" class="inner-level collapse collapsable-details ">
       <div class="step">
 
 
@@ -2501,7 +1892,7 @@ but was instance of:
   <span class="keyword indention">Given</span>
   <span class="name">I am on <span class="argument">&quot;http://localhost.:8000/accounts/login&quot;</span></span>
 
-  <span class="lead-duration duration">0.098</span>
+  <span class="lead-duration duration">0.163</span>
 
 </div>
 
@@ -2555,7 +1946,7 @@ but was instance of:
   <span class="keyword indention">When</span>
   <span class="name">I enter <span class="argument">&quot;' UNKNOWN SYNTAX; -- .&quot;</span> into a field selected by <span class="argument">&quot;input[name='username']&quot;</span></span>
 
-  <span class="lead-duration duration">0.028</span>
+  <span class="lead-duration duration">0.099</span>
 
 </div>
 
@@ -2582,7 +1973,7 @@ but was instance of:
   <span class="keyword indention">And</span>
   <span class="name">I enter <span class="argument">&quot;' UNKNOWN SYNTAX; -- .&quot;</span> into a field selected by <span class="argument">&quot;input[name='password']&quot;</span></span>
 
-  <span class="lead-duration duration">0.023</span>
+  <span class="lead-duration duration">0.027</span>
 
 </div>
 
@@ -2609,7 +2000,7 @@ but was instance of:
   <span class="keyword indention">And</span>
   <span class="name">I click on <span class="argument">&quot;form input[type='submit']&quot;</span></span>
 
-  <span class="lead-duration duration">0.246</span>
+  <span class="lead-duration duration">0.364</span>
 
 </div>
 
@@ -2842,7 +2233,262 @@ but was instance of:
 </div>
 
 
-  <span class="lead-duration duration">0.388</span>
+  <span class="lead-duration duration">0.522</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-29">
+
+<div class="brief passed">
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">Stealing Information From Database</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention">  If the SQL Queries are creates by simple concatenation, there is a risk that an attacker could inject
+  a malicious code into said queries. This SQL Injection can be used to obtain</div>
+
+  <div id="element-29" class="collapse collapsable-details ">
+
+
+  <div class="inner-level hooks-element-before">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-30">
+
+<div class="brief passed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+    </div>
+
+    <div id="before-30" class="inner-level collapse collapsable-details ">
+        <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">Before</span>
+              <span class="location name">io.github.multicatch.cucumber.audit.NavigationStepDefs.&lt;init&gt;(NavigationStepDefs.kt:14)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+          </div>
+
+
+
+
+
+
+
+        </div>
+    </div>
+  </div>
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-31">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-31" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">I am on <span class="argument">&quot;http://localhost.:8000/accounts/login&quot;</span></span>
+
+  <span class="lead-duration duration">0.111</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">the response content is under inspection</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">I enter <span class="argument">&quot;' OR sleep(5000) -- .&quot;</span> into a field selected by <span class="argument">&quot;input[name='username']&quot;</span></span>
+
+  <span class="lead-duration duration">0.038</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">I enter <span class="argument">&quot;' OR sleep(5000) -- .&quot;</span> into a field selected by <span class="argument">&quot;input[name='password']&quot;</span></span>
+
+  <span class="lead-duration duration">0.028</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">I click on <span class="argument">&quot;form input[type='submit']&quot;</span></span>
+
+  <span class="lead-duration duration">0.342</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">the response time should not be longer than <span class="argument">5000</span> ms</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+    <div class="indention">
+      <b>Feature:</b>
+      <a href="report-feature_2_2671934457.html">Database Queries Threats</a>
+    </div>
+
+
+<div class="tags indention">
+    <b>Tags:</b>
+       <a href="report-tag_2122853336.html">@InformationDisclosure</a>
+</div>
+
+
+  <span class="lead-duration duration">0.500</span>
 
 
   <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-32">
@@ -2918,7 +2564,7 @@ but was instance of:
   <span class="keyword indention">Given</span>
   <span class="name">I am on <span class="argument">&quot;http://localhost.:8000/accounts/login&quot;</span></span>
 
-  <span class="lead-duration duration">0.104</span>
+  <span class="lead-duration duration">0.130</span>
 
 </div>
 
@@ -2970,9 +2616,9 @@ but was instance of:
 
 <div class="brief step-name-When passed">
   <span class="keyword indention">When</span>
-  <span class="name">I enter <span class="argument">&quot;' OR sleep(5000) -- .&quot;</span> into a field selected by <span class="argument">&quot;input[name='username']&quot;</span></span>
+  <span class="name">I enter <span class="argument">&quot;' || dbms_pipe.receive_message(('a'), 5) -- .&quot;</span> into a field selected by <span class="argument">&quot;input[name='username']&quot;</span></span>
 
-  <span class="lead-duration duration">0.029</span>
+  <span class="lead-duration duration">0.047</span>
 
 </div>
 
@@ -2997,9 +2643,9 @@ but was instance of:
 
 <div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
-  <span class="name">I enter <span class="argument">&quot;' OR sleep(5000) -- .&quot;</span> into a field selected by <span class="argument">&quot;input[name='password']&quot;</span></span>
+  <span class="name">I enter <span class="argument">&quot;' || dbms_pipe.receive_message(('a'), 5) -- .&quot;</span> into a field selected by <span class="argument">&quot;input[name='password']&quot;</span></span>
 
-  <span class="lead-duration duration">0.027</span>
+  <span class="lead-duration duration">0.037</span>
 
 </div>
 
@@ -3026,7 +2672,7 @@ but was instance of:
   <span class="keyword indention">And</span>
   <span class="name">I click on <span class="argument">&quot;form input[type='submit']&quot;</span></span>
 
-  <span class="lead-duration duration">0.225</span>
+  <span class="lead-duration duration">0.284</span>
 
 </div>
 
@@ -3097,7 +2743,7 @@ but was instance of:
 </div>
 
 
-  <span class="lead-duration duration">0.373</span>
+  <span class="lead-duration duration">0.477</span>
 
 
   <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-35">
@@ -3173,7 +2819,7 @@ but was instance of:
   <span class="keyword indention">Given</span>
   <span class="name">I am on <span class="argument">&quot;http://localhost.:8000/accounts/login&quot;</span></span>
 
-  <span class="lead-duration duration">0.096</span>
+  <span class="lead-duration duration">0.120</span>
 
 </div>
 
@@ -3225,7 +2871,34 @@ but was instance of:
 
 <div class="brief step-name-When passed">
   <span class="keyword indention">When</span>
-  <span class="name">I enter <span class="argument">&quot;' || dbms_pipe.receive_message(('a'), 5) -- .&quot;</span> into a field selected by <span class="argument">&quot;input[name='username']&quot;</span></span>
+  <span class="name">I enter <span class="argument">&quot;' OR pg_sleep(5) -- .&quot;</span> into a field selected by <span class="argument">&quot;input[name='username']&quot;</span></span>
+
+  <span class="lead-duration duration">0.059</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">I enter <span class="argument">&quot;' OR pg_sleep(5) -- .&quot;</span> into a field selected by <span class="argument">&quot;input[name='password']&quot;</span></span>
 
   <span class="lead-duration duration">0.030</span>
 
@@ -3252,36 +2925,9 @@ but was instance of:
 
 <div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
-  <span class="name">I enter <span class="argument">&quot;' || dbms_pipe.receive_message(('a'), 5) -- .&quot;</span> into a field selected by <span class="argument">&quot;input[name='password']&quot;</span></span>
-
-  <span class="lead-duration duration">0.031</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-And passed">
-  <span class="keyword indention">And</span>
   <span class="name">I click on <span class="argument">&quot;form input[type='submit']&quot;</span></span>
 
-  <span class="lead-duration duration">0.215</span>
+  <span class="lead-duration duration">0.266</span>
 
 </div>
 
@@ -3352,7 +2998,7 @@ but was instance of:
 </div>
 
 
-  <span class="lead-duration duration">0.326</span>
+  <span class="lead-duration duration">0.439</span>
 
 
   <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-38">
@@ -3428,262 +3074,7 @@ but was instance of:
   <span class="keyword indention">Given</span>
   <span class="name">I am on <span class="argument">&quot;http://localhost.:8000/accounts/login&quot;</span></span>
 
-  <span class="lead-duration duration">0.078</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-And passed">
-  <span class="keyword indention">And</span>
-  <span class="name">the response content is under inspection</span>
-
-  <span class="lead-duration duration">0.000</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-When passed">
-  <span class="keyword indention">When</span>
-  <span class="name">I enter <span class="argument">&quot;' OR pg_sleep(5) -- .&quot;</span> into a field selected by <span class="argument">&quot;input[name='username']&quot;</span></span>
-
-  <span class="lead-duration duration">0.024</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-And passed">
-  <span class="keyword indention">And</span>
-  <span class="name">I enter <span class="argument">&quot;' OR pg_sleep(5) -- .&quot;</span> into a field selected by <span class="argument">&quot;input[name='password']&quot;</span></span>
-
-  <span class="lead-duration duration">0.020</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-And passed">
-  <span class="keyword indention">And</span>
-  <span class="name">I click on <span class="argument">&quot;form input[type='submit']&quot;</span></span>
-
-  <span class="lead-duration duration">0.203</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-Then passed">
-  <span class="keyword indention">Then</span>
-  <span class="name">the response time should not be longer than <span class="argument">5000</span> ms</span>
-
-  <span class="lead-duration duration">0.000</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-  </div>
-</div>
-
-
-
-
-
-  </div>
-</div>
-
-
-<div class="element">
-    <div class="indention">
-      <b>Feature:</b>
-      <a href="report-feature_2_2671934457.html">Database Queries Threats</a>
-    </div>
-
-
-<div class="tags indention">
-    <b>Tags:</b>
-       <a href="report-tag_2122853336.html">@InformationDisclosure</a>
-</div>
-
-
-  <span class="lead-duration duration">0.344</span>
-
-
-  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-41">
-
-<div class="brief passed">
-  <span class="keyword indention">Scenario Outline</span>
-  <span class="name">Stealing Information From Database</span>
-
-
-     <i class="chevron fa fa-fw"></i>
-</div>
-
-  </span>
-  <div class="description indention">  If the SQL Queries are creates by simple concatenation, there is a risk that an attacker could inject
-  a malicious code into said queries. This SQL Injection can be used to obtain</div>
-
-  <div id="element-41" class="collapse collapsable-details ">
-
-
-  <div class="inner-level hooks-element-before">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-42">
-
-<div class="brief passed">
-  <span class="keyword indention">Hooks</span>
-  <span class="name"></span>
-
-
-     <i class="chevron fa fa-fw"></i>
-</div>
-
-    </div>
-
-    <div id="before-42" class="inner-level collapse collapsable-details ">
-        <div class="hook">
-          <div class="brief passed">
-            <span class="keyword indention">Before</span>
-              <span class="location name">io.github.multicatch.cucumber.audit.NavigationStepDefs.&lt;init&gt;(NavigationStepDefs.kt:14)</span>
-
-  <span class="lead-duration duration">0.000</span>
-
-          </div>
-
-
-
-
-
-
-
-        </div>
-    </div>
-  </div>
-
-
-
-<div class="steps inner-level">
-  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-43">
-
-<div class="brief passed">
-  <span class="keyword indention">Steps</span>
-  <span class="name"></span>
-
-
-     <i class="chevron fa fa-fw"></i>
-</div>
-
-  </div>
-
-  <div id="steps-43" class="inner-level collapse collapsable-details ">
-      <div class="step">
-
-
-<div class="brief step-name-Given passed">
-  <span class="keyword indention">Given</span>
-  <span class="name">I am on <span class="argument">&quot;http://localhost.:8000/accounts/login&quot;</span></span>
-
-  <span class="lead-duration duration">0.076</span>
+  <span class="lead-duration duration">0.109</span>
 
 </div>
 
@@ -3737,7 +3128,7 @@ but was instance of:
   <span class="keyword indention">When</span>
   <span class="name">I enter <span class="argument">&quot;' OR WAITFOR DELAY '0:0:05' -- .&quot;</span> into a field selected by <span class="argument">&quot;input[name='username']&quot;</span></span>
 
-  <span class="lead-duration duration">0.024</span>
+  <span class="lead-duration duration">0.038</span>
 
 </div>
 
@@ -3764,7 +3155,7 @@ but was instance of:
   <span class="keyword indention">And</span>
   <span class="name">I enter <span class="argument">&quot;' OR WAITFOR DELAY '0:0:05' -- .&quot;</span> into a field selected by <span class="argument">&quot;input[name='password']&quot;</span></span>
 
-  <span class="lead-duration duration">0.018</span>
+  <span class="lead-duration duration">0.027</span>
 
 </div>
 
@@ -3791,7 +3182,7 @@ but was instance of:
   <span class="keyword indention">And</span>
   <span class="name">I click on <span class="argument">&quot;form input[type='submit']&quot;</span></span>
 
-  <span class="lead-duration duration">0.224</span>
+  <span class="lead-duration duration">0.263</span>
 
 </div>
 

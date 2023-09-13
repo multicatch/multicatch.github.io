@@ -74,7 +74,7 @@ $(document).ready(function() {
   <tbody>
     <tr class="info">
       <td>Cucumber Audit</td>
-      <td>22 Apr 2021, 08:12</td>
+      <td>13 Sep 2023, 09:33</td>
     </tr>
   </tbody>
 </table>
@@ -127,18 +127,18 @@ $(document).ready(function() {
         <tbody>
         <tr>
           <td class="tagname">Authentication Request Threats</td>
-          <td      class="passed"    >18</td>
-          <td      class="failed"    >1</td>
+          <td      class="passed"    >17</td>
+          <td      class="failed"    >2</td>
           <td >0</td>
           <td >0</td>
           <td >0</td>
           <td class="total">19</td>
 
-          <td  class="passed"    >1</td>
-          <td  class="failed"    >1</td>
+          <td >0</td>
+          <td  class="failed"    >2</td>
           <td class="total">2</td>
 
-          <td class="duration" data-value="664780000">0.664</td>
+          <td class="duration" data-value="956778164">0.956</td>
           <td class="failed">Failed</td>
         </tr>
         </tbody>
@@ -189,7 +189,7 @@ $(document).ready(function() {
 </div>
 
 
-  <span class="lead-duration duration">0.016</span>
+  <span class="lead-duration duration">0.011</span>
 
 
   <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-1">
@@ -286,7 +286,7 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">app running on <span class="argument">&quot;http://localhost.:8000/consumer/&quot;</span> has already started</span>
 
-  <span class="lead-duration duration">0.016</span>
+  <span class="lead-duration duration">0.011</span>
 
 </div>
 
@@ -326,7 +326,7 @@ $(document).ready(function() {
 </div>
 
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.001</span>
 
 
   <span data-toggle="collapse" class=" collapsable-control" data-target="#element-3">
@@ -429,7 +429,7 @@ $(document).ready(function() {
   <span class="keyword indention">Then</span>
   <span class="name">the connection should be secure</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.001</span>
 
 </div>
 
@@ -445,13 +445,13 @@ $(document).ready(function() {
       </div>
       <div id="msg-6" class="collapse collapsable-details  in ">
         <pre>java.lang.AssertionError: 
-Expecting:
-  &lt;sun.net.www.protocol.http.HttpURLConnection:http://localhost.:8000/accounts/login&gt;
+Expecting actual:
+  sun.net.www.protocol.http.HttpURLConnection:http://localhost.:8000/accounts/login
 to be an instance of:
-  &lt;javax.net.ssl.HttpsURLConnection&gt;
+  javax.net.ssl.HttpsURLConnection
 but was instance of:
-  &lt;sun.net.www.protocol.http.HttpURLConnection&gt;
-	at io.github.multicatch.cucumber.audit.ProtocolInspectionStepDefs$2.accept(ProtocolInspectionStepDefs.kt:22)
+  sun.net.www.protocol.http.HttpURLConnection
+	at io.github.multicatch.cucumber.audit.ProtocolInspectionStepDefs._init_$lambda$2(ProtocolInspectionStepDefs.kt:22)
 	at &#10045;.the connection should be secure(classpath:io/github/multicatch/cucumber/audit/Authentication_Request.feature:14)
 </pre>
       </div>
@@ -487,7 +487,7 @@ but was instance of:
 </div>
 
 
-  <span class="lead-duration duration">0.033</span>
+  <span class="lead-duration duration">0.028</span>
 
 
   <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-7">
@@ -584,7 +584,7 @@ but was instance of:
   <span class="keyword indention">And</span>
   <span class="name">app running on <span class="argument">&quot;http://localhost.:8000/consumer/&quot;</span> has already started</span>
 
-  <span class="lead-duration duration">0.033</span>
+  <span class="lead-duration duration">0.028</span>
 
 </div>
 
@@ -624,12 +624,12 @@ but was instance of:
 </div>
 
 
-  <span class="lead-duration duration">0.613</span>
+  <span class="lead-duration duration">0.914</span>
 
 
-  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-9">
+  <span data-toggle="collapse" class=" collapsable-control" data-target="#element-9">
 
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Scenario</span>
   <span class="name">Hostile Linking</span>
 
@@ -642,7 +642,7 @@ but was instance of:
   An attacker can prepare a link that automatically authorizes the application without any user action.
   The authorization should only be valid when done by the user.</div>
 
-  <div id="element-9" class="collapse collapsable-details ">
+  <div id="element-9" class="collapse collapsable-details  in ">
 
 
   <div class="inner-level hooks-element-before">
@@ -681,9 +681,9 @@ but was instance of:
 
 
 <div class="steps inner-level">
-  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-11">
+  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-11">
 
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Steps</span>
   <span class="name"></span>
 
@@ -693,7 +693,7 @@ but was instance of:
 
   </div>
 
-  <div id="steps-11" class="inner-level collapse collapsable-details ">
+  <div id="steps-11" class="inner-level collapse collapsable-details  in ">
       <div class="step">
 
 
@@ -701,7 +701,7 @@ but was instance of:
   <span class="keyword indention">Given</span>
   <span class="name">I go to <span class="argument">&quot;http://localhost.:8000/consumer&quot;</span></span>
 
-  <span class="lead-duration duration">0.098</span>
+  <span class="lead-duration duration">0.164</span>
 
 </div>
 
@@ -728,7 +728,7 @@ but was instance of:
   <span class="keyword indention">And</span>
   <span class="name">I click on <span class="argument">&quot;a.btn-primary&quot;</span></span>
 
-  <span class="lead-duration duration">0.147</span>
+  <span class="lead-duration duration">0.236</span>
 
 </div>
 
@@ -755,7 +755,7 @@ but was instance of:
   <span class="keyword indention">And</span>
   <span class="name">I enter <span class="argument">&quot;demo&quot;</span> into a field selected by <span class="argument">&quot;#id_username&quot;</span></span>
 
-  <span class="lead-duration duration">0.034</span>
+  <span class="lead-duration duration">0.063</span>
 
 </div>
 
@@ -782,7 +782,7 @@ but was instance of:
   <span class="keyword indention">And</span>
   <span class="name">I enter <span class="argument">&quot;easypassword&quot;</span> into a field selected by <span class="argument">&quot;#id_password&quot;</span></span>
 
-  <span class="lead-duration duration">0.020</span>
+  <span class="lead-duration duration">0.026</span>
 
 </div>
 
@@ -809,7 +809,7 @@ but was instance of:
   <span class="keyword indention">And</span>
   <span class="name">I click on <span class="argument">&quot;input[type=submit]&quot;</span></span>
 
-  <span class="lead-duration duration">0.251</span>
+  <span class="lead-duration duration">0.292</span>
 
 </div>
 
@@ -944,7 +944,7 @@ but was instance of:
   <span class="keyword indention">And</span>
   <span class="name">I make a request to <span class="argument">&quot;http://localhost.:8000/oauth2/authorize/?response_type=code&amp;state=4564382&amp;client_id=Qv6vn7hxGGNyGuLxOU7DHtvPAykevYe1fKwy0eEP&quot;</span></span>
 
-  <span class="lead-duration duration">0.059</span>
+  <span class="lead-duration duration">0.122</span>
 
 </div>
 
@@ -967,11 +967,11 @@ but was instance of:
       <div class="step">
 
 
-<div class="brief step-name-Then passed">
+<div class="brief step-name-Then failed">
   <span class="keyword indention">Then</span>
   <span class="name">the response code should be <span class="argument">403</span></span>
 
-  <span class="lead-duration duration">0.001</span>
+  <span class="lead-duration duration">0.007</span>
 
 </div>
 
@@ -979,6 +979,27 @@ but was instance of:
 
 
 
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-12">
+          <a>java.lang.AssertionError:</a>
+      </div>
+      <div id="msg-12" class="collapse collapsable-details  in ">
+        <pre>java.lang.AssertionError: 
+Expecting ArrayList:
+  []
+to contain:
+  [403]
+but could not find the following element(s):
+  [403]
+
+	at io.github.multicatch.cucumber.audit.ResponseInspectionStepDefs._init_$lambda$37(ResponseInspectionStepDefs.kt:134)
+	at &#10045;.the response code should be 403(classpath:io/github/multicatch/cucumber/audit/Authentication_Request.feature:32)
+</pre>
+      </div>
+    </div>
+  </div>
 
 
 
