@@ -75,7 +75,7 @@ $(document).ready(function() {
   <tbody>
     <tr class="info">
       <td>Cucumber Audit</td>
-      <td>22 Apr 2021, 07:57</td>
+      <td>15 Sep 2023, 07:24</td>
     </tr>
   </tbody>
 </table>
@@ -125,7 +125,7 @@ $(document).ready(function() {
 </div>
 
 
-  <span class="lead-duration duration">0.149</span>
+  <span class="lead-duration duration">0.210</span>
 
 
   <span data-toggle="collapse" class=" collapsable-control" data-target="#element-1">
@@ -164,7 +164,7 @@ $(document).ready(function() {
             <span class="keyword indention">Before</span>
               <span class="location name">io.github.multicatch.cucumber.audit.NavigationStepDefs.&lt;init&gt;(NavigationStepDefs.kt:14)</span>
 
-  <span class="lead-duration duration">0.001</span>
+  <span class="lead-duration duration">0.002</span>
 
           </div>
 
@@ -228,7 +228,7 @@ $(document).ready(function() {
   <span class="keyword indention">Then</span>
   <span class="name">the connection should be secure</span>
 
-  <span class="lead-duration duration">0.149</span>
+  <span class="lead-duration duration">0.210</span>
 
 </div>
 
@@ -244,13 +244,13 @@ $(document).ready(function() {
       </div>
       <div id="msg-4" class="collapse collapsable-details  in ">
         <pre>java.lang.AssertionError: 
-Expecting:
-  &lt;sun.net.www.protocol.http.HttpURLConnection:http://localhost.:8000/accounts/login&gt;
+Expecting actual:
+  sun.net.www.protocol.http.HttpURLConnection:http://localhost.:8000/accounts/login
 to be an instance of:
-  &lt;javax.net.ssl.HttpsURLConnection&gt;
+  javax.net.ssl.HttpsURLConnection
 but was instance of:
-  &lt;sun.net.www.protocol.http.HttpURLConnection&gt;
-	at io.github.multicatch.cucumber.audit.ProtocolInspectionStepDefs$2.accept(ProtocolInspectionStepDefs.kt:22)
+  sun.net.www.protocol.http.HttpURLConnection
+	at io.github.multicatch.cucumber.audit.ProtocolInspectionStepDefs._init_$lambda$2(ProtocolInspectionStepDefs.kt:22)
 	at &#10045;.the connection should be secure(classpath:io/github/multicatch/cucumber/audit/Authentication_Page.feature:14)
 </pre>
       </div>
@@ -292,7 +292,7 @@ but was instance of:
 </div>
 
 
-  <span class="lead-duration duration">1.870</span>
+  <span class="lead-duration duration">0.984</span>
 
 
   <span data-toggle="collapse" class=" collapsable-control" data-target="#element-5">
@@ -368,7 +368,7 @@ but was instance of:
   <span class="keyword indention">Given</span>
   <span class="name">the response headers are under inspection</span>
 
-  <span class="lead-duration duration">0.920</span>
+  <span class="lead-duration duration">0.406</span>
 
 </div>
 
@@ -395,7 +395,7 @@ but was instance of:
   <span class="keyword indention">And</span>
   <span class="name">cookies are cleared</span>
 
-  <span class="lead-duration duration">0.016</span>
+  <span class="lead-duration duration">0.010</span>
 
 </div>
 
@@ -422,7 +422,7 @@ but was instance of:
   <span class="keyword indention">When</span>
   <span class="name">I go to <span class="argument">&quot;http://localhost.:8000/accounts/login&quot;</span></span>
 
-  <span class="lead-duration duration">0.874</span>
+  <span class="lead-duration duration">0.524</span>
 
 </div>
 
@@ -449,7 +449,7 @@ but was instance of:
   <span class="keyword indention">Then</span>
   <span class="name">the <span class="argument">&quot;Set-Cookie&quot;</span> response header should contain <span class="argument">&quot;HttpOnly&quot;</span></span>
 
-  <span class="lead-duration duration">0.059</span>
+  <span class="lead-duration duration">0.044</span>
 
 </div>
 
@@ -466,10 +466,10 @@ but was instance of:
       <div id="msg-8" class="collapse collapsable-details  in ">
         <pre>java.lang.AssertionError: 
 Expecting any elements of:
-  &lt;[&quot;csrftoken=3foOIcVAbQIh3iQugftqepVpQ5DvLhZEgO5zoZ6jhh28ExHUuRWzyyWvPtUEPO1n; expires=Thu, 21 Apr 2022 07:57:43 GMT; Max-Age=31449600; Path=/; SameSite=Lax&quot;]&gt;
+  []
 to match given predicate but none did.
-	at java.base/java.util.Optional.orElseGet(Optional.java:369)
-	at io.github.multicatch.cucumber.audit.ResponseInspectionStepDefs$3.accept(ResponseInspectionStepDefs.kt:35)
+	at java.base/java.util.Optional.orElseThrow(Optional.java:403)
+	at io.github.multicatch.cucumber.audit.ResponseInspectionStepDefs._init_$lambda$6(ResponseInspectionStepDefs.kt:35)
 	at &#10045;.the &quot;Set-Cookie&quot; response header should contain &quot;HttpOnly&quot;(classpath:io/github/multicatch/cucumber/audit/Authentication_Page.feature:24)
 </pre>
       </div>
@@ -507,27 +507,26 @@ to match given predicate but none did.
 
 <div class="tags indention">
     <b>Tags:</b>
-       <a href="report-tag_2122853336.html">@InformationDisclosure</a>
+       <a href="report-tag_3758974180.html">@Tampering</a>
 </div>
 
 
-  <span class="lead-duration duration">0.092</span>
+  <span class="lead-duration duration">0.000</span>
 
 
   <span data-toggle="collapse" class=" collapsable-control" data-target="#element-9">
 
 <div class="brief failed">
   <span class="keyword indention">Scenario</span>
-  <span class="name">Exploitation of System Software Information In Headers</span>
+  <span class="name">User Deception with Modified Responses</span>
 
 
      <i class="chevron fa fa-fw"></i>
 </div>
 
   </span>
-  <div class="description indention">  The disclosure of software information may be used to provide knowledge about known vulnerabilities of
-  a particular version. The &quot;Server&quot; and &quot;X-Powered-By&quot; headers provide information about technology that
-  is used on the server side. Disabling them makes it more difficult to exploit the server software.</div>
+  <div class="description indention">  If the communication is unencrypted, there is a risk that an attacker could use a Man-in-The-Middle attack
+  to modify responses. They may use a modified page to make user think they authorize a different application.</div>
 
   <div id="element-9" class="collapse collapsable-details  in ">
 
@@ -584,38 +583,11 @@ to match given predicate but none did.
       <div class="step">
 
 
-<div class="brief step-name-Given passed">
-  <span class="keyword indention">Given</span>
-  <span class="name">the response headers are under inspection</span>
-
-  <span class="lead-duration duration">0.000</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
 <div class="brief step-name-When passed">
   <span class="keyword indention">When</span>
-  <span class="name">I go to <span class="argument">&quot;http://localhost.:8000/accounts/login&quot;</span></span>
+  <span class="name">I connect to <span class="argument">&quot;http://localhost.:8000/accounts/login&quot;</span></span>
 
-  <span class="lead-duration duration">0.089</span>
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 
@@ -640,9 +612,9 @@ to match given predicate but none did.
 
 <div class="brief step-name-Then failed">
   <span class="keyword indention">Then</span>
-  <span class="name">the <span class="argument">&quot;Server&quot;</span> response header should not contain numbers</span>
+  <span class="name">the connection should be secure</span>
 
-  <span class="lead-duration duration">0.002</span>
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 
@@ -658,44 +630,18 @@ to match given predicate but none did.
       </div>
       <div id="msg-12" class="collapse collapsable-details  in ">
         <pre>java.lang.AssertionError: 
-Expecting no elements of:
-  &lt;[&quot;WSGIServer/0.2 CPython/3.8.3&quot;]&gt;
-to match given predicate but this element did:
-  &lt;&quot;WSGIServer/0.2 CPython/3.8.3&quot;&gt;
-	at java.base/java.util.Optional.ifPresent(Optional.java:183)
-	at io.github.multicatch.cucumber.audit.ResponseInspectionStepDefs$5.accept(ResponseInspectionStepDefs.kt:65)
-	at &#10045;.the &quot;Server&quot; response header should not contain numbers(classpath:io/github/multicatch/cucumber/audit/Authentication_Page.feature:34)
+Expecting actual:
+  sun.net.www.protocol.http.HttpURLConnection:http://localhost.:8000/accounts/login
+to be an instance of:
+  javax.net.ssl.HttpsURLConnection
+but was instance of:
+  sun.net.www.protocol.http.HttpURLConnection
+	at io.github.multicatch.cucumber.audit.ProtocolInspectionStepDefs._init_$lambda$2(ProtocolInspectionStepDefs.kt:22)
+	at &#10045;.the connection should be secure(classpath:io/github/multicatch/cucumber/audit/Authentication_Page.feature:79)
 </pre>
       </div>
     </div>
   </div>
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-And skipped">
-  <span class="keyword indention">And</span>
-  <span class="name">the <span class="argument">&quot;X-Powered-By&quot;</span> response header should not contain numbers</span>
-
-  <span class="lead-duration duration">0.000</span>
-
-</div>
-
-
-
-
-
 
 
 
@@ -722,7 +668,7 @@ to match given predicate but this element did:
 <div class="element">
     <div class="indention">
       <b>Feature:</b>
-      <a href="report-feature_1298702509.html">Authentication Page Threats</a>
+      <a href="report-feature_1_2353070367.html">Authentication Request Threats</a>
     </div>
 
 
@@ -732,23 +678,22 @@ to match given predicate but this element did:
 </div>
 
 
-  <span class="lead-duration duration">0.057</span>
+  <span class="lead-duration duration">0.000</span>
 
 
   <span data-toggle="collapse" class=" collapsable-control" data-target="#element-13">
 
 <div class="brief failed">
-  <span class="keyword indention">Scenario Outline</span>
-  <span class="name">Exploitation of Sensitive Information on Error Pages</span>
+  <span class="keyword indention">Scenario</span>
+  <span class="name">Confidential Data Eavesdropping</span>
 
 
      <i class="chevron fa fa-fw"></i>
 </div>
 
   </span>
-  <div class="description indention">  The disclosure of software information may be used to provide knowledge about known vulnerabilities of
-  a particular version. The default error pages can contain information about the server software.
-  Overriding default error pages makes it more difficult to exploit the server software.</div>
+  <div class="description indention">  HTTP communication is unencrypted and thus prone to eavesdropping via Man-in-The-Middle Attacks.
+  HTTPS is recommended for safe exchange of confidential information such as passwords or tokens.</div>
 
   <div id="element-13" class="collapse collapsable-details  in ">
 
@@ -805,38 +750,11 @@ to match given predicate but this element did:
       <div class="step">
 
 
-<div class="brief step-name-Given passed">
-  <span class="keyword indention">Given</span>
-  <span class="name">the response content is under inspection</span>
-
-  <span class="lead-duration duration">0.000</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
 <div class="brief step-name-When passed">
   <span class="keyword indention">When</span>
-  <span class="name">I go to <span class="argument">&quot;http://localhost.:8000/accounts/login/shouldbenotfound&quot;</span></span>
+  <span class="name">I connect to <span class="argument">&quot;http://localhost.:8000/accounts/login&quot;</span></span>
 
-  <span class="lead-duration duration">0.056</span>
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 
@@ -861,7 +779,7 @@ to match given predicate but this element did:
 
 <div class="brief step-name-Then failed">
   <span class="keyword indention">Then</span>
-  <span class="name">the response should not contain <span class="argument">&quot;Django&quot;</span></span>
+  <span class="name">the connection should be secure</span>
 
   <span class="lead-duration duration">0.000</span>
 
@@ -879,417 +797,14 @@ to match given predicate but this element did:
       </div>
       <div id="msg-16" class="collapse collapsable-details  in ">
         <pre>java.lang.AssertionError: 
-Expecting no elements of:
-  &lt;[&quot;&lt;!DOCTYPE html&gt;
-&lt;html lang=&quot;en&quot;&gt;
-&lt;head&gt;
-  &lt;meta http-equiv=&quot;content-type&quot; content=&quot;text/html; charset=utf-8&quot;&gt;
-  &lt;title&gt;Page not found at /accounts/login/shouldbenotfound&lt;/title&gt;
-  &lt;meta name=&quot;robots&quot; content=&quot;NONE,NOARCHIVE&quot;&gt;
-  &lt;style type=&quot;text/css&quot;&gt;
-    html * { padding:0; margin:0; }
-    body * { padding:10px 20px; }
-    body * * { padding:0; }
-    body { font:small sans-serif; background:#eee; color:#000; }
-    body&gt;div { border-bottom:1px solid #ddd; }
-    h1 { font-weight:normal; margin-bottom:.4em; }
-    h1 span { font-size:60%; color:#666; font-weight:normal; }
-    table { border:none; border-collapse: collapse; width:100%; }
-    td, th { vertical-align:top; padding:2px 3px; }
-    th { width:12em; text-align:right; color:#666; padding-right:.5em; }
-    #info { background:#f6f6f6; }
-    #info ol { margin: 0.5em 4em; }
-    #info ol li { font-family: monospace; }
-    #summary { background: #ffc; }
-    #explanation { background:#eee; border-bottom: 0px none; }
-  &lt;/style&gt;
-&lt;/head&gt;
-&lt;body&gt;
-  &lt;div id=&quot;summary&quot;&gt;
-    &lt;h1&gt;Page not found &lt;span&gt;(404)&lt;/span&gt;&lt;/h1&gt;
-    &lt;table class=&quot;meta&quot;&gt;
-      &lt;tr&gt;
-        &lt;th&gt;Request Method:&lt;/th&gt;
-        &lt;td&gt;GET&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-        &lt;th&gt;Request URL:&lt;/th&gt;
-        &lt;td&gt;http://localhost.:8000/accounts/login/shouldbenotfound&lt;/td&gt;
-      &lt;/tr&gt;
-      
-    &lt;/table&gt;
-  &lt;/div&gt;
-  &lt;div id=&quot;info&quot;&gt;
-    
-      &lt;p&gt;
-      Using the URLconf defined in &lt;code&gt;app.urls&lt;/code&gt;,
-      Django tried these URL patterns, in this order:
-      &lt;/p&gt;
-      &lt;ol&gt;
-        
-          &lt;li&gt;
-            
-                consumer/
-                
-            
-          &lt;/li&gt;
-        
-          &lt;li&gt;
-            
-                admin/
-                
-            
-          &lt;/li&gt;
-        
-          &lt;li&gt;
-            
-                
-                
-            
-                accounts/
-                
-            
-                login/
-                [name='login']
-            
-          &lt;/li&gt;
-        
-          &lt;li&gt;
-            
-                
-                
-            
-                accounts/
-                
-            
-                logout/
-                [name='logout']
-            
-          &lt;/li&gt;
-        
-          &lt;li&gt;
-            
-                
-                
-            
-                accounts/
-                
-            
-                password_change/
-                [name='password_change']
-            
-          &lt;/li&gt;
-        
-          &lt;li&gt;
-            
-                
-                
-            
-                accounts/
-                
-            
-                password_change/done/
-                [name='password_change_done']
-            
-          &lt;/li&gt;
-        
-          &lt;li&gt;
-            
-                
-                
-            
-                accounts/
-                
-            
-                password_reset/
-                [name='password_reset']
-            
-          &lt;/li&gt;
-        
-          &lt;li&gt;
-            
-                
-                
-            
-                accounts/
-                
-            
-                password_reset/done/
-                [name='password_reset_done']
-            
-          &lt;/li&gt;
-        
-          &lt;li&gt;
-            
-                
-                
-            
-                accounts/
-                
-            
-                reset/&amp;lt;uidb64&amp;gt;/&amp;lt;token&amp;gt;/
-                [name='password_reset_confirm']
-            
-          &lt;/li&gt;
-        
-          &lt;li&gt;
-            
-                
-                
-            
-                accounts/
-                
-            
-                reset/done/
-                [name='password_reset_complete']
-            
-          &lt;/li&gt;
-        
-          &lt;li&gt;
-            
-                
-                
-            
-                oauth2/
-                
-            
-          &lt;/li&gt;
-        
-          &lt;li&gt;
-            
-                
-                
-            
-                oauth2/user/
-                
-            
-          &lt;/li&gt;
-        
-      &lt;/ol&gt;
-      &lt;p&gt;
-        
-        The current path, &lt;code&gt;accounts/login/shouldbenotfound&lt;/code&gt;, didn't match any of these.
-      &lt;/p&gt;
-    
-  &lt;/div&gt;
-
-  &lt;div id=&quot;explanation&quot;&gt;
-    &lt;p&gt;
-      You're seeing this error because you have &lt;code&gt;DEBUG = True&lt;/code&gt; in
-      your Django settings file. Change that to &lt;code&gt;False&lt;/code&gt;, and Django
-      will display a standard 404 page.
-    &lt;/p&gt;
-  &lt;/div&gt;
-&lt;/body&gt;
-&lt;/html&gt;
-&quot;]&gt;
-to match given predicate but this element did:
-  &lt;&quot;&lt;!DOCTYPE html&gt;
-&lt;html lang=&quot;en&quot;&gt;
-&lt;head&gt;
-  &lt;meta http-equiv=&quot;content-type&quot; content=&quot;text/html; charset=utf-8&quot;&gt;
-  &lt;title&gt;Page not found at /accounts/login/shouldbenotfound&lt;/title&gt;
-  &lt;meta name=&quot;robots&quot; content=&quot;NONE,NOARCHIVE&quot;&gt;
-  &lt;style type=&quot;text/css&quot;&gt;
-    html * { padding:0; margin:0; }
-    body * { padding:10px 20px; }
-    body * * { padding:0; }
-    body { font:small sans-serif; background:#eee; color:#000; }
-    body&gt;div { border-bottom:1px solid #ddd; }
-    h1 { font-weight:normal; margin-bottom:.4em; }
-    h1 span { font-size:60%; color:#666; font-weight:normal; }
-    table { border:none; border-collapse: collapse; width:100%; }
-    td, th { vertical-align:top; padding:2px 3px; }
-    th { width:12em; text-align:right; color:#666; padding-right:.5em; }
-    #info { background:#f6f6f6; }
-    #info ol { margin: 0.5em 4em; }
-    #info ol li { font-family: monospace; }
-    #summary { background: #ffc; }
-    #explanation { background:#eee; border-bottom: 0px none; }
-  &lt;/style&gt;
-&lt;/head&gt;
-&lt;body&gt;
-  &lt;div id=&quot;summary&quot;&gt;
-    &lt;h1&gt;Page not found &lt;span&gt;(404)&lt;/span&gt;&lt;/h1&gt;
-    &lt;table class=&quot;meta&quot;&gt;
-      &lt;tr&gt;
-        &lt;th&gt;Request Method:&lt;/th&gt;
-        &lt;td&gt;GET&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-        &lt;th&gt;Request URL:&lt;/th&gt;
-        &lt;td&gt;http://localhost.:8000/accounts/login/shouldbenotfound&lt;/td&gt;
-      &lt;/tr&gt;
-      
-    &lt;/table&gt;
-  &lt;/div&gt;
-  &lt;div id=&quot;info&quot;&gt;
-    
-      &lt;p&gt;
-      Using the URLconf defined in &lt;code&gt;app.urls&lt;/code&gt;,
-      Django tried these URL patterns, in this order:
-      &lt;/p&gt;
-      &lt;ol&gt;
-        
-          &lt;li&gt;
-            
-                consumer/
-                
-            
-          &lt;/li&gt;
-        
-          &lt;li&gt;
-            
-                admin/
-                
-            
-          &lt;/li&gt;
-        
-          &lt;li&gt;
-            
-                
-                
-            
-                accounts/
-                
-            
-                login/
-                [name='login']
-            
-          &lt;/li&gt;
-        
-          &lt;li&gt;
-            
-                
-                
-            
-                accounts/
-                
-            
-                logout/
-                [name='logout']
-            
-          &lt;/li&gt;
-        
-          &lt;li&gt;
-            
-                
-                
-            
-                accounts/
-                
-            
-                password_change/
-                [name='password_change']
-            
-          &lt;/li&gt;
-        
-          &lt;li&gt;
-            
-                
-                
-            
-                accounts/
-                
-            
-                password_change/done/
-                [name='password_change_done']
-            
-          &lt;/li&gt;
-        
-          &lt;li&gt;
-            
-                
-                
-            
-                accounts/
-                
-            
-                password_reset/
-                [name='password_reset']
-            
-          &lt;/li&gt;
-        
-          &lt;li&gt;
-            
-                
-                
-            
-                accounts/
-                
-            
-                password_reset/done/
-                [name='password_reset_done']
-            
-          &lt;/li&gt;
-        
-          &lt;li&gt;
-            
-                
-                
-            
-                accounts/
-                
-            
-                reset/&amp;lt;uidb64&amp;gt;/&amp;lt;token&amp;gt;/
-                [name='password_reset_confirm']
-            
-          &lt;/li&gt;
-        
-          &lt;li&gt;
-            
-                
-                
-            
-                accounts/
-                
-            
-                reset/done/
-                [name='password_reset_complete']
-            
-          &lt;/li&gt;
-        
-          &lt;li&gt;
-            
-                
-                
-            
-                oauth2/
-                
-            
-          &lt;/li&gt;
-        
-          &lt;li&gt;
-            
-                
-                
-            
-                oauth2/user/
-                
-            
-          &lt;/li&gt;
-        
-      &lt;/ol&gt;
-      &lt;p&gt;
-        
-        The current path, &lt;code&gt;accounts/login/shouldbenotfound&lt;/code&gt;, didn't match any of these.
-      &lt;/p&gt;
-    
-  &lt;/div&gt;
-
-  &lt;div id=&quot;explanation&quot;&gt;
-    &lt;p&gt;
-      You're seeing this error because you have &lt;code&gt;DEBUG = True&lt;/code&gt; in
-      your Django settings file. Change that to &lt;code&gt;False&lt;/code&gt;, and Django
-      will display a standard 404 page.
-    &lt;/p&gt;
-  &lt;/div&gt;
-&lt;/body&gt;
-&lt;/html&gt;
-&quot;&gt;
-	at java.base/java.util.Optional.ifPresent(Optional.java:183)
-	at io.github.multicatch.cucumber.audit.ResponseInspectionStepDefs$8.accept(ResponseInspectionStepDefs.kt:108)
-	at &#10045;.the response should not contain &quot;Django&quot;(classpath:io/github/multicatch/cucumber/audit/Authentication_Page.feature:45)
+Expecting actual:
+  sun.net.www.protocol.http.HttpURLConnection:http://localhost.:8000/accounts/login
+to be an instance of:
+  javax.net.ssl.HttpsURLConnection
+but was instance of:
+  sun.net.www.protocol.http.HttpURLConnection
+	at io.github.multicatch.cucumber.audit.ProtocolInspectionStepDefs._init_$lambda$2(ProtocolInspectionStepDefs.kt:22)
+	at &#10045;.the connection should be secure(classpath:io/github/multicatch/cucumber/audit/Authentication_Request.feature:14)
 </pre>
       </div>
     </div>
@@ -1320,33 +835,33 @@ to match given predicate but this element did:
 <div class="element">
     <div class="indention">
       <b>Feature:</b>
-      <a href="report-feature_1298702509.html">Authentication Page Threats</a>
+      <a href="report-feature_1_2353070367.html">Authentication Request Threats</a>
     </div>
 
 
 <div class="tags indention">
     <b>Tags:</b>
-       <a href="report-tag_2122853336.html">@InformationDisclosure</a>
+       <a href="report-tag_2192116828.html">@ElevationOfPrivilege</a>
 </div>
 
 
-  <span class="lead-duration duration">0.126</span>
+  <span class="lead-duration duration">0.912</span>
 
 
   <span data-toggle="collapse" class=" collapsable-control" data-target="#element-17">
 
 <div class="brief failed">
   <span class="keyword indention">Scenario</span>
-  <span class="name">Exploitation of System Architecture Information On Error Pages</span>
+  <span class="name">Hostile Linking</span>
 
 
      <i class="chevron fa fa-fw"></i>
 </div>
 
   </span>
-  <div class="description indention">  Usually the server software prints stack traces on error by default. This is a debug feature that should be
-  disabled when running the software in production. The stack trace may provide information about architecture
-  and used libraries that can be used by an attacker to exploit known vulnerabilities.</div>
+  <div class="description indention">  An authorization granted to the application should not be a stateless mechanism.
+  An attacker can prepare a link that automatically authorizes the application without any user action.
+  The authorization should only be valid when done by the user.</div>
 
   <div id="element-17" class="collapse collapsable-details  in ">
 
@@ -1405,7 +920,142 @@ to match given predicate but this element did:
 
 <div class="brief step-name-Given passed">
   <span class="keyword indention">Given</span>
-  <span class="name">the response content is under inspection</span>
+  <span class="name">I go to <span class="argument">&quot;http://localhost.:8000/consumer&quot;</span></span>
+
+  <span class="lead-duration duration">0.168</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">I click on <span class="argument">&quot;a.btn-primary&quot;</span></span>
+
+  <span class="lead-duration duration">0.239</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">I enter <span class="argument">&quot;demo&quot;</span> into a field selected by <span class="argument">&quot;#id_username&quot;</span></span>
+
+  <span class="lead-duration duration">0.091</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">I enter <span class="argument">&quot;easypassword&quot;</span> into a field selected by <span class="argument">&quot;#id_password&quot;</span></span>
+
+  <span class="lead-duration duration">0.023</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">I click on <span class="argument">&quot;input[type=submit]&quot;</span></span>
+
+  <span class="lead-duration duration">0.254</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">the response headers are under inspection</span>
 
   <span class="lead-duration duration">0.000</span>
 
@@ -1459,7 +1109,7 @@ to match given predicate but this element did:
 
 <div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
-  <span class="name">I add a <span class="argument">&quot;Authentication&quot;</span> header with value <span class="argument">&quot;!Unsupported&quot;</span></span>
+  <span class="name">I add a <span class="argument">&quot;Content-Type&quot;</span> header with value <span class="argument">&quot;application/x-www-form-urlencoded&quot;</span></span>
 
   <span class="lead-duration duration">0.000</span>
 
@@ -1486,7 +1136,7 @@ to match given predicate but this element did:
 
 <div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
-  <span class="name">I add a <span class="argument">&quot;Content-Type&quot;</span> header with value <span class="argument">&quot;application/unsupported&quot;</span></span>
+  <span class="name">the request body is <span class="argument">&quot;csrfmiddlewaretoken=wrong_csrf&amp;redirect_uri=http%3A%2F%2Fhttpbin.org%2F&amp;scope=read+write&amp;client_id=Qv6vn7hxGGNyGuLxOU7DHtvPAykevYe1fKwy0eEP&amp;state=4564382&amp;response_type=code&amp;code_challenge=&amp;code_challenge_method=&amp;allow=Authorize&quot;</span></span>
 
   <span class="lead-duration duration">0.000</span>
 
@@ -1513,9 +1163,9 @@ to match given predicate but this element did:
 
 <div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
-  <span class="name">I make a request to <span class="argument">&quot;http://localhost.:8000/accounts/login/?error=1283927&quot;</span></span>
+  <span class="name">I make a request to <span class="argument">&quot;http://localhost.:8000/oauth2/authorize/?response_type=code&amp;state=4564382&amp;client_id=Qv6vn7hxGGNyGuLxOU7DHtvPAykevYe1fKwy0eEP&quot;</span></span>
 
-  <span class="lead-duration duration">0.123</span>
+  <span class="lead-duration duration">0.129</span>
 
 </div>
 
@@ -1538,146 +1188,11 @@ to match given predicate but this element did:
       <div class="step">
 
 
-<div class="brief step-name-Then passed">
+<div class="brief step-name-Then failed">
   <span class="keyword indention">Then</span>
-  <span class="name">the response should not contain <span class="argument">&quot;Exception&quot;</span></span>
+  <span class="name">the response code should be <span class="argument">403</span></span>
 
-  <span class="lead-duration duration">0.000</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-And passed">
-  <span class="keyword indention">And</span>
-  <span class="name">the response should not contain <span class="argument">&quot;Stacktrace&quot;</span></span>
-
-  <span class="lead-duration duration">0.000</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-And passed">
-  <span class="keyword indention">And</span>
-  <span class="name">the response should not contain <span class="argument">&quot;Traceback&quot;</span></span>
-
-  <span class="lead-duration duration">0.000</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-And passed">
-  <span class="keyword indention">And</span>
-  <span class="name">the response should not match <span class="argument">&quot;.*[a-zA-Z0-9.]+:[0-9]+\).*&quot;</span></span>
-
-  <span class="lead-duration duration">0.002</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-And passed">
-  <span class="keyword indention">And</span>
-  <span class="name">the response should not match <span class="argument">&quot;(?i).*line [0-9]+.*&quot;</span></span>
-
-  <span class="lead-duration duration">0.000</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-And failed">
-  <span class="keyword indention">And</span>
-  <span class="name">the response should not match <span class="argument">&quot;(?i).*debug.*&quot;</span></span>
-
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.004</span>
 
 </div>
 
@@ -1693,495 +1208,15 @@ to match given predicate but this element did:
       </div>
       <div id="msg-20" class="collapse collapsable-details  in ">
         <pre>java.lang.AssertionError: 
-Expecting no elements of:
-  &lt;[&quot;
-&lt;!DOCTYPE html&gt;
-&lt;html lang=&quot;en&quot;&gt;
-&lt;head&gt;
-  &lt;meta http-equiv=&quot;content-type&quot; content=&quot;text/html; charset=utf-8&quot;&gt;
-  &lt;meta name=&quot;robots&quot; content=&quot;NONE,NOARCHIVE&quot;&gt;
-  &lt;title&gt;403 Forbidden&lt;/title&gt;
-  &lt;style type=&quot;text/css&quot;&gt;
-    html * { padding:0; margin:0; }
-    body * { padding:10px 20px; }
-    body * * { padding:0; }
-    body { font:small sans-serif; background:#eee; color:#000; }
-    body&gt;div { border-bottom:1px solid #ddd; }
-    h1 { font-weight:normal; margin-bottom:.4em; }
-    h1 span { font-size:60%; color:#666; font-weight:normal; }
-    #info { background:#f6f6f6; }
-    #info ul { margin: 0.5em 4em; }
-    #info p, #summary p { padding-top:10px; }
-    #summary { background: #ffc; }
-    #explanation { background:#eee; border-bottom: 0px none; }
-  &lt;/style&gt;
-&lt;/head&gt;
-&lt;body&gt;
-&lt;div id=&quot;summary&quot;&gt;
-  &lt;h1&gt;Forbidden &lt;span&gt;(403)&lt;/span&gt;&lt;/h1&gt;
-  &lt;p&gt;CSRF verification failed. Request aborted.&lt;/p&gt;
-
-
-&lt;/div&gt;
-
-&lt;div id=&quot;info&quot;&gt;
-  &lt;h2&gt;Help&lt;/h2&gt;
-    
-    &lt;p&gt;Reason given for failure:&lt;/p&gt;
-    &lt;pre&gt;
-    CSRF token missing or incorrect.
-    &lt;/pre&gt;
-    
-
-  &lt;p&gt;In general, this can occur when there is a genuine Cross Site Request Forgery, or when
-  &lt;a
-  href=&quot;https://docs.djangoproject.com/en/3.0/ref/csrf/&quot;&gt;Django's
-  CSRF mechanism&lt;/a&gt; has not been used correctly.  For POST forms, you need to
-  ensure:&lt;/p&gt;
-
-  &lt;ul&gt;
-    &lt;li&gt;Your browser is accepting cookies.&lt;/li&gt;
-
-    &lt;li&gt;The view function passes a &lt;code&gt;request&lt;/code&gt; to the template's &lt;a
-    href=&quot;https://docs.djangoproject.com/en/dev/topics/templates/#django.template.backends.base.Template.render&quot;&gt;&lt;code&gt;render&lt;/code&gt;&lt;/a&gt;
-    method.&lt;/li&gt;
-
-    &lt;li&gt;In the template, there is a &lt;code&gt;{% csrf_token
-    %}&lt;/code&gt; template tag inside each POST form that
-    targets an internal URL.&lt;/li&gt;
-
-    &lt;li&gt;If you are not using &lt;code&gt;CsrfViewMiddleware&lt;/code&gt;, then you must use
-    &lt;code&gt;csrf_protect&lt;/code&gt; on any views that use the &lt;code&gt;csrf_token&lt;/code&gt;
-    template tag, as well as those that accept the POST data.&lt;/li&gt;
-
-    &lt;li&gt;The form has a valid CSRF token. After logging in in another browser
-    tab or hitting the back button after a login, you may need to reload the
-    page with the form, because the token is rotated after a login.&lt;/li&gt;
-  &lt;/ul&gt;
-
-  &lt;p&gt;You're seeing the help section of this page because you have &lt;code&gt;DEBUG =
-  True&lt;/code&gt; in your Django settings file. Change that to &lt;code&gt;False&lt;/code&gt;,
-  and only the initial error message will be displayed.  &lt;/p&gt;
-
-  &lt;p&gt;You can customize this page using the CSRF_FAILURE_VIEW setting.&lt;/p&gt;
-&lt;/div&gt;
-
-&lt;/body&gt;
-&lt;/html&gt;
-&quot;]&gt;
-to match given predicate but this element did:
-  &lt;&quot;
-&lt;!DOCTYPE html&gt;
-&lt;html lang=&quot;en&quot;&gt;
-&lt;head&gt;
-  &lt;meta http-equiv=&quot;content-type&quot; content=&quot;text/html; charset=utf-8&quot;&gt;
-  &lt;meta name=&quot;robots&quot; content=&quot;NONE,NOARCHIVE&quot;&gt;
-  &lt;title&gt;403 Forbidden&lt;/title&gt;
-  &lt;style type=&quot;text/css&quot;&gt;
-    html * { padding:0; margin:0; }
-    body * { padding:10px 20px; }
-    body * * { padding:0; }
-    body { font:small sans-serif; background:#eee; color:#000; }
-    body&gt;div { border-bottom:1px solid #ddd; }
-    h1 { font-weight:normal; margin-bottom:.4em; }
-    h1 span { font-size:60%; color:#666; font-weight:normal; }
-    #info { background:#f6f6f6; }
-    #info ul { margin: 0.5em 4em; }
-    #info p, #summary p { padding-top:10px; }
-    #summary { background: #ffc; }
-    #explanation { background:#eee; border-bottom: 0px none; }
-  &lt;/style&gt;
-&lt;/head&gt;
-&lt;body&gt;
-&lt;div id=&quot;summary&quot;&gt;
-  &lt;h1&gt;Forbidden &lt;span&gt;(403)&lt;/span&gt;&lt;/h1&gt;
-  &lt;p&gt;CSRF verification failed. Request aborted.&lt;/p&gt;
-
-
-&lt;/div&gt;
-
-&lt;div id=&quot;info&quot;&gt;
-  &lt;h2&gt;Help&lt;/h2&gt;
-    
-    &lt;p&gt;Reason given for failure:&lt;/p&gt;
-    &lt;pre&gt;
-    CSRF token missing or incorrect.
-    &lt;/pre&gt;
-    
-
-  &lt;p&gt;In general, this can occur when there is a genuine Cross Site Request Forgery, or when
-  &lt;a
-  href=&quot;https://docs.djangoproject.com/en/3.0/ref/csrf/&quot;&gt;Django's
-  CSRF mechanism&lt;/a&gt; has not been used correctly.  For POST forms, you need to
-  ensure:&lt;/p&gt;
-
-  &lt;ul&gt;
-    &lt;li&gt;Your browser is accepting cookies.&lt;/li&gt;
-
-    &lt;li&gt;The view function passes a &lt;code&gt;request&lt;/code&gt; to the template's &lt;a
-    href=&quot;https://docs.djangoproject.com/en/dev/topics/templates/#django.template.backends.base.Template.render&quot;&gt;&lt;code&gt;render&lt;/code&gt;&lt;/a&gt;
-    method.&lt;/li&gt;
-
-    &lt;li&gt;In the template, there is a &lt;code&gt;{% csrf_token
-    %}&lt;/code&gt; template tag inside each POST form that
-    targets an internal URL.&lt;/li&gt;
-
-    &lt;li&gt;If you are not using &lt;code&gt;CsrfViewMiddleware&lt;/code&gt;, then you must use
-    &lt;code&gt;csrf_protect&lt;/code&gt; on any views that use the &lt;code&gt;csrf_token&lt;/code&gt;
-    template tag, as well as those that accept the POST data.&lt;/li&gt;
-
-    &lt;li&gt;The form has a valid CSRF token. After logging in in another browser
-    tab or hitting the back button after a login, you may need to reload the
-    page with the form, because the token is rotated after a login.&lt;/li&gt;
-  &lt;/ul&gt;
-
-  &lt;p&gt;You're seeing the help section of this page because you have &lt;code&gt;DEBUG =
-  True&lt;/code&gt; in your Django settings file. Change that to &lt;code&gt;False&lt;/code&gt;,
-  and only the initial error message will be displayed.  &lt;/p&gt;
-
-  &lt;p&gt;You can customize this page using the CSRF_FAILURE_VIEW setting.&lt;/p&gt;
-&lt;/div&gt;
-
-&lt;/body&gt;
-&lt;/html&gt;
-&quot;&gt;
-	at java.base/java.util.Optional.ifPresent(Optional.java:183)
-	at io.github.multicatch.cucumber.audit.ResponseInspectionStepDefs$12.accept(ResponseInspectionStepDefs.kt:162)
-	at &#10045;.the response should not match &quot;(?i).*debug.*&quot;(classpath:io/github/multicatch/cucumber/audit/Authentication_Page.feature:71)
-</pre>
-      </div>
-    </div>
-  </div>
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-  </div>
-</div>
-
-
-
-
-
-  </div>
-</div>
-
-
-<div class="element">
-    <div class="indention">
-      <b>Feature:</b>
-      <a href="report-feature_1298702509.html">Authentication Page Threats</a>
-    </div>
-
-
-<div class="tags indention">
-    <b>Tags:</b>
-       <a href="report-tag_3758974180.html">@Tampering</a>
-</div>
-
-
-  <span class="lead-duration duration">0.000</span>
-
-
-  <span data-toggle="collapse" class=" collapsable-control" data-target="#element-21">
-
-<div class="brief failed">
-  <span class="keyword indention">Scenario</span>
-  <span class="name">User Deception with Modified Responses</span>
-
-
-     <i class="chevron fa fa-fw"></i>
-</div>
-
-  </span>
-  <div class="description indention">  If the communication is unencrypted, there is a risk that an attacker could use a Man-in-The-Middle attack
-  to modify responses. They may use a modified page to make user think they authorize a different application.</div>
-
-  <div id="element-21" class="collapse collapsable-details  in ">
-
-
-  <div class="inner-level hooks-element-before">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-22">
-
-<div class="brief passed">
-  <span class="keyword indention">Hooks</span>
-  <span class="name"></span>
-
-
-     <i class="chevron fa fa-fw"></i>
-</div>
-
-    </div>
-
-    <div id="before-22" class="inner-level collapse collapsable-details ">
-        <div class="hook">
-          <div class="brief passed">
-            <span class="keyword indention">Before</span>
-              <span class="location name">io.github.multicatch.cucumber.audit.NavigationStepDefs.&lt;init&gt;(NavigationStepDefs.kt:14)</span>
-
-  <span class="lead-duration duration">0.000</span>
-
-          </div>
-
-
-
-
-
-
-
-        </div>
-    </div>
-  </div>
-
-
-
-<div class="steps inner-level">
-  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-23">
-
-<div class="brief failed">
-  <span class="keyword indention">Steps</span>
-  <span class="name"></span>
-
-
-     <i class="chevron fa fa-fw"></i>
-</div>
-
-  </div>
-
-  <div id="steps-23" class="inner-level collapse collapsable-details  in ">
-      <div class="step">
-
-
-<div class="brief step-name-When passed">
-  <span class="keyword indention">When</span>
-  <span class="name">I connect to <span class="argument">&quot;http://localhost.:8000/accounts/login&quot;</span></span>
-
-  <span class="lead-duration duration">0.000</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-Then failed">
-  <span class="keyword indention">Then</span>
-  <span class="name">the connection should be secure</span>
-
-  <span class="lead-duration duration">0.000</span>
-
-</div>
-
-
-
-
-
-
-  <div class="inner-level">
-    <div class="message indention">
-      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-24">
-          <a>java.lang.AssertionError:</a>
-      </div>
-      <div id="msg-24" class="collapse collapsable-details  in ">
-        <pre>java.lang.AssertionError: 
-Expecting:
-  &lt;sun.net.www.protocol.http.HttpURLConnection:http://localhost.:8000/accounts/login&gt;
-to be an instance of:
-  &lt;javax.net.ssl.HttpsURLConnection&gt;
-but was instance of:
-  &lt;sun.net.www.protocol.http.HttpURLConnection&gt;
-	at io.github.multicatch.cucumber.audit.ProtocolInspectionStepDefs$2.accept(ProtocolInspectionStepDefs.kt:22)
-	at &#10045;.the connection should be secure(classpath:io/github/multicatch/cucumber/audit/Authentication_Page.feature:79)
-</pre>
-      </div>
-    </div>
-  </div>
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-  </div>
-</div>
-
-
-
-
-
-  </div>
-</div>
-
-
-<div class="element">
-    <div class="indention">
-      <b>Feature:</b>
-      <a href="report-feature_1_2353070367.html">Authentication Request Threats</a>
-    </div>
-
-
-<div class="tags indention">
-    <b>Tags:</b>
-       <a href="report-tag_2122853336.html">@InformationDisclosure</a>
-</div>
-
-
-  <span class="lead-duration duration">0.000</span>
-
-
-  <span data-toggle="collapse" class=" collapsable-control" data-target="#element-25">
-
-<div class="brief failed">
-  <span class="keyword indention">Scenario</span>
-  <span class="name">Confidential Data Eavesdropping</span>
-
-
-     <i class="chevron fa fa-fw"></i>
-</div>
-
-  </span>
-  <div class="description indention">  HTTP communication is unencrypted and thus prone to eavesdropping via Man-in-The-Middle Attacks.
-  HTTPS is recommended for safe exchange of confidential information such as passwords or tokens.</div>
-
-  <div id="element-25" class="collapse collapsable-details  in ">
-
-
-  <div class="inner-level hooks-element-before">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-26">
-
-<div class="brief passed">
-  <span class="keyword indention">Hooks</span>
-  <span class="name"></span>
-
-
-     <i class="chevron fa fa-fw"></i>
-</div>
-
-    </div>
-
-    <div id="before-26" class="inner-level collapse collapsable-details ">
-        <div class="hook">
-          <div class="brief passed">
-            <span class="keyword indention">Before</span>
-              <span class="location name">io.github.multicatch.cucumber.audit.NavigationStepDefs.&lt;init&gt;(NavigationStepDefs.kt:14)</span>
-
-  <span class="lead-duration duration">0.000</span>
-
-          </div>
-
-
-
-
-
-
-
-        </div>
-    </div>
-  </div>
-
-
-
-<div class="steps inner-level">
-  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-27">
-
-<div class="brief failed">
-  <span class="keyword indention">Steps</span>
-  <span class="name"></span>
-
-
-     <i class="chevron fa fa-fw"></i>
-</div>
-
-  </div>
-
-  <div id="steps-27" class="inner-level collapse collapsable-details  in ">
-      <div class="step">
-
-
-<div class="brief step-name-When passed">
-  <span class="keyword indention">When</span>
-  <span class="name">I connect to <span class="argument">&quot;http://localhost.:8000/accounts/login&quot;</span></span>
-
-  <span class="lead-duration duration">0.000</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-Then failed">
-  <span class="keyword indention">Then</span>
-  <span class="name">the connection should be secure</span>
-
-  <span class="lead-duration duration">0.000</span>
-
-</div>
-
-
-
-
-
-
-  <div class="inner-level">
-    <div class="message indention">
-      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-28">
-          <a>java.lang.AssertionError:</a>
-      </div>
-      <div id="msg-28" class="collapse collapsable-details  in ">
-        <pre>java.lang.AssertionError: 
-Expecting:
-  &lt;sun.net.www.protocol.http.HttpURLConnection:http://localhost.:8000/accounts/login&gt;
-to be an instance of:
-  &lt;javax.net.ssl.HttpsURLConnection&gt;
-but was instance of:
-  &lt;sun.net.www.protocol.http.HttpURLConnection&gt;
-	at io.github.multicatch.cucumber.audit.ProtocolInspectionStepDefs$2.accept(ProtocolInspectionStepDefs.kt:22)
-	at &#10045;.the connection should be secure(classpath:io/github/multicatch/cucumber/audit/Authentication_Request.feature:14)
+Expecting ArrayList:
+  []
+to contain:
+  [403]
+but could not find the following element(s):
+  [403]
+
+	at io.github.multicatch.cucumber.audit.ResponseInspectionStepDefs._init_$lambda$37(ResponseInspectionStepDefs.kt:134)
+	at &#10045;.the response code should be 403(classpath:io/github/multicatch/cucumber/audit/Authentication_Request.feature:32)
 </pre>
       </div>
     </div>
