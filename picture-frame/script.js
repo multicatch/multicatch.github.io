@@ -126,7 +126,7 @@ async function sendInChunks(data, statusElement, width = 800, height = 480) {
     console.log("Number from ESP32:", number);
 
     if (statusElement) {
-        if (number != 480) {
+        if (number != 0) {
             statusElement.innerText = "Write error.";
         } else {
             statusElement.innerText = "Success.";

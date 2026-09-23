@@ -215,8 +215,9 @@ function convertTo4bppRaw(imageData, palette = DEVICE_PALETTE, deviceIndexLookup
 
     let out = 0;
 
-    for (let y = height - 1; y >= 0; y--) { // reverse lines for spectra
-        for (let x = 0; x < width; x += 2) {
+    // the pixels are reversed, bottom right is our top left
+    for (let y = height - 1; y >= 0; y--) {
+        for (let x = (width - 2); x >= 0; x -= 2) {
 
             const i0 = (y * width + x) * 4;
             const i1 = i0 + 4;
