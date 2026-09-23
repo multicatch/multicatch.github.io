@@ -208,7 +208,7 @@ function drawScaledImage(ctx, image, stretch = false, background = "white", widt
     ctx.filter = "";
 }
 
-function convertTo4bppRaw(imageData, palette = DEVICE_PALETTE, width = WIDTH, height = HEIGHT) {
+function convertTo4bppRaw(imageData, palette = DEVICE_PALETTE, deviceIndexLookup = DEVICE_INDEX_TO_RAW, width = WIDTH, height = HEIGHT) {
     const data = imageData.data;
 
     const output = new Uint8Array(width * height / 2);
@@ -235,8 +235,8 @@ function convertTo4bppRaw(imageData, palette = DEVICE_PALETTE, width = WIDTH, he
                 palette
             );
 
-            const p0 = DEVICE_INDEX_TO_RAW[index0];
-            const p1 = DEVICE_INDEX_TO_RAW[index1];
+            const p0 = deviceIndexLookup[index0];
+            const p1 = deviceIndexLookup[index1];
 
             output[out++] = (p0 << 4) | p1;
         }
