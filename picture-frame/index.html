@@ -1,0 +1,108 @@
+<html>
+<head>
+    <title>ESP32 Picture Frame Image Loader</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: #333;
+        }
+
+        .img-buffer {
+            display: none;
+        }
+
+        .file-controls {
+            position: absolute;
+            padding: 0.5em;
+            top: 0;
+            left: 0;
+            right: 0;
+            border-bottom: 1px solid #eee;
+            background: #eee;
+        }
+
+        .file-controls > * {
+            margin-right: 1em;
+        }
+        
+        .bluetooth-controls {
+            position: fixed;
+            padding: 1em;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            border-top: 1px solid #eee;
+            background: #eee;
+        }
+
+        .canvas-wrapper {
+            margin-top: 5em;
+            overflow-x: auto;
+            overflow-y: auto;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        #status {
+            margin-top: 1em;
+        }
+
+        #reload-notice {
+            display: none;
+        }
+    </style>
+    <script src="./spectra6.js"></script>
+</head>
+<body>
+    <div class="file-controls">
+        <label>
+            <input id="stretch-to-fill" type="checkbox" />
+            Scretch to fill
+        </label>
+        <input id="image-loader" accept="image/*" type="file" />
+        <div id="reload-notice">
+            Select file again to reload.
+        </div>
+    </div>
+
+    <div class="canvas-wrapper">
+        <canvas width="800" height="480"></canvas>
+    </div>
+
+    <div class="bluetooth-controls">
+        <div class="buttons">
+            <button id="connectButton">Connect</button>
+            <button id="sendButton" disabled>Send data</button>
+        </div>
+        <div id="status">
+            Waiting for connection...
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+    <script>
+        const stretchToFill = document.getElementById("stretch-to-fill");
+        const filePicker = document.getElementById("image-loader");
+        const canvas = document.querySelector("canvas");
+        const ctx = canvas.getContext('2d');
+
+        const connectButton = document.getElementById("connectButton");
+        const sendButton = document.getElementById("sendButton");
+        const statusElement = document.getElementById("status");
+
+        stretchToFill.addEventListener("change", () => {
+            document.getElementById("reload-notice").style.display = "inline-block";
+        });
+
+        filePicker.addEventListener("change", () => {
+            document.getElementById("reload-notice").style.display = "none";
+        });
+
+        initFileLoader(filePicker, stretchToFill, ctx);
+        initBLEUploader(connectButton, sendButton, statusElement, ctx);
+    </script>
+</body>
+</html>
