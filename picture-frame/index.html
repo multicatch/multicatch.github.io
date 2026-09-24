@@ -1,7 +1,13 @@
 <html>
+
 <head>
     <title>ESP32 Picture Frame Image Loader</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
     <style>
         body {
             font-family: Arial, Helvetica, sans-serif;
@@ -12,32 +18,24 @@
             display: none;
         }
 
-        .file-controls {
-            position: absolute;
+        .dropdown-menu {
             padding: 0.5em;
-            top: 0;
-            left: 0;
-            right: 0;
-            border-bottom: 1px solid #eee;
-            background: #eee;
         }
 
-        .file-controls > * {
-            margin-right: 1em;
-        }
-        
-        .bluetooth-controls {
-            position: fixed;
-            padding: 1em;
-            bottom: 0;
+        header {
+            background: #fff;
             left: 0;
             right: 0;
-            border-top: 1px solid #eee;
-            background: #eee;
+            top: 0;
+        }
+
+        #status {
+            font-size: 9pt;
+            color: #aaa;
         }
 
         .canvas-wrapper {
-            margin-top: 5em;
+            margin-top: 2em;
             overflow-x: auto;
             overflow-y: auto;
 
@@ -49,42 +47,57 @@
         #status {
             margin-top: 1em;
         }
-
-        #reload-notice {
-            display: none;
-        }
     </style>
     <script src="./spectra6.js"></script>
 </head>
+
 <body>
-    <div class="file-controls">
-        <label>
-            <input id="stretch-to-fill" type="checkbox" />
-            Scretch to fill
-        </label>
-        <input id="image-loader" accept="image/*" type="file" />
-        <div id="reload-notice">
-            Select file again to reload.
+    <header class="d-flex justify-content-center py-3 file-controls">
+        <div class="container">
+            <div class="border-bottom">
+                <div class="input-group mb-3">
+                    <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">Options</button>
+                    <ul class="dropdown-menu">
+                        <li>
+                            <div class="form-check form-switch">
+                                <input class="form-check-input" type="checkbox" role="switch" id="stretch-to-fill" checked />
+                                <label class="form-check-label" for="stretch-to-fill">Stretch to fill</label>
+                            </div>
+                        </li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li>
+                            <div>
+                                <label for="brightness-range" class="form-label">Brightness: <output
+                                        for="brightness-range" id="brightnessRangeValue"
+                                        aria-hidden="true"></output>%</label>
+                                <input type="range" class="form-range" min="0" max="200" value="110"
+                                    id="brightness-range">
+                            </div>
+                        </li>
+                    </ul>
+                    <input id="image-loader" accept="image/*" type="file" class="form-control">
+
+                    <button id="connectButton" class="btn btn-outline-secondary" type="button">Connect</button>
+                    <button id="sendButton" class="btn btn-outline-secondary" type="button" disabled>Send data</button>
+                </div>
+            </div>
+            <div id="status">
+                Waiting for connection...
+            </div>
         </div>
-    </div>
+    </header>
 
     <div class="canvas-wrapper">
         <canvas width="800" height="480"></canvas>
     </div>
 
-    <div class="bluetooth-controls">
-        <div class="buttons">
-            <button id="connectButton">Connect</button>
-            <button id="sendButton" disabled>Send data</button>
-        </div>
-        <div id="status">
-            Waiting for connection...
-        </div>
-    </div>
-
     <script src="./script.js"></script>
     <script>
         const stretchToFill = document.getElementById("stretch-to-fill");
+        const brightnessRange = document.getElementById("brightness-range");
         const filePicker = document.getElementById("image-loader");
         const canvas = document.querySelector("canvas");
         const ctx = canvas.getContext('2d');
@@ -94,15 +107,23 @@
         const statusElement = document.getElementById("status");
 
         stretchToFill.addEventListener("change", () => {
-            document.getElementById("reload-notice").style.display = "inline-block";
+            if (loadedImage != null) {
+                drawScaledImage(ctx, loadedImage, stretchToFill.checked, brightnessRange.value);
+            }
         });
 
-        filePicker.addEventListener("change", () => {
-            document.getElementById("reload-notice").style.display = "none";
-        });
-
-        initFileLoader(filePicker, stretchToFill, ctx);
+        initFileLoader(filePicker, stretchToFill, brightnessRange, ctx);
         initBLEUploader(connectButton, sendButton, statusElement, ctx);
+
+        const rangeOutput = document.getElementById("brightnessRangeValue");
+        rangeOutput.textContent = brightnessRange.value;
+        brightnessRange.addEventListener('input', () => {
+            rangeOutput.textContent = brightnessRange.value;
+            if (loadedImage != null) {
+                drawScaledImage(ctx, loadedImage, stretchToFill.checked, brightnessRange.value);
+            }
+        });
     </script>
 </body>
+
 </html>

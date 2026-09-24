@@ -1,4 +1,6 @@
-function initFileLoader(filePicker, stretchToFill, ctx) {
+let loadedImage = null;
+
+function initFileLoader(filePicker, stretchToFill, brightnessRange, ctx) {
     filePicker.addEventListener("change", event => {
         const file = event.target.files[0];
 
@@ -6,12 +8,14 @@ function initFileLoader(filePicker, stretchToFill, ctx) {
             return;
         }
 
-        const image = new Image();
-        image.onload = () => {
-            drawScaledImage(ctx, image, stretchToFill.checked);
-            URL.revokeObjectURL(image.src);
+        if (loadedImage != null) {
+            URL.revokeObjectURL(loadedImage.src);
+        }
+        loadedImage = new Image();
+        loadedImage.onload = () => {
+            drawScaledImage(ctx, loadedImage, stretchToFill.checked, brightnessRange.value);
         };
-        image.src = URL.createObjectURL(file);
+        loadedImage.src = URL.createObjectURL(file);
     });
 }
 
@@ -53,11 +57,11 @@ class BLEDevice {
 let currentConnection = null;
 
 function initBLEUploader(connectButton, sendButton, statusElement, ctx) {
-    connectButton.addEventListener("click", () => connectBLE(sendButton));
+    connectButton.addEventListener("click", () => connectBLE(sendButton, statusElement));
     sendButton.addEventListener("click", () => sendImage(sendButton, statusElement, ctx));
 }
 
-async function connectBLE(sendButton) {
+async function connectBLE(sendButton, statusElement) {
     try {
         const device = await navigator.bluetooth.requestDevice({
             filters: [
@@ -67,6 +71,9 @@ async function connectBLE(sendButton) {
         currentConnection = new BLEDevice(device);
         currentConnection.connectIfNeeded();
         sendButton.disabled = false;
+        if (statusElement) {
+            statusElement.innerText = "Connected to " + device.name;
+        }
     } catch (error) {
         console.error("Bluetooth connection failed:", error);
     }

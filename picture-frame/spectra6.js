@@ -172,7 +172,7 @@ function addError(
     pixels[pos + 2] += errorB * factor;
 }
 
-function drawScaledImage(ctx, image, stretch = false, background = "white", width = WIDTH, height = HEIGHT) {
+function drawScaledImage(ctx, image, stretch = false, brightness = 110, background = "white", width = WIDTH, height = HEIGHT) {
     ctx.setTransform(1, 0, 0, 1, 0, 0);
 
     ctx.fillStyle = background;
@@ -197,7 +197,7 @@ function drawScaledImage(ctx, image, stretch = false, background = "white", widt
     const x = (width - newWidth) / 2;
     const y = (height - newHeight) / 2;
 
-    ctx.filter = "brightness(112%)"; // spectra is dark unfortunately
+    ctx.filter = `brightness(${brightness}%)`;
     ctx.drawImage(
         image,
         x,
