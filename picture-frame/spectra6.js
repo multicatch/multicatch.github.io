@@ -172,42 +172,6 @@ function addError(
     pixels[pos + 2] += errorB * factor;
 }
 
-function drawScaledImage(ctx, image, stretch = false, brightness = 110, background = "white", width = WIDTH, height = HEIGHT) {
-    ctx.setTransform(1, 0, 0, 1, 0, 0);
-
-    ctx.fillStyle = background;
-    ctx.fillRect(0, 0, width, HEIGHT);
-
-    let scale;
-    if (stretch) {
-        scale = Math.max(
-            width / image.width,
-            height / image.height
-        );
-    } else {
-        scale = Math.min(
-            width / image.width,
-            height / image.height
-        );
-    }
-
-    const newWidth = Math.round(image.width * scale);
-    const newHeight = Math.round(image.height * scale);
-
-    const x = (width - newWidth) / 2;
-    const y = (height - newHeight) / 2;
-
-    ctx.filter = `brightness(${brightness}%)`;
-    ctx.drawImage(
-        image,
-        x,
-        y,
-        newWidth,
-        newHeight
-    );
-    ctx.filter = "";
-}
-
 function convertTo4bppRaw(imageData, palette = DEVICE_PALETTE, deviceIndexLookup = DEVICE_INDEX_TO_RAW, width = WIDTH, height = HEIGHT) {
     const data = imageData.data;
 

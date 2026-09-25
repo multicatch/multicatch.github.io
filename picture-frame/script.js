@@ -1,5 +1,75 @@
 let loadedImage = null;
 
+function isBrightnessFilterSupported(ctx, width, height) {
+    ctx.fillStyle = "rgb(100, 100, 100)";
+    ctx.fillRect(0, 0, width, height);
+
+    ctx.filter = "brightness(200%)";
+    ctx.fillRect(0, 0, width, height);
+
+    const pixel = ctx.getImageData(0, 0, 1, 1).data;
+
+    return pixel[0] > 150;
+}
+
+function adjustBrightness(ctx, brightness, width, height) {
+    const imageData = ctx.getImageData(0, 0, width, height);
+    const data = imageData.data;
+
+    const factor = brightness / 100.0;
+
+    for (let i = 0; i < data.byteLength; i += 4) {
+        data[i] *= factor;
+        data[i + 1] *= factor;
+        data[i + 2] *= factor;
+    }
+
+    ctx.putImageData(imageData, 0, 0);
+}
+
+function drawScaledImage(ctx, image, stretch = false, brightness = 110, background = "white", width = WIDTH, height = HEIGHT) {
+    ctx.setTransform(1, 0, 0, 1, 0, 0);
+
+    ctx.fillStyle = background;
+    ctx.fillRect(0, 0, width, HEIGHT);
+
+    let scale;
+    if (stretch) {
+        scale = Math.max(
+            width / image.width,
+            height / image.height
+        );
+    } else {
+        scale = Math.min(
+            width / image.width,
+            height / image.height
+        );
+    }
+
+    const newWidth = Math.round(image.width * scale);
+    const newHeight = Math.round(image.height * scale);
+
+    const x = (width - newWidth) / 2;
+    const y = (height - newHeight) / 2;
+
+    const filterSupported = isBrightnessFilterSupported(ctx, width, height);
+
+    if (filterSupported) {
+        ctx.filter = `brightness(${brightness}%)`;
+    }
+    ctx.drawImage(
+        image,
+        x,
+        y,
+        newWidth,
+        newHeight
+    );
+    ctx.filter = "";
+    if (!filterSupported) {
+        adjustBrightness(ctx, brightness, width, height);
+    }
+}
+
 function initFileLoader(filePicker, stretchToFill, brightnessRange, ctx) {
     filePicker.addEventListener("change", event => {
         const file = event.target.files[0];

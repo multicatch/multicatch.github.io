@@ -29,6 +29,10 @@
             top: 0;
         }
 
+        #brightnessRangeValue {
+            display: inline;
+        }
+
         #status {
             font-size: 9pt;
             color: #aaa;
@@ -46,6 +50,10 @@
 
         #status {
             margin-top: 1em;
+        }
+
+        #unsupported-browser {
+            display: none;
         }
     </style>
     <script src="./spectra6.js"></script>
@@ -83,6 +91,10 @@
                     <button id="connectButton" class="btn btn-outline-secondary" type="button">Connect</button>
                     <button id="sendButton" class="btn btn-outline-secondary" type="button" disabled>Send data</button>
                 </div>
+
+                <div id="unsupported-browser" class="alert alert-danger" role="alert">
+                Your browser is unsupported. Recommended browser: Bluefy (iOS) or Chrome (Mac, Windows, Android).
+                </div>
             </div>
             <div id="status">
                 Waiting for connection...
@@ -105,6 +117,10 @@
         const connectButton = document.getElementById("connectButton");
         const sendButton = document.getElementById("sendButton");
         const statusElement = document.getElementById("status");
+
+        if (!navigator.bluetooth) {
+            document.getElementById("unsupported-browser").style.display = "block";
+        }
 
         stretchToFill.addEventListener("change", () => {
             if (loadedImage != null) {
