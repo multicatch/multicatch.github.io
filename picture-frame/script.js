@@ -68,6 +68,13 @@ function drawScaledImage(ctx, image, stretch = false, brightness = 110, backgrou
     if (!filterSupported) {
         adjustBrightness(ctx, brightness, width, height);
     }
+
+    const imageData = floydSteinbergDithering(
+        ctx,
+        DEVICE_PALETTE,
+        width, height
+    );
+    ctx.putImageData(imageData, 0, 0);
 }
 
 function initFileLoader(filePicker, stretchToFill, brightnessRange, ctx) {
@@ -212,12 +219,7 @@ async function sendInChunks(data, statusElement, width = 800, height = 480) {
 }
 
 async function sendImage(sendButton, statusElement, ctx, width = WIDTH, height = HEIGHT) {
-    const imageData = floydSteinbergDithering(
-        ctx,
-        DEVICE_PALETTE,
-        width, height
-    );
-    ctx.putImageData(imageData, 0, 0);
+    const imageData = ctx.getImageData(0, 0, width, height);
     const raw = convertTo4bppRaw(imageData);
 
     console.log("RAW:", raw, "size:", raw.length);
